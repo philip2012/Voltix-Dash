@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Camera))]
 public class CameraFollow : MonoBehaviour
 {
     [Header("Target")]
@@ -18,9 +19,19 @@ public class CameraFollow : MonoBehaviour
     [SerializeField] private float lookAheadDistance = 1.5f;
     [SerializeField] private float lookAheadSmoothTime = 0.1f;
 
+    [Header("Bounds")]
+    [SerializeField] private BoxCollider2D cameraBounds;
+
+    private Camera cam;
+
     private Vector3 followVelocity;
     private float currentLookAhead;
     private float lookAheadVelocity;
+
+    private void Awake()
+    {
+        cam = GetComponent<Camera>();
+    }
 
     private void LateUpdate()
     {
@@ -70,15 +81,54 @@ public class CameraFollow : MonoBehaviour
         );
 
         desiredPosition.x += currentLookAhead;
-
-        // Keep camera in 2D plane.
         desiredPosition.z = -10f;
 
-        transform.position = Vector3.SmoothDamp(
+        Vector3 newPosition = Vector3.SmoothDamp(
             transform.position,
             desiredPosition,
             ref followVelocity,
             smoothTime
         );
+
+        newPosition = ClampToBounds(newPosition);
+
+        transform.position = newPosition;
+    }
+
+    private Vector3 ClampToBounds(Vector3 position)
+    {
+        if (cameraBounds == null)
+            return position;
+
+        Bounds bounds = cameraBounds.bounds;
+
+        float halfHeight = cam.orthographicSize;
+        float halfWidth = halfHeight * cam.aspect;
+
+        float minX = bounds.min.x + halfWidth;
+        float maxX = bounds.max.x - halfWidth;
+
+        float minY = bounds.min.y + halfHeight;
+        float maxY = bounds.max.y - halfHeight;
+
+        if (minX <= maxX)
+        {
+            position.x = Mathf.Clamp(
+                position.x,
+                minX,
+                maxX
+            );
+        }
+
+        if (minY <= maxY)
+        {
+            position.y = Mathf.Clamp(
+                position.y,
+                minY,
+                maxY
+            );
+        }
+
+        return position;
     }
 }
