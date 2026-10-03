@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="HUD.uss" />
+    <ui:VisualElement name="hud-overlay" class="hud-overlay" picking-mode="Ignore">
+        <ui:VisualElement name="hud-panel" class="hud-panel" picking-mode="Ignore">
+            <ui:Label name="health-label" text="HP: 3/3" class="hud-label" picking-mode="Ignore" />
+            <ui:Label name="score-label" text="SCORE: 0000" class="hud-label score-label" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

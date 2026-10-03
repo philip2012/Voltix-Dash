@@ -24,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
     public Vector3 StartingPosition => startingPosition;
     public float FallRespawnY => fallRespawnY;
     public bool IsInvulnerable => Time.time < nextDamageTime;
+    public event System.Action<int, int> HealthChanged;
 
     private void Awake()
     {
@@ -32,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
         startingRotation = transform.rotation;
         startingGravityScale = body.gravityScale;
         CurrentHealth = maxHealth;
+        HealthChanged?.Invoke(CurrentHealth, maxHealth);
     }
 
     private void LateUpdate()
@@ -54,6 +56,8 @@ public class PlayerHealth : MonoBehaviour
         CurrentHealth = Mathf.Max(0, CurrentHealth - amount);
         nextDamageTime = Time.time + damageCooldown;
 
+        HealthChanged?.Invoke(CurrentHealth, maxHealth);
+
         if (CurrentHealth == 0)
         {
             Respawn();
@@ -74,6 +78,7 @@ public class PlayerHealth : MonoBehaviour
         body.linearVelocity = Vector2.zero;
         body.angularVelocity = 0f;
         body.gravityScale = startingGravityScale;
+        HealthChanged?.Invoke(CurrentHealth, maxHealth);
     }
 
     private void OnValidate()
