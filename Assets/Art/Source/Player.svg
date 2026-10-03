@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+<polygon points="80,5 176,5 207,40 207,133 177,162 79,162 49,133 49,40" fill="#0b1223" stroke="#52e9f5" stroke-width="8"/>
+<polygon points="69,49 187,49 187,99 165,119 69,119" fill="#52e9f5"/>
+<polygon points="82,60 173,60 173,72 82,72" fill="#d5fcff"/>
+<polygon points="152,88 175,88 175,100 152,100" fill="#0b1223"/>
+<polygon points="76,174 180,174 218,211 196,340 60,340 38,211" fill="#19283c" stroke="#34465e" stroke-width="7"/>
+<polyline points="79,181 98,209 158,209 177,181" fill="none" stroke="#52e9f5" stroke-width="8" stroke-linejoin="round"/>
+<polygon points="128,226 153,261 128,299 103,261" fill="#52e9f5"/>
+<polygon points="128,240 139,260 128,283 117,260" fill="#d5fcff"/>
+<polygon points="37,206 61,221 54,315 24,306 15,237" fill="#0b1223" stroke="#52e9f5" stroke-width="5"/>
+<polygon points="219,206 241,237 232,306 202,315 195,221" fill="#0b1223" stroke="#52e9f5" stroke-width="5"/>
+<polygon points="63,323 193,323 193,339 63,339" fill="#9165ec"/>
+<polygon points="64,348 120,348 114,464 96,496 32,496 32,474 57,456" fill="#19283c" stroke="#52e9f5" stroke-width="5"/>
+<polygon points="136,348 192,348 199,456 224,474 224,496 160,496 142,464" fill="#19283c" stroke="#52e9f5" stroke-width="5"/>
+<polygon points="34,478 98,478 98,497 34,497" fill="#0b1223"/>
+<polygon points="158,478 222,478 222,497 158,497" fill="#0b1223"/>
+</svg>
