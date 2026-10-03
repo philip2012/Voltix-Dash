@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
     public float FallRespawnY => fallRespawnY;
     public bool IsInvulnerable => Time.time < nextDamageTime;
     public event System.Action<int, int> HealthChanged;
+    public event System.Action DeathRespawned;
 
     private void Awake()
     {
@@ -41,7 +42,7 @@ public class PlayerHealth : MonoBehaviour
         // Fall deaths bypass the contact-damage cooldown.
         if (transform.position.y < fallRespawnY)
         {
-            Respawn();
+            RespawnAfterDeath();
         }
     }
 
@@ -60,10 +61,16 @@ public class PlayerHealth : MonoBehaviour
 
         if (CurrentHealth == 0)
         {
-            Respawn();
+            RespawnAfterDeath();
         }
 
         return true;
+    }
+
+    private void RespawnAfterDeath()
+    {
+        Respawn();
+        DeathRespawned?.Invoke();
     }
 
     public void Respawn()
