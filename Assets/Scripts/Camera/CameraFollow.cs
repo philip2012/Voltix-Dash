@@ -131,4 +131,15 @@ public class CameraFollow : MonoBehaviour
 
         return position;
     }
+
+    private void OnDrawGizmos()
+    {
+        if (cameraBounds == null)
+            return;
+
+        Gizmos.DrawWireCube(
+            cameraBounds.bounds.center,
+            cameraBounds.bounds.size
+        );
+    }
 }
