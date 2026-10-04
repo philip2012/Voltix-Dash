@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
 
     public int CurrentHealth { get; private set; }
     public int MaxHealth => maxHealth;
+    public static event System.Action<Vector3> Killed;
 
     private void Awake()
     {
@@ -31,6 +32,7 @@ public class EnemyHealth : MonoBehaviour
             {
                 ScoreManager.Instance.AddScore(scoreValue);
             }
+            Killed?.Invoke(transform.position);
             Destroy(gameObject);
         }
     }
