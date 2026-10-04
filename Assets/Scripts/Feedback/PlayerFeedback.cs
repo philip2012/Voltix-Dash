@@ -5,6 +5,9 @@ using UnityEngine;
 [DefaultExecutionOrder(100)]
 public class PlayerFeedback : MonoBehaviour
 {
+    public event System.Action Jumped;
+    public event System.Action Landed;
+
     [SerializeField] private SpriteRenderer visual;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
@@ -22,6 +25,7 @@ public class PlayerFeedback : MonoBehaviour
     private Vector3 baseScale;
     private Vector3 basePosition;
     private bool wasGrounded;
+    private bool pendingLanding;
     private float lastVelocityY;
     private int lastHealth;
     private float landingUntil;
@@ -81,8 +85,19 @@ public class PlayerFeedback : MonoBehaviour
         float velocityY = body.linearVelocity.y;
         bool grounded = groundCheck != null && velocityY <= 0.1f &&
             Physics2D.OverlapCircle(groundCheck.position, groundRadius, groundLayer) != null;
+        if (!grounded && lastVelocityY <= 0.1f && velocityY > 1f)
+            Jumped?.Invoke();
+        if (!grounded && velocityY < -1f) pendingLanding = true;
+        if (grounded)
+        {
+            // The interpolated ground-check transform can settle after physics velocity does.
+            if (!wasGrounded && pendingLanding) Landed?.Invoke();
+            pendingLanding = false;
+        }
         if (grounded && !wasGrounded && lastVelocityY < -1f)
+        {
             landingUntil = Time.time + landingDuration;
+        }
 
         Vector2 shape = Vector2.one;
         if (Time.time < landingUntil) shape = landingSquash;
@@ -110,6 +125,7 @@ public class PlayerFeedback : MonoBehaviour
             visual.transform.localPosition = basePosition;
         }
         wasGrounded = false;
+        pendingLanding = false;
         lastVelocityY = 0f;
         landingUntil = 0f;
     }
