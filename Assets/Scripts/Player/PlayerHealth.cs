@@ -39,6 +39,9 @@ public class PlayerHealth : MonoBehaviour
 
     private void LateUpdate()
     {
+        // A paused frame must not process a pending fall death.
+        if (Time.timeScale == 0f) return;
+
         // Fall deaths bypass the contact-damage cooldown.
         if (transform.position.y < fallRespawnY)
         {

@@ -102,8 +102,8 @@ public class GameplayAudio : MonoBehaviour
     public bool Play(Sound sound)
     {
         int kind = (int)sound;
-        if (!isActiveAndEnabled || kind < 0 || kind >= nextAllowed.Length ||
-            (completed && sound != Sound.Completion) || Time.unscaledTime < nextAllowed[kind])
+        if (!isActiveAndEnabled || AudioListener.pause || kind < 0 || kind >= nextAllowed.Length ||
+            (completed && sound != Sound.Completion) || Time.time < nextAllowed[kind])
             return false;
 
         AudioClip clip = GetClip(sound);
@@ -129,7 +129,7 @@ public class GameplayAudio : MonoBehaviour
         source.Play();
         voicePriority[slot] = priority;
         busyUntil[slot] = now + clip.length;
-        nextAllowed[kind] = Time.unscaledTime + GetCooldown(sound);
+        nextAllowed[kind] = Time.time + GetCooldown(sound);
         return true;
     }
 

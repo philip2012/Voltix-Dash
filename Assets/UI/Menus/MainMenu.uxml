@@ -1,0 +1,12 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="Menus.uss" />
+    <ui:VisualElement name="main-menu" class="menu-screen main-menu-screen">
+        <ui:VisualElement class="menu-panel title-panel">
+            <ui:Label text="NEON PLATFORM ACTION" class="menu-kicker" />
+            <ui:Label text="VOLTIX DASH" class="game-title" />
+            <ui:VisualElement class="energy-rule" />
+            <ui:Button name="play-button" text="PLAY" class="menu-button primary-button" />
+            <ui:Button name="quit-button" text="QUIT" class="menu-button" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

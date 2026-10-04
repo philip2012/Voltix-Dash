@@ -1,0 +1,79 @@
+.menu-screen {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(5, 10, 20, 0.94);
+}
+.main-menu-screen {
+    background-image: url('../../Art/Sprites/Background.png');
+    -unity-background-scale-mode: scale-and-crop;
+    background-color: rgb(8, 14, 25);
+}
+.menu-panel {
+    width: 400px;
+    max-width: 90%;
+    padding: 28px;
+    background-color: rgba(18, 29, 46, 0.96);
+    border-width: 2px;
+    border-color: rgb(82, 233, 245);
+    border-radius: 8px;
+}
+.title-panel {
+    width: 520px;
+    padding: 40px;
+}
+.menu-kicker {
+    color: rgb(178, 131, 255);
+    font-size: 16px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 12px;
+}
+.game-title {
+    color: rgb(82, 233, 245);
+    font-size: 52px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin: 0;
+    white-space: normal;
+}
+.menu-title {
+    color: rgb(82, 233, 245);
+    font-size: 32px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-bottom: 12px;
+}
+.energy-rule {
+    height: 3px;
+    background-color: rgb(178, 131, 255);
+    margin-top: 22px;
+    margin-bottom: 16px;
+}
+.menu-button {
+    height: 52px;
+    margin-top: 12px;
+    border-width: 1px;
+    border-color: rgb(82, 233, 245);
+    border-radius: 5px;
+    background-color: rgb(25, 40, 60);
+    color: rgb(225, 245, 255);
+    font-size: 24px;
+    -unity-font-style: bold;
+}
+.primary-button {
+    background-color: rgb(82, 233, 245);
+    color: rgb(11, 18, 35);
+}
+.menu-button:hover,
+.menu-button:focus {
+    background-color: rgb(180, 245, 255);
+    color: rgb(11, 18, 35);
+}
+.pause-overlay {
+    display: none;
+}

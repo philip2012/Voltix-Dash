@@ -1,9 +1,18 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements">
     <Style src="HUD.uss" />
+    <Style src="../Menus/Menus.uss" />
     <ui:VisualElement name="hud-overlay" class="hud-overlay" picking-mode="Ignore">
         <ui:VisualElement name="hud-panel" class="hud-panel" picking-mode="Ignore">
             <ui:Label name="health-label" text="HP: 3/3" class="hud-label" picking-mode="Ignore" />
             <ui:Label name="score-label" text="SCORE: 0000" class="hud-label score-label" picking-mode="Ignore" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:VisualElement name="pause-overlay" class="menu-screen pause-overlay">
+        <ui:VisualElement class="menu-panel">
+            <ui:Label text="PAUSED" class="menu-title" />
+            <ui:Button name="resume-button" text="RESUME" class="menu-button primary-button" />
+            <ui:Button name="pause-restart-button" text="RESTART" class="menu-button" />
+            <ui:Button name="main-menu-button" text="MAIN MENU" class="menu-button" />
         </ui:VisualElement>
     </ui:VisualElement>
     <ui:VisualElement name="completion-overlay" class="completion-overlay">

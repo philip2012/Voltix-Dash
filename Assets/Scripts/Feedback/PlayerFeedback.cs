@@ -74,6 +74,8 @@ public class PlayerFeedback : MonoBehaviour
 
     private void LateUpdate()
     {
+        // Preserve visual/event state until gameplay resumes.
+        if (Time.timeScale == 0f) return;
         if (visual == null) return;
         if (!health.isActiveAndEnabled)
         {

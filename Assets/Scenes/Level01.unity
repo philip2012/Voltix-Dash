@@ -4294,6 +4294,7 @@ GameObject:
   - component: {fileID: 1099217397}
   - component: {fileID: 1099217396}
   - component: {fileID: 1099217398}
+  - component: {fileID: 1099217399}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4342,6 +4343,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   playerHealth: {fileID: 1502846386}
   scoreManager: {fileID: 1099217396}
+--- !u!114 &1099217399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1099217395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4dd2eb5909574744aba1ec554f89eb6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelPause
+  levelManager: {fileID: 1099217398}
+  playerInput: {fileID: 1502846379}
 --- !u!1001 &1110213524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13603,6 +13618,7 @@ GameObject:
   - component: {fileID: 2058849755}
   - component: {fileID: 2058849754}
   - component: {fileID: 2058849757}
+  - component: {fileID: 2058849758}
   m_Layer: 0
   m_Name: HUD
   m_TagString: Untagged
@@ -13675,6 +13691,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelCompletionUI
   levelManager: {fileID: 1099217398}
+--- !u!114 &2058849758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058849753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793cd7c49d6574e70bd8174bf24568da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PauseMenuUI
+  levelPause: {fileID: 1099217399}
 --- !u!1 &2083169820
 GameObject:
   m_ObjectHideFlags: 0
