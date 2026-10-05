@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 512">
+<g id="frame-00" transform="translate(0,0)">
+<polygon points="8.00,0.00 120.00,0.00 120.00,512.00 8.00,512.00" fill="#0b1223" opacity="1.000"/>
+<polygon points="21.00,26.00 107.00,26.00 107.00,486.00 21.00,486.00" fill="#272345" opacity="1.000"/>
+<polygon points="7.00,0.00 22.00,0.00 22.00,512.00 7.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polygon points="106.00,0.00 121.00,0.00 121.00,512.00 106.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polyline points="27.00,48.00 101.00,48.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,112.00 101.00,112.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,176.00 101.00,176.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,240.00 101.00,240.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,304.00 101.00,304.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,368.00 101.00,368.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,432.00 101.00,432.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polygon points="0.00,0.00 128.00,0.00 113.00,39.00 15.00,39.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polygon points="15.00,473.00 113.00,473.00 128.00,512.00 0.00,512.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polyline points="61.90,40.00 40.90,112.00 82.90,181.00 45.10,260.00 79.75,326.00 45.10,407.00 62.95,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="8.0" stroke-linejoin="round"/>
+<polyline points="60.85,41.00 48.25,111.00 75.55,182.00 51.40,260.00 73.45,326.00 52.45,406.00 61.90,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="2.0" stroke-linejoin="round"/>
+</g>
+<g id="frame-01" transform="translate(128,0)">
+<polygon points="8.00,0.00 120.00,0.00 120.00,512.00 8.00,512.00" fill="#0b1223" opacity="1.000"/>
+<polygon points="21.00,26.00 107.00,26.00 107.00,486.00 21.00,486.00" fill="#272345" opacity="1.000"/>
+<polygon points="7.00,0.00 22.00,0.00 22.00,512.00 7.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polygon points="106.00,0.00 121.00,0.00 121.00,512.00 106.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polyline points="27.00,48.00 101.00,48.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,112.00 101.00,112.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,176.00 101.00,176.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,240.00 101.00,240.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,304.00 101.00,304.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,368.00 101.00,368.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,432.00 101.00,432.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polygon points="0.00,0.00 128.00,0.00 113.00,39.00 15.00,39.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polygon points="15.00,473.00 113.00,473.00 128.00,512.00 0.00,512.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polyline points="67.15,40.00 46.65,112.00 87.65,181.00 50.75,260.00 84.57,326.00 50.75,407.00 68.17,470.00" fill="none" opacity="1.000" stroke="#52e9f5" stroke-width="8.0" stroke-linejoin="round"/>
+<polyline points="66.12,41.00 53.82,111.00 80.47,182.00 56.90,260.00 78.42,326.00 57.92,406.00 67.15,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="2.0" stroke-linejoin="round"/>
+</g>
+<g id="frame-02" transform="translate(256,0)">
+<polygon points="8.00,0.00 120.00,0.00 120.00,512.00 8.00,512.00" fill="#0b1223" opacity="1.000"/>
+<polygon points="21.00,26.00 107.00,26.00 107.00,486.00 21.00,486.00" fill="#272345" opacity="1.000"/>
+<polygon points="7.00,0.00 22.00,0.00 22.00,512.00 7.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polygon points="106.00,0.00 121.00,0.00 121.00,512.00 106.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polyline points="27.00,48.00 101.00,48.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,112.00 101.00,112.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,176.00 101.00,176.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,240.00 101.00,240.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,304.00 101.00,304.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,368.00 101.00,368.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,432.00 101.00,432.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polygon points="0.00,0.00 128.00,0.00 113.00,39.00 15.00,39.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polygon points="15.00,473.00 113.00,473.00 128.00,512.00 0.00,512.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polyline points="67.25,40.00 47.75,112.00 86.75,181.00 51.65,260.00 83.82,326.00 51.65,407.00 68.22,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="8.0" stroke-linejoin="round"/>
+<polyline points="66.27,41.00 54.57,111.00 79.92,182.00 57.50,260.00 77.97,326.00 58.47,406.00 67.25,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="2.0" stroke-linejoin="round"/>
+</g>
+<g id="frame-03" transform="translate(384,0)">
+<polygon points="8.00,0.00 120.00,0.00 120.00,512.00 8.00,512.00" fill="#0b1223" opacity="1.000"/>
+<polygon points="21.00,26.00 107.00,26.00 107.00,486.00 21.00,486.00" fill="#272345" opacity="1.000"/>
+<polygon points="7.00,0.00 22.00,0.00 22.00,512.00 7.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polygon points="106.00,0.00 121.00,0.00 121.00,512.00 106.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polyline points="27.00,48.00 101.00,48.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,112.00 101.00,112.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,176.00 101.00,176.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,240.00 101.00,240.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,304.00 101.00,304.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,368.00 101.00,368.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,432.00 101.00,432.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polygon points="0.00,0.00 128.00,0.00 113.00,39.00 15.00,39.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polygon points="15.00,473.00 113.00,473.00 128.00,512.00 0.00,512.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polyline points="62.10,40.00 43.10,112.00 81.10,181.00 46.90,260.00 78.25,326.00 46.90,407.00 63.05,470.00" fill="none" opacity="1.000" stroke="#52e9f5" stroke-width="8.0" stroke-linejoin="round"/>
+<polyline points="61.15,41.00 49.75,111.00 74.45,182.00 52.60,260.00 72.55,326.00 53.55,406.00 62.10,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="2.0" stroke-linejoin="round"/>
+</g>
+<g id="frame-04" transform="translate(512,0)">
+<polygon points="8.00,0.00 120.00,0.00 120.00,512.00 8.00,512.00" fill="#0b1223" opacity="1.000"/>
+<polygon points="21.00,26.00 107.00,26.00 107.00,486.00 21.00,486.00" fill="#272345" opacity="1.000"/>
+<polygon points="7.00,0.00 22.00,0.00 22.00,512.00 7.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polygon points="106.00,0.00 121.00,0.00 121.00,512.00 106.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polyline points="27.00,48.00 101.00,48.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,112.00 101.00,112.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,176.00 101.00,176.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,240.00 101.00,240.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,304.00 101.00,304.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,368.00 101.00,368.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,432.00 101.00,432.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polygon points="0.00,0.00 128.00,0.00 113.00,39.00 15.00,39.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polygon points="15.00,473.00 113.00,473.00 128.00,512.00 0.00,512.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polyline points="56.85,40.00 37.35,112.00 76.35,181.00 41.25,260.00 73.43,326.00 41.25,407.00 57.83,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="8.0" stroke-linejoin="round"/>
+<polyline points="55.88,41.00 44.18,111.00 69.53,182.00 47.10,260.00 67.58,326.00 48.08,406.00 56.85,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="2.0" stroke-linejoin="round"/>
+</g>
+<g id="frame-05" transform="translate(640,0)">
+<polygon points="8.00,0.00 120.00,0.00 120.00,512.00 8.00,512.00" fill="#0b1223" opacity="1.000"/>
+<polygon points="21.00,26.00 107.00,26.00 107.00,486.00 21.00,486.00" fill="#272345" opacity="1.000"/>
+<polygon points="7.00,0.00 22.00,0.00 22.00,512.00 7.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polygon points="106.00,0.00 121.00,0.00 121.00,512.00 106.00,512.00" fill="#ff8539" opacity="1.000"/>
+<polyline points="27.00,48.00 101.00,48.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,112.00 101.00,112.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,176.00 101.00,176.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,240.00 101.00,240.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,304.00 101.00,304.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,368.00 101.00,368.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polyline points="27.00,432.00 101.00,432.00" fill="none" opacity="1.000" stroke="#45406a" stroke-width="3.0" stroke-linejoin="round"/>
+<polygon points="0.00,0.00 128.00,0.00 113.00,39.00 15.00,39.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polygon points="15.00,473.00 113.00,473.00 128.00,512.00 0.00,512.00" fill="#19283c" opacity="1.000" stroke="#ff8539" stroke-width="5.0" stroke-linejoin="round"/>
+<polyline points="56.75,40.00 36.25,112.00 77.25,181.00 40.35,260.00 74.18,326.00 40.35,407.00 57.78,470.00" fill="none" opacity="1.000" stroke="#52e9f5" stroke-width="8.0" stroke-linejoin="round"/>
+<polyline points="55.73,41.00 43.43,111.00 70.08,182.00 46.50,260.00 68.03,326.00 47.53,406.00 56.75,470.00" fill="none" opacity="1.000" stroke="#d5fcff" stroke-width="2.0" stroke-linejoin="round"/>
+</g>
+</svg>

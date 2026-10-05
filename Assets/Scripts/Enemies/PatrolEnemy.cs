@@ -13,6 +13,8 @@ public class PatrolEnemy : MonoBehaviour
     private float startingX;
     private int direction = 1;
 
+    public int FacingDirection => direction;
+
     private void Awake()
     {
         body = GetComponent<Rigidbody2D>();

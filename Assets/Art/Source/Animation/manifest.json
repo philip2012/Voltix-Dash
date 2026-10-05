@@ -1,0 +1,119 @@
+[
+  {
+    "name": "PlayerIdle",
+    "frames": 4,
+    "width": 256,
+    "height": 128,
+    "ppu": 128,
+    "fps": 6,
+    "loop": true
+  },
+  {
+    "name": "PlayerRun",
+    "frames": 8,
+    "width": 256,
+    "height": 128,
+    "ppu": 128,
+    "fps": 14,
+    "loop": true
+  },
+  {
+    "name": "PlayerJumpStart",
+    "frames": 3,
+    "width": 256,
+    "height": 128,
+    "ppu": 128,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "name": "PlayerRise",
+    "frames": 2,
+    "width": 256,
+    "height": 128,
+    "ppu": 128,
+    "fps": 8,
+    "loop": true
+  },
+  {
+    "name": "PlayerFall",
+    "frames": 2,
+    "width": 256,
+    "height": 128,
+    "ppu": 128,
+    "fps": 8,
+    "loop": true
+  },
+  {
+    "name": "PlayerLand",
+    "frames": 3,
+    "width": 256,
+    "height": 128,
+    "ppu": 128,
+    "fps": 30,
+    "loop": false
+  },
+  {
+    "name": "PlayerAttack",
+    "frames": 5,
+    "width": 256,
+    "height": 128,
+    "ppu": 128,
+    "fps": 20,
+    "loop": false
+  },
+  {
+    "name": "PlayerHurt",
+    "frames": 3,
+    "width": 256,
+    "height": 128,
+    "ppu": 128,
+    "fps": 18,
+    "loop": false
+  },
+  {
+    "name": "PatrolBotPatrol",
+    "frames": 6,
+    "width": 128,
+    "height": 128,
+    "ppu": 128,
+    "fps": 10,
+    "loop": true
+  },
+  {
+    "name": "PatrolBotDeath",
+    "frames": 6,
+    "width": 128,
+    "height": 128,
+    "ppu": 128,
+    "fps": 18,
+    "loop": false
+  },
+  {
+    "name": "ElectricBarrierLoop",
+    "frames": 6,
+    "width": 128,
+    "height": 128,
+    "ppu": 128,
+    "fps": 12,
+    "loop": true
+  },
+  {
+    "name": "MovingHazardLoop",
+    "frames": 6,
+    "width": 128,
+    "height": 128,
+    "ppu": 128,
+    "fps": 10,
+    "loop": true
+  },
+  {
+    "name": "GoalPortalLoop",
+    "frames": 6,
+    "width": 192,
+    "height": 320,
+    "ppu": 80,
+    "fps": 8,
+    "loop": true
+  }
+]
