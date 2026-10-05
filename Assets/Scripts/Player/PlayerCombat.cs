@@ -13,6 +13,7 @@ public class PlayerCombat : MonoBehaviour
     private int facingDirection = 1;
     private float nextAttackTime;
     private readonly HashSet<EnemyHealth> hitEnemies = new HashSet<EnemyHealth>();
+    private readonly List<Collider2D> hitColliders = new List<Collider2D>(8);
 
     public int FacingDirection => facingDirection;
     public event System.Action<int, float, float> AttackPerformed;
@@ -48,10 +49,14 @@ public class PlayerCombat : MonoBehaviour
         nextAttackTime = Time.time + attackCooldown;
         hitEnemies.Clear();
 
-        Collider2D[] hits = Physics2D.OverlapBoxAll(
-            AttackCenter, new Vector2(attackRange, attackHeight), 0f, Physics2D.AllLayers);
+        // Reuse result storage without a fixed hit limit. Keep the existing global
+        // trigger-query setting and all-layer overlap behavior.
+        ContactFilter2D filter = new ContactFilter2D().NoFilter();
+        filter.useTriggers = Physics2D.queriesHitTriggers;
+        Physics2D.OverlapBox(
+            AttackCenter, new Vector2(attackRange, attackHeight), 0f, filter, hitColliders);
 
-        foreach (Collider2D hit in hits)
+        foreach (Collider2D hit in hitColliders)
         {
             EnemyHealth health = hit.GetComponentInParent<EnemyHealth>();
             if (health != null && hitEnemies.Add(health))
@@ -60,6 +65,8 @@ public class PlayerCombat : MonoBehaviour
                 health.TakeDamage(1);
             }
         }
+
+        hitColliders.Clear();
 
         AttackPerformed?.Invoke(facingDirection, attackRange, attackHeight);
         return true;
