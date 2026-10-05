@@ -1,0 +1,2184 @@
+{
+  "unityVersion": "6000.5.6f1",
+  "date": "2026-10-05",
+  "environment": "macOS Editor / Mono / Metal; not a WebGL build",
+  "profiles": {
+    "Baseline": {
+      "runSeconds": 64.33087,
+      "runGC": [
+        2,
+        2,
+        2
+      ],
+      "platforms": 32,
+      "jumps": 37,
+      "acceptedAttacks": 4,
+      "killEvents": 4,
+      "pauseTests": 2,
+      "pauseExact": true,
+      "completionBlocks": true,
+      "timerStopped": true,
+      "checks": {
+        "lethalRespawnHP": 3,
+        "lethalDeaths": 1,
+        "pitHP": 3,
+        "pitDeaths": 2,
+        "runHP": 1,
+        "runScore": 400,
+        "runDeaths": 0,
+        "runLevelTimer": 64.84888493480719,
+        "complete": true,
+        "enemyDeathVisualsRemaining": 0,
+        "restartHP": 3,
+        "restartScore": 0,
+        "restartDeaths": 0,
+        "restartBots": 4,
+        "restartAnimators": 10,
+        "restartListeners": 1,
+        "restartSources": 3,
+        "restartUI": 1,
+        "mainMenuScene": "MainMenu",
+        "returnHP": 3,
+        "returnScore": 0,
+        "returnAnimators": 10,
+        "returnScene": "Level01"
+      },
+      "loadTimes": [
+        {
+          "scene": "Level01",
+          "ms": 142.62304100020629
+        },
+        {
+          "scene": "Level01",
+          "ms": 295.9058750002441
+        },
+        {
+          "scene": "MainMenu",
+          "ms": 136.65612499971758
+        },
+        {
+          "scene": "Level01",
+          "ms": 160.6680419999975
+        }
+      ],
+      "events": [
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.1009,
+          "time": 604.6387
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0444,
+          "time": 605.061462
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0387,
+          "time": 605.4872
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0377,
+          "time": 605.9085
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0406,
+          "time": 606.3344
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0403,
+          "time": 606.7551
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0397,
+          "time": 607.1752
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0413,
+          "time": 607.595642
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0876,
+          "time": 608.0185
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0392,
+          "time": 608.439636
+        },
+        {
+          "kind": "damage1",
+          "bytes": -1,
+          "ms": 0.1595,
+          "time": 609.4403
+        },
+        {
+          "kind": "damage2",
+          "bytes": -1,
+          "ms": 0.0426,
+          "time": 610.442
+        },
+        {
+          "kind": "damage3",
+          "bytes": -1,
+          "ms": 0.285,
+          "time": 611.4441
+        },
+        {
+          "kind": "pause",
+          "bytes": -1,
+          "ms": 0.1313,
+          "time": 613.0457
+        },
+        {
+          "kind": "resume",
+          "bytes": -1,
+          "ms": 0.0481,
+          "time": 613.0457
+        },
+        {
+          "kind": "probeReload",
+          "bytes": -1,
+          "ms": 0.3263,
+          "time": 613.6509
+        },
+        {
+          "kind": "hitAttack",
+          "bytes": -1,
+          "ms": 0.3354,
+          "time": 622.6255
+        },
+        {
+          "kind": "midLevelPause",
+          "bytes": -1,
+          "ms": 0.1536,
+          "time": 628.631
+        },
+        {
+          "kind": "midLevelResume",
+          "bytes": -1,
+          "ms": 0.0639,
+          "time": 628.631
+        },
+        {
+          "kind": "hitAttack",
+          "bytes": -1,
+          "ms": 0.3319,
+          "time": 639.5446
+        },
+        {
+          "kind": "midLevelPause",
+          "bytes": -1,
+          "ms": 0.1225,
+          "time": 651.373169
+        },
+        {
+          "kind": "midLevelResume",
+          "bytes": -1,
+          "ms": 0.0492,
+          "time": 651.373169
+        },
+        {
+          "kind": "hitAttack",
+          "bytes": -1,
+          "ms": 0.3646,
+          "time": 657.9262
+        },
+        {
+          "kind": "hitAttack",
+          "bytes": -1,
+          "ms": 0.4061,
+          "time": 670.02655
+        },
+        {
+          "kind": "completionRestartUI",
+          "bytes": -1,
+          "ms": 5.0346,
+          "time": 679.2114
+        },
+        {
+          "kind": "navigationPause",
+          "bytes": -1,
+          "ms": 0.0685,
+          "time": 679.5676
+        },
+        {
+          "kind": "mainMenuUI",
+          "bytes": -1,
+          "ms": 0.2404,
+          "time": 679.5676
+        },
+        {
+          "kind": "playUI",
+          "bytes": -1,
+          "ms": 0.2112,
+          "time": 680.1146
+        }
+      ],
+      "rawEvents": [],
+      "counters": {
+        "CPU Main Thread Frame Time": {
+          "median": 386042,
+          "p95": 646875,
+          "maximum": 4365208
+        },
+        "Main Thread": {
+          "median": 2059417,
+          "p95": 7592458,
+          "maximum": 18308250
+        },
+        "PlayerLoop": {
+          "median": 408041,
+          "p95": 5448583,
+          "maximum": 9058792
+        },
+        "GC Allocated In Frame": {
+          "median": 14835,
+          "p95": 14835,
+          "maximum": 21659
+        },
+        "Texture Memory": {
+          "median": 261817451,
+          "p95": 261817451,
+          "maximum": 261817451
+        },
+        "AudioClip Memory": {
+          "median": 68504,
+          "p95": 68504,
+          "maximum": 68504
+        },
+        "Audio Used Memory": {
+          "median": 1424880,
+          "p95": 1425288,
+          "maximum": 1425696
+        },
+        "Animators.Update": {
+          "median": 36542,
+          "p95": 70667,
+          "maximum": 172333
+        },
+        "Physics2D.Simulate": {
+          "median": 0,
+          "p95": 25125,
+          "maximum": 282333
+        },
+        "BehaviourUpdate": {
+          "median": 2125,
+          "p95": 4833,
+          "maximum": 32500
+        },
+        "LateBehaviourUpdate": {
+          "median": 25917,
+          "p95": 44750,
+          "maximum": 132833
+        },
+        "Standard Draw Calls Count": {
+          "median": 8,
+          "p95": 16,
+          "maximum": 22
+        },
+        "SRP Batcher Draw Calls Count": {
+          "median": 0,
+          "p95": 0,
+          "maximum": 0
+        },
+        "SetPass Calls Count": {
+          "median": 5,
+          "p95": 10,
+          "maximum": 16
+        },
+        "Assembly-CSharp.dll!::PlayerAnimationController.LateUpdate() [Invoke]": {
+          "median": 1334,
+          "p95": 2291,
+          "maximum": 58208
+        }
+      },
+      "timing": {
+        "dt": {
+          "median": 0.002064959,
+          "p95": 0.007600163,
+          "maximum": 0.01831921
+        },
+        "cpuActiveMs": {
+          "median": 0.387291,
+          "p95": 0.641334,
+          "maximum": 4.169708
+        },
+        "gpuMs": {
+          "median": 2.5702498387545347,
+          "p95": 15.053499955683947,
+          "maximum": 35.51795845851302
+        },
+        "frameMs": {
+          "median": 2.032667,
+          "p95": 7.262459,
+          "maximum": 1135.216167
+        }
+      },
+      "editorLoopFPS": 484.27111627882203,
+      "scriptCallbackGC": {
+        "median": 0.0,
+        "p95": 0,
+        "maximum": 80
+      }
+    },
+    "Post": {
+      "runSeconds": 64.21809,
+      "runGC": [
+        2,
+        2,
+        2
+      ],
+      "platforms": 32,
+      "jumps": 38,
+      "acceptedAttacks": 4,
+      "killEvents": 4,
+      "pauseTests": 2,
+      "pauseExact": true,
+      "completionBlocks": true,
+      "timerStopped": true,
+      "checks": {
+        "lethalRespawnHP": 3,
+        "lethalDeaths": 1,
+        "pitHP": 3,
+        "pitDeaths": 2,
+        "runHP": 2,
+        "runScore": 400,
+        "runDeaths": 0,
+        "runLevelTimer": 64.70037107426303,
+        "complete": true,
+        "enemyDeathVisualsRemaining": 0,
+        "restartHP": 3,
+        "restartScore": 0,
+        "restartDeaths": 0,
+        "restartBots": 4,
+        "restartAnimators": 10,
+        "restartListeners": 1,
+        "restartSources": 3,
+        "restartUI": 1,
+        "mainMenuScene": "MainMenu",
+        "returnHP": 3,
+        "returnScore": 0,
+        "returnAnimators": 10,
+        "returnScene": "Level01"
+      },
+      "loadTimes": [
+        {
+          "scene": "Level01",
+          "ms": 163.35262500024328
+        },
+        {
+          "scene": "Level01",
+          "ms": 179.80054200006634
+        },
+        {
+          "scene": "MainMenu",
+          "ms": 149.98945799970897
+        },
+        {
+          "scene": "Level01",
+          "ms": 147.00308300007237
+        }
+      ],
+      "events": [
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.8568,
+          "time": 1.09339261
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0376,
+          "time": 1.51395011
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0378,
+          "time": 1.9371742
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0373,
+          "time": 2.35842872
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0412,
+          "time": 2.779394
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0379,
+          "time": 3.203215
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0407,
+          "time": 3.62419343
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0432,
+          "time": 4.047745
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0452,
+          "time": 4.46992
+        },
+        {
+          "kind": "emptyAttack",
+          "bytes": -1,
+          "ms": 0.0433,
+          "time": 4.890214
+        },
+        {
+          "kind": "damage1",
+          "bytes": -1,
+          "ms": 0.4318,
+          "time": 5.891733
+        },
+        {
+          "kind": "damage2",
+          "bytes": -1,
+          "ms": 0.0801,
+          "time": 6.8923316
+        },
+        {
+          "kind": "damage3",
+          "bytes": -1,
+          "ms": 0.8128,
+          "time": 7.89328241
+        },
+        {
+          "kind": "pause",
+          "bytes": -1,
+          "ms": 3.0124,
+          "time": 9.495033
+        },
+        {
+          "kind": "resume",
+          "bytes": -1,
+          "ms": 0.8576,
+          "time": 9.495033
+        },
+        {
+          "kind": "probeReload",
+          "bytes": -1,
+          "ms": 0.5125,
+          "time": 10.0996027
+        },
+        {
+          "kind": "hitAttack",
+          "bytes": -1,
+          "ms": 1.9021,
+          "time": 19.0625954
+        },
+        {
+          "kind": "midLevelPause",
+          "bytes": -1,
+          "ms": 0.1191,
+          "time": 25.0723248
+        },
+        {
+          "kind": "midLevelResume",
+          "bytes": -1,
+          "ms": 0.0781,
+          "time": 25.0723248
+        },
+        {
+          "kind": "hitAttack",
+          "bytes": -1,
+          "ms": 0.2394,
+          "time": 35.9876
+        },
+        {
+          "kind": "midLevelPause",
+          "bytes": -1,
+          "ms": 0.0605,
+          "time": 47.8098221
+        },
+        {
+          "kind": "midLevelResume",
+          "bytes": -1,
+          "ms": 0.0446,
+          "time": 47.8098221
+        },
+        {
+          "kind": "hitAttack",
+          "bytes": -1,
+          "ms": 0.2804,
+          "time": 54.3887062
+        },
+        {
+          "kind": "hitAttack",
+          "bytes": -1,
+          "ms": 0.3188,
+          "time": 66.4669647
+        },
+        {
+          "kind": "completionRestartUI",
+          "bytes": -1,
+          "ms": 6.173,
+          "time": 75.50664
+        },
+        {
+          "kind": "navigationPause",
+          "bytes": -1,
+          "ms": 0.0837,
+          "time": 75.97537
+        },
+        {
+          "kind": "mainMenuUI",
+          "bytes": -1,
+          "ms": 0.2557,
+          "time": 75.97537
+        },
+        {
+          "kind": "playUI",
+          "bytes": -1,
+          "ms": 0.2284,
+          "time": 76.51574
+        }
+      ],
+      "rawEvents": [
+        {
+          "frame": 98822,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 172,
+          "ms": 0.816125
+        },
+        {
+          "frame": 98975,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.03625
+        },
+        {
+          "frame": 99122,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.036958
+        },
+        {
+          "frame": 99268,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.036083
+        },
+        {
+          "frame": 99418,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.039917
+        },
+        {
+          "frame": 99564,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.036666
+        },
+        {
+          "frame": 99715,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.039542
+        },
+        {
+          "frame": 99862,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.041917
+        },
+        {
+          "frame": 100006,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.044041
+        },
+        {
+          "frame": 100159,
+          "kind": "VoltixQA.emptyAttack",
+          "bytes": 0,
+          "ms": 0.042333
+        },
+        {
+          "frame": 100533,
+          "kind": "VoltixQA.damage1",
+          "bytes": 76,
+          "ms": 0.405667
+        },
+        {
+          "frame": 100907,
+          "kind": "VoltixQA.damage2",
+          "bytes": 76,
+          "ms": 0.037833
+        },
+        {
+          "frame": 101287,
+          "kind": "VoltixQA.damage3",
+          "bytes": 152,
+          "ms": 0.777917
+        },
+        {
+          "frame": 101895,
+          "kind": "VoltixQA.pause",
+          "bytes": 4388,
+          "ms": 2.979417
+        },
+        {
+          "frame": 102131,
+          "kind": "VoltixQA.resume",
+          "bytes": 1072,
+          "ms": 0.817041
+        },
+        {
+          "frame": 102362,
+          "kind": "VoltixQA.probeReload",
+          "bytes": 124,
+          "ms": 0.485375
+        },
+        {
+          "frame": 105596,
+          "kind": "VoltixQA.hitAttack",
+          "bytes": 636,
+          "ms": 1.851375
+        },
+        {
+          "frame": 107898,
+          "kind": "VoltixQA.midLevelPause",
+          "bytes": 0,
+          "ms": 0.083167
+        },
+        {
+          "frame": 108134,
+          "kind": "VoltixQA.midLevelResume",
+          "bytes": 0,
+          "ms": 0.042125
+        },
+        {
+          "frame": 112297,
+          "kind": "VoltixQA.hitAttack",
+          "bytes": 256,
+          "ms": 0.2345
+        },
+        {
+          "frame": 116840,
+          "kind": "VoltixQA.midLevelPause",
+          "bytes": 0,
+          "ms": 0.057042
+        },
+        {
+          "frame": 117078,
+          "kind": "VoltixQA.midLevelResume",
+          "bytes": 0,
+          "ms": 0.043209
+        },
+        {
+          "frame": 119263,
+          "kind": "VoltixQA.hitAttack",
+          "bytes": 256,
+          "ms": 0.279333
+        },
+        {
+          "frame": 123859,
+          "kind": "VoltixQA.hitAttack",
+          "bytes": 256,
+          "ms": 0.317458
+        },
+        {
+          "frame": 127300,
+          "kind": "VoltixQA.completionRestartUI",
+          "bytes": 1434,
+          "ms": 6.144459
+        },
+        {
+          "frame": 127457,
+          "kind": "VoltixQA.navigationPause",
+          "bytes": 0,
+          "ms": 0.055999998
+        },
+        {
+          "frame": 127457,
+          "kind": "VoltixQA.mainMenuUI",
+          "bytes": 1040,
+          "ms": 0.244917
+        },
+        {
+          "frame": 127694,
+          "kind": "VoltixQA.playUI",
+          "bytes": 948,
+          "ms": 0.194959
+        }
+      ],
+      "counters": {
+        "CPU Main Thread Frame Time": {
+          "median": 332228.5,
+          "p95": 466457,
+          "maximum": 3440043
+        },
+        "Main Thread": {
+          "median": 1842645.5,
+          "p95": 6866375,
+          "maximum": 15572500
+        },
+        "PlayerLoop": {
+          "median": 345521.0,
+          "p95": 4980335,
+          "maximum": 13433166
+        },
+        "GC Allocated In Frame": {
+          "median": 14835.0,
+          "p95": 14835,
+          "maximum": 40779
+        },
+        "Texture Memory": {
+          "median": 262881449.0,
+          "p95": 262881449,
+          "maximum": 262881449
+        },
+        "AudioClip Memory": {
+          "median": 68504.0,
+          "p95": 68504,
+          "maximum": 68504
+        },
+        "Audio Used Memory": {
+          "median": 1424880.0,
+          "p95": 1425288,
+          "maximum": 1425696
+        },
+        "Animators.Update": {
+          "median": 32583.0,
+          "p95": 64166,
+          "maximum": 123874
+        },
+        "Physics2D.Simulate": {
+          "median": 0.0,
+          "p95": 22875,
+          "maximum": 55458
+        },
+        "BehaviourUpdate": {
+          "median": 1833.0,
+          "p95": 3750,
+          "maximum": 11041
+        },
+        "LateBehaviourUpdate": {
+          "median": 23479.5,
+          "p95": 32916,
+          "maximum": 85666
+        },
+        "Standard Draw Calls Count": {
+          "median": 8.0,
+          "p95": 16,
+          "maximum": 22
+        },
+        "SRP Batcher Draw Calls Count": {
+          "median": 0.0,
+          "p95": 0,
+          "maximum": 0
+        },
+        "SetPass Calls Count": {
+          "median": 5.0,
+          "p95": 10,
+          "maximum": 16
+        },
+        "Assembly-CSharp.dll!::PlayerAnimationController.LateUpdate() [Invoke]": {
+          "median": 1125.0,
+          "p95": 1708,
+          "maximum": 35125
+        }
+      },
+      "timing": {
+        "dt": {
+          "median": 0.0018469387449999999,
+          "p95": 0.00687166257,
+          "maximum": 0.0155843329
+        },
+        "cpuActiveMs": {
+          "median": 0.332334,
+          "p95": 0.468792,
+          "maximum": 5.336374
+        },
+        "gpuMs": {
+          "median": 2.3608957999385893,
+          "p95": 13.228041585534811,
+          "maximum": 23.853541701100767
+        },
+        "frameMs": {
+          "median": 1.807375,
+          "p95": 6.347334,
+          "maximum": 9.435291
+        }
+      },
+      "editorLoopFPS": 541.4364730325694,
+      "scriptCallbackGC": {
+        "median": 0,
+        "p95": 0,
+        "maximum": 80
+      }
+    }
+  },
+  "baselineInventory": {
+    "scene": "Level01",
+    "gameObjects": 194,
+    "components": 436,
+    "animators": 10,
+    "spriteRenderers": 105,
+    "enabledSpriteRenderers": 90,
+    "audioSources": 3,
+    "bodies": [
+      {
+        "name": "PatrolBot_04",
+        "type": "Kinematic",
+        "constraints": "FreezeRotation",
+        "gravity": 0.0,
+        "simulated": true
+      },
+      {
+        "name": "MovingHorizontalHazard",
+        "type": "Kinematic",
+        "constraints": "FreezeRotation",
+        "gravity": 0.0,
+        "simulated": true
+      },
+      {
+        "name": "MovingHorizontalHazard_02",
+        "type": "Kinematic",
+        "constraints": "FreezeRotation",
+        "gravity": 0.0,
+        "simulated": true
+      },
+      {
+        "name": "PatrolBot_03",
+        "type": "Kinematic",
+        "constraints": "FreezeRotation",
+        "gravity": 0.0,
+        "simulated": true
+      },
+      {
+        "name": "PatrolBot",
+        "type": "Kinematic",
+        "constraints": "FreezeRotation",
+        "gravity": 0.0,
+        "simulated": true
+      },
+      {
+        "name": "Player",
+        "type": "Dynamic",
+        "constraints": "FreezeRotation",
+        "gravity": 4.0,
+        "simulated": true
+      },
+      {
+        "name": "PatrolBot_02",
+        "type": "Kinematic",
+        "constraints": "FreezeRotation",
+        "gravity": 0.0,
+        "simulated": true
+      }
+    ],
+    "colliders": 48,
+    "materials": [
+      {
+        "name": "NeonSprite",
+        "shader": "Universal Render Pipeline/2D/Sprite-Unlit-Default"
+      },
+      {
+        "name": "Sprite-Lit-Default",
+        "shader": "Universal Render Pipeline/2D/Sprite-Lit-Default"
+      },
+      {
+        "name": "PlayerFlash",
+        "shader": "Voltix/PlayerFlash"
+      },
+      {
+        "name": "Sprite-Unlit-Default",
+        "shader": "Universal Render Pipeline/2D/Sprite-Unlit-Default"
+      }
+    ],
+    "textures": [
+      {
+        "path": "Packages/com.unity.inputsystem/InputSystem/Editor/Icons/InputAction.png",
+        "w": 256,
+        "h": 256,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 16,
+        "h": 16,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 3056
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 32,
+        "h": 32,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 9200
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 64,
+        "h": 64,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 33776
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 32,
+        "h": 32,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 9200
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 64,
+        "h": 64,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 33776
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 32,
+        "h": 32,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 9200
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 64,
+        "h": 64,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 33776
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 10,
+        "h": 10,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 1808
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 20,
+        "h": 20,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 4208
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 12,
+        "h": 12,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 2160
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/Art/Sprites/Background.png",
+        "w": 1536,
+        "h": 1024,
+        "format": "RGB24",
+        "readable": false,
+        "bytes": 11011056
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PatrolBotDeath.png",
+        "w": 768,
+        "h": 128,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 787440
+      },
+      {
+        "path": "Assets/Art/Sprites/PlatformBody.png",
+        "w": 1024,
+        "h": 256,
+        "format": "RGB24",
+        "readable": false,
+        "bytes": 1836016
+      },
+      {
+        "path": "Assets/Art/Sprites/PlatformSurface.png",
+        "w": 1024,
+        "h": 41,
+        "format": "RGB24",
+        "readable": false,
+        "bytes": 294896
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+        "w": 768,
+        "h": 128,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 787440
+      },
+      {
+        "path": "Assets/Art/Sprites/StaticSpike.png",
+        "w": 256,
+        "h": 256,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+        "w": 768,
+        "h": 128,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 787440
+      },
+      {
+        "path": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "w": 256,
+        "h": 256,
+        "format": "DXT1",
+        "readable": false,
+        "bytes": 66544
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/GoalPortalLoop.png",
+        "w": 1152,
+        "h": 320,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 2950128
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+        "w": 768,
+        "h": 128,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 787440
+      },
+      {
+        "path": "Assets/Art/Sprites/PatrolBot.png",
+        "w": 256,
+        "h": 256,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerIdle.png",
+        "w": 1024,
+        "h": 128,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 1049584
+      },
+      {
+        "path": "Assets/Art/Sprites/Player.png",
+        "w": 256,
+        "h": 256,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/Art/Sprites/ElectricSlash.png",
+        "w": 256,
+        "h": 64,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 132080
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerFall.png",
+        "w": 512,
+        "h": 128,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerLand.png",
+        "w": 768,
+        "h": 128,
+        "format": "RGBA32",
+        "readable": false,
+        "bytes": 787440
+      }
+    ],
+    "sceneReferencedTextureBytes": 24213920,
+    "audio": [
+      {
+        "path": "Assets/Audio/SFX/Jump.wav",
+        "samples": 3087,
+        "frequency": 22050,
+        "channels": 1,
+        "length": 0.14,
+        "bytes": 7375
+      },
+      {
+        "path": "Assets/Audio/SFX/Landing.wav",
+        "samples": 1984,
+        "frequency": 22050,
+        "channels": 1,
+        "length": 0.089977324,
+        "bytes": 5169
+      },
+      {
+        "path": "Assets/Audio/SFX/Attack.wav",
+        "samples": 3087,
+        "frequency": 22050,
+        "channels": 1,
+        "length": 0.14,
+        "bytes": 7375
+      },
+      {
+        "path": "Assets/Audio/SFX/Damage.wav",
+        "samples": 3969,
+        "frequency": 22050,
+        "channels": 1,
+        "length": 0.18,
+        "bytes": 9139
+      },
+      {
+        "path": "Assets/Audio/SFX/EnemyDeath.wav",
+        "samples": 4851,
+        "frequency": 22050,
+        "channels": 1,
+        "length": 0.22,
+        "bytes": 10903
+      },
+      {
+        "path": "Assets/Audio/SFX/Completion.wav",
+        "samples": 13671,
+        "frequency": 22050,
+        "channels": 1,
+        "length": 0.62,
+        "bytes": 28543
+      }
+    ],
+    "disabledRenderers": [
+      {
+        "name": "PatrolBot_02",
+        "parent": "Enemies",
+        "texturePath": "Assets/Art/Sprites/PatrolBot.png",
+        "components": [
+          "HazardDamage",
+          "PatrolEnemy",
+          "EnemyHealth",
+          "EnemyAnimationController"
+        ]
+      },
+      {
+        "name": "Platform_03_EasyJump",
+        "parent": "Platforms",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "PatrolBot_03",
+        "parent": "Enemies",
+        "texturePath": "Assets/Art/Sprites/PatrolBot.png",
+        "components": [
+          "HazardDamage",
+          "PatrolEnemy",
+          "EnemyHealth",
+          "EnemyAnimationController"
+        ]
+      },
+      {
+        "name": "Platform_02_EasyJump",
+        "parent": "Platforms",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "Platform_08_Elevated",
+        "parent": "Platforms",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "HazardCore",
+        "parent": "MovingHorizontalHazard_02",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "PatrolBot",
+        "parent": "Enemies",
+        "texturePath": "Assets/Art/Sprites/PatrolBot.png",
+        "components": [
+          "HazardDamage",
+          "PatrolEnemy",
+          "EnemyHealth",
+          "EnemyAnimationController"
+        ]
+      },
+      {
+        "name": "Platform_04_SpikeIntro",
+        "parent": "Platforms",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "Player",
+        "parent": "",
+        "texturePath": "Assets/Art/Sprites/Player.png",
+        "components": [
+          "PlayerInput",
+          "PlayerMovement",
+          "PlayerHealth",
+          "PlayerCombat",
+          "PlayerAttackVisual",
+          "PlayerFeedback",
+          "PlayerAnimationController"
+        ]
+      },
+      {
+        "name": "Platform_05_BotIntro",
+        "parent": "Platforms",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "HazardCore",
+        "parent": "MovingHorizontalHazard",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "Platform_07_Elevated",
+        "parent": "Platforms",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "PatrolBot_04",
+        "parent": "Enemies",
+        "texturePath": "Assets/Art/Sprites/PatrolBot.png",
+        "components": [
+          "HazardDamage",
+          "PatrolEnemy",
+          "EnemyHealth",
+          "EnemyAnimationController"
+        ]
+      },
+      {
+        "name": "Platform_01_Opening",
+        "parent": "Platforms",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      },
+      {
+        "name": "Platform_06_Elevated",
+        "parent": "Platforms",
+        "texturePath": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": []
+      }
+    ],
+    "dependencyPaths": [
+      "Assets/Art/Sprites/Animation/GoalPortalLoop.png",
+      "Assets/Prefabs/Hazards/StaticSpikes.prefab",
+      "Assets/Art/Sprites/PatrolBot.png",
+      "Assets/Art/Sprites/ElectricSlash.png",
+      "Assets/Art/Sprites/Player.png",
+      "Assets/Scripts/Player/PlayerCombat.cs",
+      "Assets/Scripts/Animation/PlayerAnimationController.cs",
+      "Assets/UI/HUD/HUD.uxml",
+      "Assets/Scripts/Feedback/EnemyDeathFeedback.cs",
+      "Assets/Art/Sprites/Animation/PlayerJumpStart.png",
+      "Assets/Art/Sprites/Animation/PatrolBotDeath.png",
+      "Assets/Scripts/Enemies/PatrolEnemy.cs",
+      "Assets/Scripts/Animation/EnemyDeathPresentation.cs",
+      "Assets/Art/Sprites/Animation/PlayerIdle.png",
+      "Assets/Scripts/Hazards/HazardDamage.cs",
+      "Assets/Art/Animation/Clips/PlayerHurt.anim",
+      "Assets/Art/Sprites/StaticSpike.png",
+      "Assets/Art/Sprites/PlatformBody.png",
+      "Assets/Art/Animation/Clips/PlayerRise.anim",
+      "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+      "Assets/Art/Animation/Clips/GoalPortalLoop.anim",
+      "Assets/UI/HUD/HUD.uss",
+      "Assets/UI/HUD/HUDTheme.tss",
+      "Assets/Art/Materials/NeonSprite.mat",
+      "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+      "Packages/com.unity.inputsystem/InputSystem/Runtime/Plugins/PlayerInput/PlayerInput.cs",
+      "Assets/UI/Menus/Menus.uss",
+      "Assets/Art/Animation/Clips/PlayerRun.anim",
+      "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+      "Assets/Prefabs/Hazards/MovingHorizontalHazard.prefab",
+      "Assets/Art/Animation/Clips/PlayerFall.anim",
+      "Assets/Scripts/Feedback/PlayerFeedback.cs",
+      "Assets/Scripts/UI/LevelCompletionUI.cs",
+      "Assets/Scripts/Animation/EnemyAnimationController.cs",
+      "Assets/Prefabs/Hazards/ElectricBarrier.prefab",
+      "Assets/Art/Sprites/Animation/PlayerLand.png",
+      "Assets/UI/HUD/HUDPanelSettings.asset",
+      "Assets/Art/Sprites/Background.png",
+      "Assets/Art/Animation/Controllers/GoalPortal.controller",
+      "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat",
+      "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Unlit-Default.shader",
+      "Assets/Art/Sprites/PlatformSurface.png",
+      "Assets/Audio/SFX/Completion.wav",
+      "Assets/Scripts/Game/LevelPause.cs",
+      "Assets/Art/Animation/Clips/MovingHazardLoop.anim",
+      "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Lit-Default.mat",
+      "Assets/Art/Sprites/Animation/PlayerRise.png",
+      "Assets/Art/Prefabs/Background.prefab",
+      "Assets/UI/Menus/MainMenu.uxml",
+      "Assets/Audio/SFX/Jump.wav",
+      "Assets/Art/Animation/Controllers/Player.controller",
+      "Assets/Scripts/UI/MainMenuUI.cs",
+      "Assets/Art/Sprites/Animation/PlayerHurt.png",
+      "Assets/Art/Animation/Clips/PlayerLand.anim",
+      "Assets/Art/Prefabs/PatrolBotDeathVisual.prefab",
+      "Assets/Input/PlayerControls.inputactions",
+      "Assets/Audio/SFX/Damage.wav",
+      "Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionAsset.cs",
+      "Assets/Scripts/Player/PlayerHealth.cs",
+      "Assets/Audio/SFX/Landing.wav",
+      "Assets/Scripts/UI/GameHUD.cs",
+      "Assets/Art/Sprites/Animation/PlayerRun.png",
+      "Assets/Scripts/Player/PlayerAttackVisual.cs",
+      "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+      "Assets/Scripts/Player/PlayerMovement.cs",
+      "Assets/Scripts/Game/GoalTrigger.cs",
+      "Assets/Scripts/Enemies/EnemyHealth.cs",
+      "Assets/Scripts/UI/PauseMenuUI.cs",
+      "Assets/Art/Sprites/Animation/PlayerAttack.png",
+      "Assets/Audio/SFX/EnemyDeath.wav",
+      "Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionReference.cs",
+      "Packages/com.unity.inputsystem/InputSystem/Editor/Icons/InputAction.png",
+      "Assets/Art/Materials/ElectricSlash.mat",
+      "Assets/Scripts/Camera/CameraFollow.cs",
+      "Assets/Scripts/Game/ScoreManager.cs",
+      "Assets/Art/Sprites/Animation/PlayerFall.png",
+      "Assets/Art/Animation/Controllers/ElectricBarrier.controller",
+      "Assets/Audio/SFX/Attack.wav",
+      "Assets/Scenes/MainMenu.unity",
+      "Assets/Art/Materials/PlayerFlash.mat",
+      "Assets/Art/Animation/Clips/PatrolBotPatrol.anim",
+      "Assets/Art/Animation/Controllers/MovingHazard.controller",
+      "Assets/Art/Prefabs/GoalPortalVisual.prefab",
+      "Assets/Art/Animation/Clips/PatrolBotDeath.anim",
+      "Packages/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalCameraData.cs",
+      "Assets/Art/Animation/Clips/PlayerAttack.anim",
+      "Assets/Scenes/Level01.unity",
+      "Assets/Scripts/Feedback/CameraShake.cs",
+      "Packages/com.unity.render-pipelines.universal/Runtime/2D/Lights/Light2D.cs",
+      "Packages/com.unity.inputsystem/InputSystem/Editor/AssetImporter/InputActionImporter.cs",
+      "Assets/Art/Shaders/PlayerFlash.shader",
+      "Assets/Art/Animation/Clips/PlayerJumpStart.anim",
+      "Assets/Scripts/Audio/GameplayAudio.cs",
+      "Assets/Art/Animation/Clips/PlayerIdle.anim",
+      "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Lit-Default.shader",
+      "Assets/Scripts/Hazards/HorizontalHazardMover.cs",
+      "Assets/Art/Animation/Controllers/PatrolBot.controller",
+      "Assets/Art/Prefabs/PlatformVisual.prefab",
+      "Assets/Art/Animation/Clips/ElectricBarrierLoop.anim",
+      "Assets/Scripts/Game/LevelManager.cs"
+    ]
+  },
+  "postInventory": {
+    "gameObjects": 194,
+    "components": 421,
+    "animators": 10,
+    "spriteRenderers": 90,
+    "enabledSpriteRenderers": 90,
+    "audioSources": 3,
+    "bodies": 7,
+    "colliders": 48,
+    "textures": [
+      {
+        "path": "Packages/com.unity.inputsystem/InputSystem/Editor/Icons/InputAction.png",
+        "w": 256,
+        "h": 256,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 24,
+        "h": 24,
+        "bytes": 5616
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 16,
+        "h": 16,
+        "bytes": 3056
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 32,
+        "h": 32,
+        "bytes": 9200
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 64,
+        "h": 64,
+        "bytes": 33776
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 32,
+        "h": 32,
+        "bytes": 9200
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 64,
+        "h": 64,
+        "bytes": 33776
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 32,
+        "h": 32,
+        "bytes": 9200
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 64,
+        "h": 64,
+        "bytes": 33776
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 10,
+        "h": 10,
+        "bytes": 1808
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 20,
+        "h": 20,
+        "bytes": 4208
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 12,
+        "h": 12,
+        "bytes": 2160
+      },
+      {
+        "path": "Assets/UI/HUD/HUDTheme.tss",
+        "w": 48,
+        "h": 48,
+        "bytes": 19440
+      },
+      {
+        "path": "Assets/Art/Sprites/Background.png",
+        "w": 1536,
+        "h": 1024,
+        "bytes": 11011056
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PatrolBotDeath.png",
+        "w": 768,
+        "h": 128,
+        "bytes": 787440
+      },
+      {
+        "path": "Assets/Art/Sprites/PlatformBody.png",
+        "w": 1024,
+        "h": 256,
+        "bytes": 1836016
+      },
+      {
+        "path": "Assets/Art/Sprites/PlatformSurface.png",
+        "w": 1024,
+        "h": 41,
+        "bytes": 294896
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+        "w": 768,
+        "h": 128,
+        "bytes": 787440
+      },
+      {
+        "path": "Assets/Art/Sprites/StaticSpike.png",
+        "w": 256,
+        "h": 256,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+        "w": 768,
+        "h": 128,
+        "bytes": 787440
+      },
+      {
+        "path": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "w": 256,
+        "h": 256,
+        "bytes": 66544
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/GoalPortalLoop.png",
+        "w": 1152,
+        "h": 320,
+        "bytes": 2950128
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+        "w": 768,
+        "h": 128,
+        "bytes": 787440
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerIdle.png",
+        "w": 1024,
+        "h": 128,
+        "bytes": 1049584
+      },
+      {
+        "path": "Assets/Art/Sprites/ElectricSlash.png",
+        "w": 256,
+        "h": 64,
+        "bytes": 132080
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerFall.png",
+        "w": 512,
+        "h": 128,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerLand.png",
+        "w": 768,
+        "h": 128,
+        "bytes": 787440
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerRun.png",
+        "w": 2048,
+        "h": 128,
+        "bytes": 2098160
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerJumpStart.png",
+        "w": 768,
+        "h": 128,
+        "bytes": 787440
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerRise.png",
+        "w": 512,
+        "h": 128,
+        "bytes": 525296
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerAttack.png",
+        "w": 1280,
+        "h": 128,
+        "bytes": 1311728
+      },
+      {
+        "path": "Assets/Art/Sprites/Animation/PlayerHurt.png",
+        "w": 768,
+        "h": 128,
+        "bytes": 787440
+      }
+    ],
+    "artTextureBytes": 27771616,
+    "dependencyPaths": [
+      "Assets/Art/Sprites/Animation/GoalPortalLoop.png",
+      "Assets/Prefabs/Hazards/StaticSpikes.prefab",
+      "Assets/Art/Sprites/ElectricSlash.png",
+      "Assets/Scripts/Player/PlayerCombat.cs",
+      "Assets/Scripts/Animation/PlayerAnimationController.cs",
+      "Assets/UI/HUD/HUD.uxml",
+      "Assets/Scripts/Feedback/EnemyDeathFeedback.cs",
+      "Assets/Art/Sprites/Animation/PlayerJumpStart.png",
+      "Assets/Art/Sprites/Animation/PatrolBotDeath.png",
+      "Assets/Scripts/Enemies/PatrolEnemy.cs",
+      "Assets/Scripts/Animation/EnemyDeathPresentation.cs",
+      "Assets/Art/Sprites/Animation/PlayerIdle.png",
+      "Assets/Scripts/Hazards/HazardDamage.cs",
+      "Assets/Art/Animation/Clips/PlayerHurt.anim",
+      "Assets/Art/Sprites/StaticSpike.png",
+      "Assets/Art/Sprites/PlatformBody.png",
+      "Assets/Art/Animation/Clips/PlayerRise.anim",
+      "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+      "Assets/Art/Animation/Clips/GoalPortalLoop.anim",
+      "Assets/UI/HUD/HUD.uss",
+      "Assets/UI/HUD/HUDTheme.tss",
+      "Assets/Art/Materials/NeonSprite.mat",
+      "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+      "Packages/com.unity.inputsystem/InputSystem/Runtime/Plugins/PlayerInput/PlayerInput.cs",
+      "Assets/UI/Menus/Menus.uss",
+      "Assets/Art/Animation/Clips/PlayerRun.anim",
+      "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+      "Assets/Prefabs/Hazards/MovingHorizontalHazard.prefab",
+      "Assets/Art/Animation/Clips/PlayerFall.anim",
+      "Assets/Scripts/Feedback/PlayerFeedback.cs",
+      "Assets/Scripts/UI/LevelCompletionUI.cs",
+      "Assets/Scripts/Animation/EnemyAnimationController.cs",
+      "Assets/Prefabs/Hazards/ElectricBarrier.prefab",
+      "Assets/Art/Sprites/Animation/PlayerLand.png",
+      "Assets/UI/HUD/HUDPanelSettings.asset",
+      "Assets/Art/Sprites/Background.png",
+      "Assets/Art/Animation/Controllers/GoalPortal.controller",
+      "Packages/com.unity.render-pipelines.universal/Runtime/Materials/Sprite-Unlit-Default.mat",
+      "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Unlit-Default.shader",
+      "Assets/Art/Sprites/PlatformSurface.png",
+      "Assets/Audio/SFX/Completion.wav",
+      "Assets/Scripts/Game/LevelPause.cs",
+      "Assets/Art/Animation/Clips/MovingHazardLoop.anim",
+      "Assets/Art/Sprites/Animation/PlayerRise.png",
+      "Assets/Art/Prefabs/Background.prefab",
+      "Assets/Audio/SFX/Jump.wav",
+      "Assets/Art/Animation/Controllers/Player.controller",
+      "Assets/Art/Sprites/Animation/PlayerHurt.png",
+      "Assets/Art/Animation/Clips/PlayerLand.anim",
+      "Assets/Art/Prefabs/PatrolBotDeathVisual.prefab",
+      "Assets/Input/PlayerControls.inputactions",
+      "Assets/Audio/SFX/Damage.wav",
+      "Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionAsset.cs",
+      "Assets/Scripts/Player/PlayerHealth.cs",
+      "Assets/Audio/SFX/Landing.wav",
+      "Assets/Scripts/UI/GameHUD.cs",
+      "Assets/Art/Sprites/Animation/PlayerRun.png",
+      "Assets/Scripts/Player/PlayerAttackVisual.cs",
+      "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+      "Assets/Scripts/Player/PlayerMovement.cs",
+      "Assets/Scripts/Game/GoalTrigger.cs",
+      "Assets/Scripts/Enemies/EnemyHealth.cs",
+      "Assets/Scripts/UI/PauseMenuUI.cs",
+      "Assets/Art/Sprites/Animation/PlayerAttack.png",
+      "Assets/Audio/SFX/EnemyDeath.wav",
+      "Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionReference.cs",
+      "Packages/com.unity.inputsystem/InputSystem/Editor/Icons/InputAction.png",
+      "Assets/Art/Materials/ElectricSlash.mat",
+      "Assets/Scripts/Camera/CameraFollow.cs",
+      "Assets/Scripts/Game/ScoreManager.cs",
+      "Assets/Art/Sprites/Animation/PlayerFall.png",
+      "Assets/Art/Animation/Controllers/ElectricBarrier.controller",
+      "Assets/Audio/SFX/Attack.wav",
+      "Assets/Art/Materials/PlayerFlash.mat",
+      "Assets/Art/Animation/Clips/PatrolBotPatrol.anim",
+      "Assets/Art/Animation/Controllers/MovingHazard.controller",
+      "Assets/Art/Prefabs/GoalPortalVisual.prefab",
+      "Assets/Art/Animation/Clips/PatrolBotDeath.anim",
+      "Packages/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalCameraData.cs",
+      "Assets/Art/Animation/Clips/PlayerAttack.anim",
+      "Assets/Scenes/Level01.unity",
+      "Assets/Scripts/Feedback/CameraShake.cs",
+      "Packages/com.unity.render-pipelines.universal/Runtime/2D/Lights/Light2D.cs",
+      "Packages/com.unity.inputsystem/InputSystem/Editor/AssetImporter/InputActionImporter.cs",
+      "Assets/Art/Shaders/PlayerFlash.shader",
+      "Assets/Art/Animation/Clips/PlayerJumpStart.anim",
+      "Assets/Scripts/Audio/GameplayAudio.cs",
+      "Assets/Art/Animation/Clips/PlayerIdle.anim",
+      "Assets/Scripts/Hazards/HorizontalHazardMover.cs",
+      "Assets/Art/Animation/Controllers/PatrolBot.controller",
+      "Assets/Art/Prefabs/PlatformVisual.prefab",
+      "Assets/Art/Animation/Clips/ElectricBarrierLoop.anim",
+      "Assets/Scripts/Game/LevelManager.cs"
+    ]
+  },
+  "legacyRendererAudit": {
+    "disabled": [
+      {
+        "path": "Player",
+        "asset": "Assets/Art/Sprites/Player.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "Rigidbody2D",
+          "CapsuleCollider2D",
+          "PlayerInput",
+          "PlayerMovement",
+          "PlayerHealth",
+          "PlayerCombat",
+          "PlayerAttackVisual",
+          "PlayerFeedback",
+          "PlayerAnimationController"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Environment/Platforms/Platform_01_Opening",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Environment/Platforms/Platform_02_EasyJump",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Environment/Platforms/Platform_03_EasyJump",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Environment/Platforms/Platform_04_SpikeIntro",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Environment/Platforms/Platform_05_BotIntro",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Environment/Platforms/Platform_06_Elevated",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Environment/Platforms/Platform_07_Elevated",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Environment/Platforms/Platform_08_Elevated",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Enemies/PatrolBot",
+        "asset": "Assets/Art/Sprites/PatrolBot.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D",
+          "Rigidbody2D",
+          "HazardDamage",
+          "PatrolEnemy",
+          "EnemyHealth",
+          "EnemyAnimationController"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Enemies/PatrolBot_02",
+        "asset": "Assets/Art/Sprites/PatrolBot.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D",
+          "Rigidbody2D",
+          "HazardDamage",
+          "PatrolEnemy",
+          "EnemyHealth",
+          "EnemyAnimationController"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Enemies/PatrolBot_03",
+        "asset": "Assets/Art/Sprites/PatrolBot.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D",
+          "Rigidbody2D",
+          "HazardDamage",
+          "PatrolEnemy",
+          "EnemyHealth",
+          "EnemyAnimationController"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Enemies/PatrolBot_04",
+        "asset": "Assets/Art/Sprites/PatrolBot.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer",
+          "BoxCollider2D",
+          "Rigidbody2D",
+          "HazardDamage",
+          "PatrolEnemy",
+          "EnemyHealth",
+          "EnemyAnimationController"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Hazards/MovingHorizontalHazard/HazardCore",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer"
+        ],
+        "autoTiling": false
+      },
+      {
+        "path": "Hazards/MovingHorizontalHazard_02/HazardCore",
+        "asset": "Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Square.png",
+        "components": [
+          "Transform",
+          "SpriteRenderer"
+        ],
+        "autoTiling": false
+      }
+    ],
+    "serializedReferences": []
+  },
+  "overlapComparison": {
+    "records": [
+      {
+        "name": "VoltixQA.OldOverlap100",
+        "bytes": 4800,
+        "ms": 0.062917
+      },
+      {
+        "name": "VoltixQA.ReusedOverlap100",
+        "bytes": 0,
+        "ms": 0.029625
+      }
+    ],
+    "queriesCompared": 96,
+    "setsEqual": true
+  },
+  "focusedQA": {
+    "initialHP": 3,
+    "initialScore": 0,
+    "moveRight": true,
+    "faceRight": true,
+    "movingJAttack": true,
+    "attackRightVisual": true,
+    "faceLeft": true,
+    "stationaryShiftAttack": true,
+    "attackLeftVisual": true,
+    "jumpStates": true,
+    "contactHP": 2,
+    "contactOnlyDamagesPlayer": true,
+    "outsideRangeSurvives": true,
+    "insideRangeDies": true,
+    "killScore": 100,
+    "killEvents": 1,
+    "deathVisualVisible": true,
+    "scoreExactlyOnce": true,
+    "deathVisualCleaned": true,
+    "escapePauses": true,
+    "pausePositionVelocityTimer": true,
+    "pauseAnimationsFrozen": true,
+    "pauseAudioFrozen": true,
+    "pauseAttackBlocked": true,
+    "escapeResumes": true,
+    "pauseRestartHP": 3,
+    "pauseRestartScore": 0,
+    "pauseRestartDeaths": 0,
+    "pauseRestartBots": 4,
+    "listeners": 1,
+    "sources": 3,
+    "UI": 1,
+    "status": "complete",
+    "states": [
+      "Idle",
+      "Run",
+      "Attack",
+      "JumpStart",
+      "Rise",
+      "Fall",
+      "Land",
+      "Hurt"
+    ],
+    "audioCuesObserved": [
+      "Attack",
+      "Jump",
+      "Landing",
+      "Damage",
+      "EnemyDeath"
+    ],
+    "environmentLoopFrameCounts": [
+      6,
+      6,
+      6,
+      6
+    ],
+    "botFrameCount": 6,
+    "botFacingMatchesPatrol": true
+  },
+  "hudCompletionAudioQA": {
+    "damageHUD": "HP: 2/3",
+    "respawnHUD": "HP: 3/3",
+    "deathsAfterFall": 1,
+    "scoreHUD": "SCORE: 0100",
+    "goalTriggerComplete": true,
+    "completionSound": true,
+    "finalScoreUI": "SCORE: 0100",
+    "finalDeathsUI": "DEATHS: 1",
+    "finalTimeUI": "TIME: 04:18.16",
+    "timerStopped": true,
+    "sources": 3,
+    "listeners": 1
+  },
+  "protectedSerializedComponentsUnchanged": 297,
+  "changedProjectFiles": {
+    "Assets/Scenes/Level01.unity": {
+      "before": "d4f459235ddeaa9d7fbff343bdf24d59a0e8208cb3b907f5dfb56ea49598830c",
+      "after": "d8f53ad169c8b0d20dea15e2784b757546db5914192f8e3c6e247c963ccfde85"
+    },
+    "Assets/Scripts/Player/PlayerCombat.cs": {
+      "before": "1b5faf8b9ed8f2dfb30a6194888c9e911c74bdbe8e38e8ef819c76b58659aa8d",
+      "after": "774f502eb71355f837995dc66c22d356d8e4d03264a3ea99d836866388c47c04"
+    }
+  },
+  "assetImportChanges": [],
+  "assetsDeleted": [],
+  "finalState": {
+    "mode": "Edit",
+    "scene": "Assets/Scenes/Level01.unity",
+    "dirty": false,
+    "consoleErrors": 0,
+    "profilerEnabled": false
+  },
+  "measurementCaveats": [
+    "Editor, tool, and test-driver allocations are included in the global GC counter and collection counts.",
+    "GC.GetAllocatedBytesForCurrentThread is a stub in this Editor; native GC.Alloc size metadata was used and validated with a 4KB allocation probe.",
+    "Before-run event durations are Stopwatch measurements; native event allocation metadata is available in the post capture and isolated overlap comparison.",
+    "Texture counters include Editor views, UI, and retained assets. They are not browser heap/VRAM measurements.",
+    "No claim of a meaningful frame-rate improvement is made from a single before/after Editor capture."
+  ]
+}
