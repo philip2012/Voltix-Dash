@@ -1,0 +1,839 @@
+{
+  "StaticSpikes": {
+    "beforeEvents": [
+      {
+        "t": 0.0,
+        "test": "StaticSpikes",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "t": 1.0399996,
+        "test": "StaticSpikes",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "t": 5.139998,
+        "test": "StaticSpikes",
+        "stage": 3,
+        "hp": 1
+      },
+      {
+        "t": 7.03999758,
+        "test": "StaticSpikes",
+        "stage": 4,
+        "hp": 0
+      },
+      {
+        "t": 7.03999758,
+        "test": "StaticSpikes",
+        "stage": 4,
+        "hp": 3
+      }
+    ],
+    "afterEvents": [
+      {
+        "t": 0.333333015,
+        "test": "StaticSpikes",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "t": 1.0906496,
+        "test": "StaticSpikes",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "t": 1.85064983,
+        "test": "StaticSpikes",
+        "stage": 1,
+        "hp": 1
+      },
+      {
+        "t": 2.61064816,
+        "test": "StaticSpikes",
+        "stage": 1,
+        "hp": 0
+      },
+      {
+        "t": 2.61064816,
+        "test": "StaticSpikes",
+        "stage": 1,
+        "hp": 3
+      },
+      {
+        "t": 5.150647,
+        "test": "StaticSpikes",
+        "stage": 3,
+        "hp": 2
+      },
+      {
+        "t": 5.91064739,
+        "test": "StaticSpikes",
+        "stage": 3,
+        "hp": 1
+      },
+      {
+        "t": 6.67064762,
+        "test": "StaticSpikes",
+        "stage": 3,
+        "hp": 0
+      },
+      {
+        "t": 6.67064762,
+        "test": "StaticSpikes",
+        "stage": 3,
+        "hp": 3
+      },
+      {
+        "t": 7.430648,
+        "test": "StaticSpikes",
+        "stage": 4,
+        "hp": 2
+      },
+      {
+        "t": 8.190646,
+        "test": "StaticSpikes",
+        "stage": 4,
+        "hp": 1
+      },
+      {
+        "t": 8.950646,
+        "test": "StaticSpikes",
+        "stage": 4,
+        "hp": 0
+      },
+      {
+        "t": 8.950646,
+        "test": "StaticSpikes",
+        "stage": 4,
+        "hp": 3
+      }
+    ],
+    "minimumAcceptedHitGap": 0.7599979999999995,
+    "cooldownRespected": true
+  },
+  "ElectricBarrier": {
+    "beforeEvents": [
+      {
+        "t": 10.0208158,
+        "test": "ElectricBarrier",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "t": 11.0399952,
+        "test": "ElectricBarrier",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "t": 15.1399946,
+        "test": "ElectricBarrier",
+        "stage": 3,
+        "hp": 1
+      },
+      {
+        "t": 17.0199928,
+        "test": "ElectricBarrier",
+        "stage": 4,
+        "hp": 0
+      },
+      {
+        "t": 17.0199928,
+        "test": "ElectricBarrier",
+        "stage": 4,
+        "hp": 3
+      }
+    ],
+    "afterEvents": [
+      {
+        "t": 10.0398874,
+        "test": "ElectricBarrier",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "t": 11.0506468,
+        "test": "ElectricBarrier",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "t": 11.8106451,
+        "test": "ElectricBarrier",
+        "stage": 1,
+        "hp": 1
+      },
+      {
+        "t": 12.5706453,
+        "test": "ElectricBarrier",
+        "stage": 1,
+        "hp": 0
+      },
+      {
+        "t": 12.5706453,
+        "test": "ElectricBarrier",
+        "stage": 1,
+        "hp": 3
+      },
+      {
+        "t": 15.1506453,
+        "test": "ElectricBarrier",
+        "stage": 3,
+        "hp": 2
+      },
+      {
+        "t": 15.9106436,
+        "test": "ElectricBarrier",
+        "stage": 3,
+        "hp": 1
+      },
+      {
+        "t": 16.6706467,
+        "test": "ElectricBarrier",
+        "stage": 3,
+        "hp": 0
+      },
+      {
+        "t": 16.6706467,
+        "test": "ElectricBarrier",
+        "stage": 3,
+        "hp": 3
+      },
+      {
+        "t": 17.430645,
+        "test": "ElectricBarrier",
+        "stage": 4,
+        "hp": 2
+      },
+      {
+        "t": 18.1906433,
+        "test": "ElectricBarrier",
+        "stage": 4,
+        "hp": 1
+      },
+      {
+        "t": 18.9506454,
+        "test": "ElectricBarrier",
+        "stage": 4,
+        "hp": 0
+      },
+      {
+        "t": 18.9506454,
+        "test": "ElectricBarrier",
+        "stage": 4,
+        "hp": 3
+      }
+    ],
+    "minimumAcceptedHitGap": 0.7599982999999995,
+    "cooldownRespected": true
+  },
+  "MovingHorizontalHazard": {
+    "beforeEvents": [
+      {
+        "t": 20.0202618,
+        "test": "MovingHorizontalHazard",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "t": 21.0399914,
+        "test": "MovingHorizontalHazard",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "t": 23.6399918,
+        "test": "MovingHorizontalHazard",
+        "stage": 1,
+        "hp": 1
+      },
+      {
+        "t": 25.13999,
+        "test": "MovingHorizontalHazard",
+        "stage": 3,
+        "hp": 0
+      },
+      {
+        "t": 25.13999,
+        "test": "MovingHorizontalHazard",
+        "stage": 3,
+        "hp": 3
+      },
+      {
+        "t": 27.07999,
+        "test": "MovingHorizontalHazard",
+        "stage": 4,
+        "hp": 2
+      },
+      {
+        "t": 29.6799889,
+        "test": "MovingHorizontalHazard",
+        "stage": 4,
+        "hp": 1
+      }
+    ],
+    "afterEvents": [
+      {
+        "t": 20.0398026,
+        "test": "MovingHorizontalHazard",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "t": 21.0506439,
+        "test": "MovingHorizontalHazard",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "t": 23.0506439,
+        "test": "MovingHorizontalHazard",
+        "stage": 1,
+        "hp": 1
+      },
+      {
+        "t": 23.8106422,
+        "test": "MovingHorizontalHazard",
+        "stage": 1,
+        "hp": 0
+      },
+      {
+        "t": 23.8106422,
+        "test": "MovingHorizontalHazard",
+        "stage": 1,
+        "hp": 3
+      },
+      {
+        "t": 25.1506424,
+        "test": "MovingHorizontalHazard",
+        "stage": 3,
+        "hp": 2
+      },
+      {
+        "t": 25.91064,
+        "test": "MovingHorizontalHazard",
+        "stage": 3,
+        "hp": 1
+      },
+      {
+        "t": 27.05064,
+        "test": "MovingHorizontalHazard",
+        "stage": 4,
+        "hp": 0
+      },
+      {
+        "t": 27.05064,
+        "test": "MovingHorizontalHazard",
+        "stage": 4,
+        "hp": 3
+      }
+    ],
+    "minimumAcceptedHitGap": 0.7599976000000019,
+    "cooldownRespected": true
+  },
+  "PatrolBot": {
+    "beforeEvents": [
+      {
+        "t": 30.0785847,
+        "test": "PatrolBot",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "t": 31.0799885,
+        "test": "PatrolBot",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "t": 35.17999,
+        "test": "PatrolBot",
+        "stage": 3,
+        "hp": 1
+      },
+      {
+        "t": 35.9399872,
+        "test": "PatrolBot",
+        "stage": 3,
+        "hp": 0
+      },
+      {
+        "t": 35.9399872,
+        "test": "PatrolBot",
+        "stage": 3,
+        "hp": 3
+      },
+      {
+        "t": 37.0799866,
+        "test": "PatrolBot",
+        "stage": 4,
+        "hp": 2
+      }
+    ],
+    "afterEvents": [
+      {
+        "t": 30.0392113,
+        "test": "PatrolBot",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "t": 31.05064,
+        "test": "PatrolBot",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "t": 31.8106384,
+        "test": "PatrolBot",
+        "stage": 1,
+        "hp": 1
+      },
+      {
+        "t": 32.57064,
+        "test": "PatrolBot",
+        "stage": 1,
+        "hp": 0
+      },
+      {
+        "t": 32.57064,
+        "test": "PatrolBot",
+        "stage": 1,
+        "hp": 3
+      },
+      {
+        "t": 35.15064,
+        "test": "PatrolBot",
+        "stage": 3,
+        "hp": 2
+      },
+      {
+        "t": 37.0506363,
+        "test": "PatrolBot",
+        "stage": 4,
+        "hp": 1
+      },
+      {
+        "t": 37.81064,
+        "test": "PatrolBot",
+        "stage": 4,
+        "hp": 0
+      },
+      {
+        "t": 37.81064,
+        "test": "PatrolBot",
+        "stage": 4,
+        "hp": 3
+      }
+    ],
+    "minimumAcceptedHitGap": 0.7599983999999971,
+    "cooldownRespected": true
+  },
+  "leave_reenter": {
+    "healthEvents": [
+      {
+        "wall": 0.10598745900006179,
+        "time": 190.923447,
+        "test": "leave_reenter",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "wall": 1.0036540419999938,
+        "time": 191.839935,
+        "test": "leave_reenter",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "wall": 3.0042156670000395,
+        "time": 193.839935,
+        "test": "leave_reenter",
+        "stage": 3,
+        "hp": 1
+      }
+    ],
+    "final": {
+      "wall": 6.902956750000044,
+      "local": 6.902956750000044,
+      "test": "leave_reenter",
+      "stage": 7,
+      "time": 197.726135,
+      "hp": 1,
+      "contacts": 0,
+      "x": -94.0,
+      "y": 40.105,
+      "sleeping": true,
+      "paused": false,
+      "scene": "Level01"
+    }
+  },
+  "pause_resume": {
+    "healthEvents": [
+      {
+        "wall": 7.003386374999991,
+        "time": 197.825943,
+        "test": "pause_resume",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "wall": 8.004104875000053,
+        "time": 198.839935,
+        "test": "pause_resume",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "wall": 10.404679041999998,
+        "time": 199.59993,
+        "test": "pause_resume",
+        "stage": 4,
+        "hp": 1
+      },
+      {
+        "wall": 11.204094375000068,
+        "time": 200.359924,
+        "test": "pause_resume",
+        "stage": 5,
+        "hp": 0
+      },
+      {
+        "wall": 11.204185334000044,
+        "time": 200.359924,
+        "test": "pause_resume",
+        "stage": 5,
+        "hp": 3
+      }
+    ],
+    "final": {
+      "wall": 13.903157042000089,
+      "local": 6.903157042000089,
+      "test": "pause_resume",
+      "stage": 7,
+      "time": 203.0261,
+      "hp": 3,
+      "contacts": 0,
+      "x": -134.0,
+      "y": 38.5049934,
+      "sleeping": true,
+      "paused": false,
+      "scene": "Level01"
+    }
+  },
+  "disabled_component": {
+    "healthEvents": [
+      {
+        "wall": 14.002300834000039,
+        "time": 203.1262,
+        "test": "disabled_component",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "wall": 15.004069000000072,
+        "time": 204.139923,
+        "test": "disabled_component",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "wall": 18.404240209000022,
+        "time": 207.539932,
+        "test": "disabled_component",
+        "stage": 6,
+        "hp": 1
+      },
+      {
+        "wall": 19.103779750000058,
+        "time": 208.299927,
+        "test": "disabled_component",
+        "stage": 7,
+        "hp": 0
+      },
+      {
+        "wall": 19.103793834000044,
+        "time": 208.299927,
+        "test": "disabled_component",
+        "stage": 7,
+        "hp": 3
+      }
+    ],
+    "final": {
+      "wall": 20.903224125000065,
+      "local": 6.903224125000065,
+      "test": "disabled_component",
+      "stage": 7,
+      "time": 210.026062,
+      "hp": 3,
+      "contacts": 0,
+      "x": -134.0,
+      "y": 38.5049934,
+      "sleeping": true,
+      "paused": false,
+      "scene": "Level01"
+    }
+  },
+  "disabled_collider": {
+    "healthEvents": [
+      {
+        "wall": 21.00328275000004,
+        "time": 210.1262,
+        "test": "disabled_collider",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "wall": 22.00393904200007,
+        "time": 211.139923,
+        "test": "disabled_collider",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "wall": 25.40415412499999,
+        "time": 214.539917,
+        "test": "disabled_collider",
+        "stage": 6,
+        "hp": 1
+      },
+      {
+        "wall": 26.103800667000087,
+        "time": 215.299927,
+        "test": "disabled_collider",
+        "stage": 7,
+        "hp": 0
+      },
+      {
+        "wall": 26.103825834000077,
+        "time": 215.299927,
+        "test": "disabled_collider",
+        "stage": 7,
+        "hp": 3
+      }
+    ],
+    "final": {
+      "wall": 27.903170292000027,
+      "local": 6.903170292000027,
+      "test": "disabled_collider",
+      "stage": 7,
+      "time": 217.026108,
+      "hp": 3,
+      "contacts": 0,
+      "x": -134.0,
+      "y": 38.5049934,
+      "sleeping": true,
+      "paused": false,
+      "scene": "Level01"
+    }
+  },
+  "simultaneous_hazards": {
+    "healthEvents": [
+      {
+        "wall": 28.002433750000023,
+        "time": 217.126129,
+        "test": "simultaneous_hazards",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "wall": 29.003841959000056,
+        "time": 218.139923,
+        "test": "simultaneous_hazards",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "wall": 29.703921292000018,
+        "time": 218.899918,
+        "test": "simultaneous_hazards",
+        "stage": 2,
+        "hp": 1
+      },
+      {
+        "wall": 30.50268216699999,
+        "time": 219.659927,
+        "test": "simultaneous_hazards",
+        "stage": 2,
+        "hp": 0
+      },
+      {
+        "wall": 30.502698709000015,
+        "time": 219.659927,
+        "test": "simultaneous_hazards",
+        "stage": 2,
+        "hp": 3
+      }
+    ],
+    "final": {
+      "wall": 34.90377004200002,
+      "local": 6.903770042000019,
+      "test": "simultaneous_hazards",
+      "stage": 7,
+      "time": 224.0261,
+      "hp": 3,
+      "contacts": 0,
+      "x": -134.0,
+      "y": 38.5049934,
+      "sleeping": true,
+      "paused": false,
+      "scene": "Level01"
+    }
+  },
+  "destroyed_hazard": {
+    "healthEvents": [
+      {
+        "wall": 35.00344220900001,
+        "time": 224.12674,
+        "test": "destroyed_hazard",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "wall": 36.00388766700007,
+        "time": 225.139923,
+        "test": "destroyed_hazard",
+        "stage": 1,
+        "hp": 2
+      }
+    ],
+    "final": {
+      "wall": 41.903159749999986,
+      "local": 6.903159749999986,
+      "test": "destroyed_hazard",
+      "stage": 7,
+      "time": 230.642471,
+      "hp": 2,
+      "contacts": 0,
+      "x": -89.7,
+      "y": 40.105,
+      "sleeping": true,
+      "paused": false,
+      "scene": "Level01"
+    }
+  },
+  "explicit_respawn": {
+    "healthEvents": [
+      {
+        "wall": 42.00353591700002,
+        "time": 230.742447,
+        "test": "explicit_respawn",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "wall": 43.00371995900002,
+        "time": 231.759918,
+        "test": "explicit_respawn",
+        "stage": 1,
+        "hp": 2
+      },
+      {
+        "wall": 43.30313241700003,
+        "time": 232.043045,
+        "test": "explicit_respawn",
+        "stage": 2,
+        "hp": 3
+      }
+    ],
+    "final": {
+      "wall": 48.90273437500002,
+      "local": 6.902734375000023,
+      "test": "explicit_respawn",
+      "stage": 7,
+      "time": 237.641937,
+      "hp": 3,
+      "contacts": 0,
+      "x": -134.0,
+      "y": 38.5049934,
+      "sleeping": true,
+      "paused": false,
+      "scene": "Level01"
+    }
+  },
+  "completion_restart_menu": {
+    "healthEvents": [
+      {
+        "wall": 49.00340491700001,
+        "time": 237.742065,
+        "test": "completion_restart_menu",
+        "stage": -1,
+        "hp": 3
+      },
+      {
+        "wall": 50.003914750000035,
+        "time": 238.759918,
+        "test": "completion_restart_menu",
+        "stage": 1,
+        "hp": 2
+      }
+    ],
+    "final": {
+      "wall": 55.90304220900009,
+      "local": 6.903042209000091,
+      "test": "completion_restart_menu",
+      "stage": 7,
+      "time": 243.002655,
+      "hp": 3,
+      "contacts": 0,
+      "x": -134.0,
+      "y": 38.5049934,
+      "sleeping": true,
+      "paused": false,
+      "scene": "Level01"
+    }
+  },
+  "checkpoints": [
+    {
+      "test": "pause_resume",
+      "stage": "paused",
+      "hp": 2,
+      "time": 199.126,
+      "contacts": 1
+    },
+    {
+      "test": "disabled_component",
+      "stage": "disabled",
+      "hp": 2,
+      "contacts": 0
+    },
+    {
+      "test": "disabled_collider",
+      "stage": "disabled",
+      "hp": 2,
+      "contacts": 0
+    },
+    {
+      "test": "completion_restart_menu",
+      "stage": "complete",
+      "complete": true,
+      "hp": 2
+    },
+    {
+      "test": "completion_restart_menu",
+      "stage": "restarted",
+      "hp": 3,
+      "deaths": 0,
+      "complete": false
+    },
+    {
+      "test": "completion_restart_menu",
+      "stage": "main_menu",
+      "scene": "MainMenu",
+      "scale": 1.0
+    },
+    {
+      "test": "completion_restart_menu",
+      "stage": "play_again",
+      "scene": "Level01",
+      "hp": 3,
+      "deaths": 0,
+      "score": 0
+    }
+  ],
+  "allAssertionsPassed": true
+}

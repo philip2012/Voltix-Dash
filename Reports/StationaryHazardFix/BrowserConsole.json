@@ -1,0 +1,13 @@
+{
+  "errors": [],
+  "errorCount": 0,
+  "warningCount": 5,
+  "warnings": [
+    {
+      "message": "Shader 'Hidden/Universal Render Pipeline/Edge Adaptive Spatial Upsampling' is not supported (in 'Blit FSR Upscaling'). PostProcessing render passes will not execute.",
+      "classification": "pre-existing; repeated once per fresh page load",
+      "url": "http://127.0.0.1:8765/Build/WebGL.framework.js.br"
+    }
+  ],
+  "browser": "Chromium 154.0.0.0"
+}

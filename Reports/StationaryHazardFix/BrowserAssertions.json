@@ -1,0 +1,19 @@
+{
+  "allAssertionsPassed": true,
+  "stationaryDamageGapsSeconds": [
+    0.7498999999761582,
+    0.7668000000715256
+  ],
+  "pausedDamageGapsSeconds": [
+    8.7665,
+    0.7507999999523163
+  ],
+  "routeCompleted": true,
+  "score": 400,
+  "deaths": 1,
+  "displayedLevelTime": "01:47.40",
+  "actualEnemyDeathCues": 4,
+  "actualCompletionCues": 1,
+  "browserErrors": 0,
+  "menuReloadFlowPassed": true
+}

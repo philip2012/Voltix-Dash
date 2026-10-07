@@ -1,0 +1,330 @@
+{
+  "modifiedProduction": [
+    "Assets/Scripts/Hazards/HazardDamage.cs"
+  ],
+  "preexistingModified": [
+    "Voltix Dash.slnx"
+  ],
+  "scenesChanged": [],
+  "prefabsChanged": [],
+  "artifacts": [
+    {
+      "path": "Reports/StationaryHazardFix/AfterCharacterization.json",
+      "bytes": 133131,
+      "sha256": "37eb11c9d39b9248417a9a3f592b6b8ebbf6b4c06df762545408ed4eb66f2931"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/ArtifactManifest.json",
+      "selfManifest": true
+    },
+    {
+      "path": "Reports/StationaryHazardFix/ArtifactManifest.md",
+      "selfManifest": true
+    },
+    {
+      "path": "Reports/StationaryHazardFix/AutomaticBuildSerialization.diff",
+      "bytes": 5295,
+      "sha256": "d84c2e1334bacc2b0e53cd6d806bcbb6bcd7c70088b7da4e01da2e3d17423eb8"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BeforeCharacterization.json",
+      "bytes": 297457,
+      "sha256": "7ade31dac3f967a69d05d51c287feee8a227e62e134168215cbd3dafdf66ce6c"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserAssertions.json",
+      "bytes": 396,
+      "sha256": "8d765896403003f16aba7818a1184a9fbcb6672db0ff40a0163f0c19542b700c"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserConsole.json",
+      "bytes": 452,
+      "sha256": "21ea790ae2e45f49f2041c7d67d604e622a3fb1a2b0460da088be6cc0e15301d"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370273.json",
+      "bytes": 596629,
+      "sha256": "a8b265779b17f713b2d7969fe2f162eb3bb3ee0d3213cc50bc6d78c0629b67db"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370351.json",
+      "bytes": 23286,
+      "sha256": "25b7fb6dbf50b8ec251840df62fb2213bea3c69574180ec5a94afe8286d27365"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370355.json",
+      "bytes": 466854,
+      "sha256": "6f4574558cac75a62d159dd45cc69616719c61c1b59402ca37f136d585410f74"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370381.json",
+      "bytes": 57539,
+      "sha256": "053cbc17d754e2d8d445fc19d12a545d629eb7bbb99c0c70d4d56159d60019bb"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370403.json",
+      "bytes": 1328182,
+      "sha256": "b7670d6d088b0322a8e3730b2dcddef1239b9e20a3a9ddf7173a24ef3cb400c4"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370477.json",
+      "bytes": 24121,
+      "sha256": "a03f29de18ecdaccf9c96aa583b57dbca6990cde37d98c48e7e8f8c808ec4428"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370478.json",
+      "bytes": 534744,
+      "sha256": "76d8236011a9674aaecf378c57241d02f87a46d59df336d1195b01357497044f"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370555.json",
+      "bytes": 27656,
+      "sha256": "9629fda94c819ae7f3ff0b456a8c4f5af8ecba9ee8d40895c3ce5ed858936459"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370569.json",
+      "bytes": 707300,
+      "sha256": "1c4b6951f8812a03550531ff1d6ba862f16bf321810435030c7f28da09b97ae3"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370747.json",
+      "bytes": 3968877,
+      "sha256": "ea5babb6500236f2792c9fde90ffab842d2d1327bfc57bae98e378afe4239513"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370861.json",
+      "bytes": 323816,
+      "sha256": "6480e6603a8a5c2ab8167eefa15db8eaad5eb5c50bb65516a0850cdfbe061ece"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370903.json",
+      "bytes": 2837694,
+      "sha256": "7b3904ef58fed72f69b1310a92a1238367c95a221088d73f2695e8aa9bb9361a"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BrowserMetrics-1791370937.json",
+      "bytes": 3457503,
+      "sha256": "324c2ae1ce1f6c7f3e8fc824aff334fac8b91d2581ab2014b6a5c3a2d1178e15"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/BuildInventoryAndHeaders.json",
+      "bytes": 8311,
+      "sha256": "a16af06533a3b52807d7ad82ee6cd71c1b8fb82fe4322ac14add5cb4fd185e02"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/Characterize.cs.txt",
+      "bytes": 3049,
+      "sha256": "5a8e76c413200a4e943bf5f9182366bc09774334c2431a89ee93f6badd8cc364"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/CharacterizeAfter.cs.txt",
+      "bytes": 3096,
+      "sha256": "1cc5fd55febaedc0b12d490768f80030ec7ce45f534a144a4a1dea0d21e519ac"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/EdgeRegressions.cs.txt",
+      "bytes": 6560,
+      "sha256": "dccd35adcc2d720b640fc89edfe0136029ee5e780a880b780e5d961116232a27"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/EdgeRegressions.json",
+      "bytes": 172792,
+      "sha256": "88254315bd34b5f3d86eadc383e6faa30fed959cfce6dce5c28fd2c9a069191f"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/EditorAssertions.json",
+      "bytes": 16685,
+      "sha256": "3f860b3ebf1faf7364ffa29bd57cab50865943176b105394ec3204ee151a9c9c"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/FallRespawnRegression.json",
+      "bytes": 188,
+      "sha256": "5ee0ae7b102db4bb5a3a992c755b7b4386260a09e393b4ae1b7f5a955be46736"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/FinalEditorVerification.json",
+      "bytes": 698,
+      "sha256": "0e18f88c6018aad6c444400b91e29744ab938ba443c45d3592febcb700b8160b"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/FinalUnityConsole.json",
+      "bytes": 210,
+      "sha256": "d2ea3c0b6b1988eee8c2cfeabdd72be3ba45d206c199baaeec1634469c7cd784"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/HTTPRequests.jsonl",
+      "bytes": 16003,
+      "sha256": "aaf2f09e89064d3af7f1483627844bb6ef4c5c79e97ed816738373964204680f"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/HazardDamage.proposed.cs.txt",
+      "bytes": 4689,
+      "sha256": "81101a59ba84772a009421a439c438a4b9efd1d1ffb18e4f0ff132244c5df7c4"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/InitialGitStatus.txt",
+      "bytes": 54,
+      "sha256": "1ca92a33e7caa8a4b1c7f77206131bb302c6e5a85654a8c31c918def2401235e"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/LevelGeometry.json",
+      "bytes": 7072,
+      "sha256": "a81999485f1ec7b7cb99ce23055f650b726d720988f3628514475d46af290f48"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/ProjectAfter.json",
+      "bytes": 41315,
+      "sha256": "f5ad846dfc19522825d4b5e3ea8a67c66a1405cf56c83830293b7b5cf7c035a2"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/ProjectBefore.json",
+      "bytes": 41315,
+      "sha256": "ac05793872ddb09585fe18a7826a19a64006b33f469bee20cd301976c5607ae1"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/ProjectChanges.json",
+      "bytes": 46,
+      "sha256": "f0498cb42246591e297a16f75f84b4c1c51a242c05c8241ec5a2774ed462f795"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/QAReport.md",
+      "bytes": 8170,
+      "sha256": "9911502fcd0c00c9aa5400f3848aaa3bd4f9e98118f3bbfea02fb446380d82aa"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/UnityBuildReport.json",
+      "bytes": 746,
+      "sha256": "bbeac8405b41867f1be336cba96fd7a23c1c2b2284dd06d181d67ffb6b5e78fb"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/adaptive.js",
+      "bytes": 5827,
+      "sha256": "e0958492f263876cef0eb3028f612ba8c7dc46ad710cfa508dd86c5df03b4d87"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/browser-proof-1791370472240.jpg",
+      "bytes": 58575,
+      "sha256": "fb74adc3cc0eff6617b7096ec37f75a27b2d69ab1b877c8549a9fd94638568f6"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/browser-proof-1791370562308.jpg",
+      "bytes": 65593,
+      "sha256": "c1c36889156dc278406ecb4428e350256835cfe697b1933dd5693b76228c02cf"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/browser-proof-1791370902946.jpg",
+      "bytes": 60974,
+      "sha256": "0dd43343dda7b6093d44a134f87663845c437a89802767d7bdf688d2316a377c"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/browser-proof-1791370937247.jpg",
+      "bytes": 70049,
+      "sha256": "513fd727b59c90aa496a990c624ce66656a3d9e1c6fe653457e9d23283697c6b"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/create_harness.py",
+      "bytes": 2067,
+      "sha256": "cf887ba32aa19d13c3cc7ec4804056f4140919326d1cb8a1eaec0992810dd8d1"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/harness.js",
+      "bytes": 7761,
+      "sha256": "b487c792479e2ec2bb9238322987fce19113500a7ec4498119c08a389be81cbd"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/qa.html",
+      "bytes": 7574,
+      "sha256": "d4bca5b212de31a2bdf013c687e0978e8c2c119d985f2d7f9732b31e4721a44f"
+    },
+    {
+      "path": "Reports/StationaryHazardFix/serve_webgl.py",
+      "bytes": 2594,
+      "sha256": "98e4cd951b5776ddd71bb54cfb1c2a61268065f017149b019a0f6be516f83025"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data.br",
+      "bytes": 4489312,
+      "sha256": "5d0315291d94f58d11c624bb798a272b88ea19ef839ddd3ae8ba13dc277f0e7f"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js.br",
+      "bytes": 72032,
+      "sha256": "8c04a4f451ae242c1b7224280ec6bcdc42f1b24b3d43e15bde56a02c199c73e5"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.loader.js",
+      "bytes": 26983,
+      "sha256": "b9533f585322b18fbc944219bda2b62f419b375e7234e6157c7da4eeee8136c2"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm.br",
+      "bytes": 8645936,
+      "sha256": "fcb1af199efb103a7484d367994428cb35d24180ba372d106b26fd060fc832d1"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/MemoryProfiler.png",
+      "bytes": 665,
+      "sha256": "0ce87be20d0c24ab6cb73b57de2004da261cc2a641e69319c6ae3fe11fc85483"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/favicon.ico",
+      "bytes": 2305,
+      "sha256": "9c13beb90ee8f70580d52a21d5233970d1c89e71e4a34a462c22610941c3c77f"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/fullscreen-button.png",
+      "bytes": 175,
+      "sha256": "21221581673a54b8139d408d4a3f8d2b879e86827d4b6fc53b995ff7a99ee3e9"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-empty-dark.png",
+      "bytes": 96,
+      "sha256": "bbee7131afe8a3365906240d89184dc86234c119467f390bc4bc6802328fdb4d"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-empty-light.png",
+      "bytes": 109,
+      "sha256": "143696c060ad43d6c30f19ff5f49000927a139a2a1e4c9f45fafaa2b90d7d2be"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-full-dark.png",
+      "bytes": 74,
+      "sha256": "3306a6244dcb3926fca38a28e3ced589df8ff1beed955eb17c0bbf01c918bc62"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-full-light.png",
+      "bytes": 84,
+      "sha256": "12395ea785480c5cdf12fade6e6cbf49666d5bb1cef7240c113dbcba6bdc5c87"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/style.css",
+      "bytes": 1448,
+      "sha256": "80acab5f9147ed15876d638d776c0f9c6b4c273c01c96d82d23b6c53ea96f9cf"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-dark.png",
+      "bytes": 3042,
+      "sha256": "c1b72d26c096487dabc948b54bc203f8dac7ed4e3f5733918798e858acb4b159"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-light.png",
+      "bytes": 3077,
+      "sha256": "002990aea0d946833cadc1519d5b7e50a4570bd537a0517dd79a59d3eec84da7"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-title-footer.png",
+      "bytes": 1151,
+      "sha256": "9e8b3bdb67c2446d16362fe59449d892100931dbbadfe6a9d923a4142b57a79f"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/webmemd-icon.png",
+      "bytes": 1670,
+      "sha256": "c56f5494640cedda273aad38d58e6ab9da625d5b3f4d875c0ff92c6192a569c2"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 6113,
+      "sha256": "fc0cc611a9d778dd14a75016dacc90b452e849ecaac5226ec55cbbe94635102e"
+    }
+  ]
+}

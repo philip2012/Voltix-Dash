@@ -1,0 +1,229 @@
+{
+  "Builds/WebGL/Build/WebGL.data.br": {
+    "bytes": 4489312,
+    "sha256": "5d0315291d94f58d11c624bb798a272b88ea19ef839ddd3ae8ba13dc277f0e7f",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "application/octet-stream",
+      "Content-Length": "4489312",
+      "Last-Modified": "Wed, 07 Oct 2026 10:49:06 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/Build/WebGL.framework.js.br": {
+    "bytes": 72032,
+    "sha256": "8c04a4f451ae242c1b7224280ec6bcdc42f1b24b3d43e15bde56a02c199c73e5",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "application/javascript",
+      "Content-Length": "72032",
+      "Last-Modified": "Wed, 07 Oct 2026 10:50:04 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/Build/WebGL.loader.js": {
+    "bytes": 26983,
+    "sha256": "b9533f585322b18fbc944219bda2b62f419b375e7234e6157c7da4eeee8136c2",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "application/javascript",
+      "Content-Length": "26983",
+      "Last-Modified": "Wed, 07 Oct 2026 10:50:04 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/Build/WebGL.wasm.br": {
+    "bytes": 8645936,
+    "sha256": "fcb1af199efb103a7484d367994428cb35d24180ba372d106b26fd060fc832d1",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "application/wasm",
+      "Content-Length": "8645936",
+      "Last-Modified": "Wed, 07 Oct 2026 10:50:03 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/MemoryProfiler.png": {
+    "bytes": 665,
+    "sha256": "0ce87be20d0c24ab6cb73b57de2004da261cc2a641e69319c6ae3fe11fc85483",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "665",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/favicon.ico": {
+    "bytes": 2305,
+    "sha256": "9c13beb90ee8f70580d52a21d5233970d1c89e71e4a34a462c22610941c3c77f",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/x-icon",
+      "Content-Length": "2305",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/fullscreen-button.png": {
+    "bytes": 175,
+    "sha256": "21221581673a54b8139d408d4a3f8d2b879e86827d4b6fc53b995ff7a99ee3e9",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "175",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/progress-bar-empty-dark.png": {
+    "bytes": 96,
+    "sha256": "bbee7131afe8a3365906240d89184dc86234c119467f390bc4bc6802328fdb4d",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "96",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/progress-bar-empty-light.png": {
+    "bytes": 109,
+    "sha256": "143696c060ad43d6c30f19ff5f49000927a139a2a1e4c9f45fafaa2b90d7d2be",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "109",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/progress-bar-full-dark.png": {
+    "bytes": 74,
+    "sha256": "3306a6244dcb3926fca38a28e3ced589df8ff1beed955eb17c0bbf01c918bc62",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "74",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/progress-bar-full-light.png": {
+    "bytes": 84,
+    "sha256": "12395ea785480c5cdf12fade6e6cbf49666d5bb1cef7240c113dbcba6bdc5c87",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "84",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/style.css": {
+    "bytes": 1448,
+    "sha256": "80acab5f9147ed15876d638d776c0f9c6b4c273c01c96d82d23b6c53ea96f9cf",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "text/css",
+      "Content-Length": "1448",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/unity-logo-dark.png": {
+    "bytes": 3042,
+    "sha256": "c1b72d26c096487dabc948b54bc203f8dac7ed4e3f5733918798e858acb4b159",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "3042",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/unity-logo-light.png": {
+    "bytes": 3077,
+    "sha256": "002990aea0d946833cadc1519d5b7e50a4570bd537a0517dd79a59d3eec84da7",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "3077",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/unity-logo-title-footer.png": {
+    "bytes": 1151,
+    "sha256": "9e8b3bdb67c2446d16362fe59449d892100931dbbadfe6a9d923a4142b57a79f",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "1151",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/TemplateData/webmemd-icon.png": {
+    "bytes": 1670,
+    "sha256": "c56f5494640cedda273aad38d58e6ab9da625d5b3f4d875c0ff92c6192a569c2",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "image/png",
+      "Content-Length": "1670",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  },
+  "Builds/WebGL/index.html": {
+    "bytes": 6113,
+    "sha256": "fc0cc611a9d778dd14a75016dacc90b452e849ecaac5226ec55cbbe94635102e",
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Wed, 07 Oct 2026 10:50:33 GMT",
+      "Content-type": "text/html",
+      "Content-Length": "6113",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:40 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  }
+}

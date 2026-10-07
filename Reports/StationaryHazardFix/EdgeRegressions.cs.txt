@@ -1,0 +1,56 @@
+Application.runInBackground=true;
+var flags=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;
+Func<string,Type> type=n=>Type.GetType(n+", Assembly-CSharp",true);
+var ht=type("PlayerHealth");var hazards=type("HazardDamage");var pt=type("LevelPause");var lt=type("LevelManager");
+GameObject p=null;Rigidbody2D body=null;Component health=null,pause=null,manager=null;Collider2D playerCollider=null;
+Action cache=()=>{p=GameObject.Find("Player");if(p==null)return;body=p.GetComponent<Rigidbody2D>();health=p.GetComponent(ht);playerCollider=p.GetComponent<Collider2D>();pause=(Component)UnityEngine.Object.FindFirstObjectByType(pt);manager=(Component)UnityEngine.Object.FindFirstObjectByType(lt);};cache();
+var spike=GameObject.Find("StaticSpikes");var hazard=(Behaviour)spike.GetComponent(hazards);var collider=spike.GetComponent<Collider2D>();GameObject clone=null;
+var names=new[]{"leave_reenter","pause_resume","disabled_component","disabled_collider","simultaneous_hazards","destroyed_hazard","explicit_respawn","completion_restart_menu"};
+var rows=new System.Collections.Generic.List<object>();var events=new System.Collections.Generic.List<object>();
+var checkpoints=new System.Collections.Generic.List<object>();int test=-1,stage=-1;double begin=EditorApplication.timeSinceStartup;string label="";bool done=false;
+Action<int,int> changed=(curHp,max)=>events.Add(new{wall=EditorApplication.timeSinceStartup-begin,time=Time.time,test=label,stage=stage,hp=curHp});ht.GetEvent("HealthChanged").AddEventHandler(health,changed);
+Action<Vector2> teleport=v=>{body.position=v;p.transform.position=new Vector3(v.x,v.y,0);body.linearVelocity=Vector2.zero;};
+Func<int> hp=()=>health==null?-1:(int)ht.GetProperty("CurrentHealth").GetValue(health,null);
+Func<int> contactCount=()=>hazard==null?-1:((System.Collections.ICollection)hazards.GetField("contacts",flags).GetValue(hazard)).Count;
+EditorApplication.CallbackFunction step=null;
+step=()=>{try{
+ if(!EditorApplication.isPlaying||done){EditorApplication.update-=step;return;}
+ double elapsed=EditorApplication.timeSinceStartup-begin;int next=(int)(elapsed/7);double local=elapsed-next*7;
+ if(next>=names.Length){done=true;EditorApplication.update-=step;if(health!=null)ht.GetEvent("HealthChanged").RemoveEventHandler(health,changed);System.IO.File.WriteAllText("Reports/StationaryHazardFix/EdgeRegressions.json",Newtonsoft.Json.JsonConvert.SerializeObject(new{samples=rows,healthEvents=events,checkpoints=checkpoints},Newtonsoft.Json.Formatting.Indented));UnityEditor.SessionState.SetString("HazardQA","edge regressions finished");return;}
+ if(next!=test){
+  if(clone!=null)UnityEngine.Object.Destroy(clone);clone=null;
+  if(pause!=null)pt.GetMethod("Resume").Invoke(pause,null);
+  test=next;stage=-1;label=names[test];
+  hazard.enabled=true;collider.enabled=true;ht.GetMethod("Respawn").Invoke(health,null);teleport(new Vector2(-94,40.105f));
+  if(label=="simultaneous_hazards"||label=="destroyed_hazard"){clone=UnityEngine.Object.Instantiate(spike);clone.name="QA_ContactHazard";if(label=="destroyed_hazard")hazard.enabled=false;}
+ }
+ if(label=="completion_restart_menu"&&p==null&&UnityEngine.SceneManagement.SceneManager.GetActiveScene().name=="Level01"){cache();ht.GetEvent("HealthChanged").AddEventHandler(health,changed);hazard=(Behaviour)GameObject.Find("StaticSpikes").GetComponent(hazards);collider=hazard.GetComponent<Collider2D>();}
+ int want=local<1?0:local<1.3?1:local<3?2:local<3.3?3:local<4?4:local<4.4?5:local<4.8?6:7;
+ if(want!=stage){stage=want;
+  if(stage==1)teleport(new Vector2(-89.7f,40.105f));
+  if(label=="leave_reenter"){
+   if(stage==2||stage==4)teleport(new Vector2(-94,40.105f));if(stage==3)teleport(new Vector2(-89.7f,40.105f));
+  }
+  if(label=="pause_resume"){
+   if(stage==2)pt.GetMethod("Pause").Invoke(pause,null);if(stage==3){checkpoints.Add(new{test=label,stage="paused",hp=hp(),time=Time.time,contacts=contactCount()});pt.GetMethod("Resume").Invoke(pause,null);}
+  }
+  if(label=="disabled_component"||label=="disabled_collider"){
+   if(stage==2){if(label=="disabled_component")hazard.enabled=false;else collider.enabled=false;}
+   if(stage==5){checkpoints.Add(new{test=label,stage="disabled",hp=hp(),contacts=contactCount()});teleport(new Vector2(-94,40.105f));hazard.enabled=true;collider.enabled=true;}
+   if(stage==6)teleport(new Vector2(-89.7f,40.105f));
+  }
+  if(label=="destroyed_hazard"&&stage==2)UnityEngine.Object.Destroy(clone);
+  if(label=="explicit_respawn"&&stage==2)ht.GetMethod("Respawn").Invoke(health,null);
+  if(label=="completion_restart_menu"){
+   if(stage==2)teleport(new Vector2(315.2f,47.705f));
+   if(stage==3){checkpoints.Add(new{test=label,stage="complete",complete=lt.GetProperty("IsComplete").GetValue(manager,null),hp=hp()});ht.GetEvent("HealthChanged").RemoveEventHandler(health,changed);lt.GetMethod("RestartLevel").Invoke(manager,null);}
+   if(stage==4){checkpoints.Add(new{test=label,stage="restarted",hp=hp(),deaths=lt.GetProperty("DeathCount").GetValue(manager,null),complete=lt.GetProperty("IsComplete").GetValue(manager,null)});pt.GetMethod("Pause").Invoke(pause,null);}
+   if(stage==5){ht.GetEvent("HealthChanged").RemoveEventHandler(health,changed);pt.GetMethod("MainMenu").Invoke(pause,null);}
+   if(stage==6){checkpoints.Add(new{test=label,stage="main_menu",scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,scale=Time.timeScale});type("SceneNavigation").GetMethod("PlayLevel").Invoke(null,null);}
+   if(stage==7)checkpoints.Add(new{test=label,stage="play_again",scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name,hp=hp(),deaths=lt.GetProperty("DeathCount").GetValue(manager,null),score=type("ScoreManager").GetProperty("Score").GetValue(UnityEngine.Object.FindFirstObjectByType(type("ScoreManager")),null)});
+  }
+ }
+ rows.Add(new{wall=elapsed,local=local,test=label,stage=stage,time=Time.time,hp=hp(),contacts=contactCount(),x=body==null?0:body.position.x,y=body==null?0:body.position.y,sleeping=body!=null&&body.IsSleeping(),paused=Time.timeScale==0,scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene().name});
+ UnityEditor.SessionState.SetString("HazardQA",label+" stage="+stage+" t="+local.ToString("F1"));
+}catch(Exception e){EditorApplication.update-=step;Time.timeScale=1;UnityEditor.SessionState.SetString("HazardQA",e.ToString());System.IO.File.WriteAllText("Reports/StationaryHazardFix/EdgeError.txt",e.ToString());}};
+EditorApplication.update+=step;return "Running overlap lifetime, pause, multiple hazards, completion/restart/menu regressions.";

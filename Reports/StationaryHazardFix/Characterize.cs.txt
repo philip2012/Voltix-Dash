@@ -1,0 +1,27 @@
+var flags=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;
+var p=GameObject.Find("Player");var body=p.GetComponent<Rigidbody2D>();var pc=p.GetComponent<Collider2D>();
+var ht=Type.GetType("PlayerHealth, Assembly-CSharp");var health=p.GetComponent(ht);
+var current=ht.GetProperty("CurrentHealth");var invulnerable=ht.GetProperty("IsInvulnerable");
+var respawn=ht.GetMethod("Respawn");var movement=p.GetComponent(Type.GetType("PlayerMovement, Assembly-CSharp"));
+movement.GetType().GetField("moveInput",flags).SetValue(movement,Vector2.zero);
+var targets=new[]{"StaticSpikes","ElectricBarrier","MovingHorizontalHazard","PatrolBot"};
+var rows=new System.Collections.Generic.List<object>();var hits=new System.Collections.Generic.List<object>();
+float begin=Time.time;int test=-1,stage=-1;bool done=false;string label="";
+Action<int,int> onHealth=(hp,max)=>hits.Add(new{t=Time.time-begin,test=label,stage=stage,hp=hp});
+ht.GetEvent("HealthChanged").AddEventHandler(health,onHealth);
+Action<Vector2> teleport=v=>{body.position=v;p.transform.position=new Vector3(v.x,v.y,0);body.linearVelocity=Vector2.zero;};
+EditorApplication.CallbackFunction step=null;step=()=>{try{
+ if(!EditorApplication.isPlaying||done){EditorApplication.update-=step;return;}
+ float elapsed=Time.time-begin;int next=(int)(elapsed/10);float t=elapsed-next*10;
+ if(next>=targets.Length){done=true;EditorApplication.update-=step;ht.GetEvent("HealthChanged").RemoveEventHandler(health,onHealth);System.IO.File.WriteAllText("Reports/StationaryHazardFix/BeforeCharacterization.json",Newtonsoft.Json.JsonConvert.SerializeObject(new{samples=rows,healthEvents=hits},Newtonsoft.Json.Formatting.Indented));UnityEditor.SessionState.SetString("HazardQA","baseline finished");return;}
+ var h=GameObject.Find(targets[next]);var c=h.GetComponent<Collider2D>();
+ if(next!=test){test=next;stage=-1;label=targets[next];respawn.Invoke(health,null);teleport(new Vector2(c.bounds.center.x-4,c.bounds.min.y+1.005f));}
+ int want=t<1?0:t<4?1:t<5.1f?2:t<7?3:4;
+ if(want!=stage){stage=want;if(stage==1||stage==3||stage==4)teleport(new Vector2(c.bounds.center.x,c.bounds.min.y+1.005f));else if(stage==2)teleport(new Vector2(c.bounds.center.x-4,c.bounds.min.y+1.005f));}
+ // Wake-only diagnostic: physics Stay callbacks resume without changing health tuning.
+ if(stage==4&&body.position.x>-130)body.WakeUp();
+ var distance=c.Distance(pc);
+ rows.Add(new{t=elapsed,local=t,test=label,stage=stage,hp=(int)current.GetValue(health,null),invulnerable=(bool)invulnerable.GetValue(health,null),sleeping=body.IsSleeping(),overlap=distance.isOverlapped,distance=distance.distance,touching=c.IsTouching(pc),x=body.position.x,y=body.position.y,hazardX=h.transform.position.x});
+ UnityEditor.SessionState.SetString("HazardQA",label+" stage="+stage+" t="+t.ToString("F1"));
+}catch(Exception e){EditorApplication.update-=step;UnityEditor.SessionState.SetString("HazardQA",e.ToString());}};
+EditorApplication.update+=step;return "Characterizing four existing hazards; no scene changes saved.";
