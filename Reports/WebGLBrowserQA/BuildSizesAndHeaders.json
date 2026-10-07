@@ -1,0 +1,120 @@
+{
+  "files": [
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 5594
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/MemoryProfiler.png",
+      "bytes": 665
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/fullscreen-button.png",
+      "bytes": 175
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-dark.png",
+      "bytes": 3042
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/favicon.ico",
+      "bytes": 2305
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/webmemd-icon.png",
+      "bytes": 1670
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-empty-light.png",
+      "bytes": 109
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/style.css",
+      "bytes": 1448
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-title-footer.png",
+      "bytes": 1151
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-full-dark.png",
+      "bytes": 74
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-full-light.png",
+      "bytes": 84
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-empty-dark.png",
+      "bytes": 96
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-light.png",
+      "bytes": 3077
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js.br",
+      "bytes": 71964,
+      "decodedBytes": 406315
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.data.br",
+      "bytes": 4487136,
+      "decodedBytes": 12381496
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm.br",
+      "bytes": 8676980,
+      "decodedBytes": 48841089
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.loader.js",
+      "bytes": 26983
+    }
+  ],
+  "totalBytes": 13282553,
+  "headers": {
+    "WebGL.framework.js.br": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Tue, 06 Oct 2026 10:48:32 GMT",
+      "Content-type": "application/javascript",
+      "Content-Length": "71964",
+      "Last-Modified": "Tue, 06 Oct 2026 10:46:30 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "WebGL.data.br": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Tue, 06 Oct 2026 10:48:32 GMT",
+      "Content-type": "application/octet-stream",
+      "Content-Length": "4487136",
+      "Last-Modified": "Tue, 06 Oct 2026 10:45:32 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "WebGL.wasm.br": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Tue, 06 Oct 2026 10:48:32 GMT",
+      "Content-type": "application/wasm",
+      "Content-Length": "8676980",
+      "Last-Modified": "Tue, 06 Oct 2026 10:46:30 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "WebGL.loader.js": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Tue, 06 Oct 2026 10:48:32 GMT",
+      "Content-type": "application/javascript",
+      "Content-Length": "26983",
+      "Last-Modified": "Tue, 06 Oct 2026 10:46:30 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    }
+  }
+}

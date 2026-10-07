@@ -1,0 +1,90 @@
+{
+  "totalBytes": 13284386,
+  "files": [
+    {
+      "path": "Builds/WebGL/Build/WebGL.data.br",
+      "bytes": 4488450,
+      "sha256": "68fb846b0d25dc24ffa0668e5ee200095276c63e1e13ece57ad8a073a1899eda"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.framework.js.br",
+      "bytes": 71964,
+      "sha256": "ec669a0313ea99fc255117cbb335e8fbe35e6366dcb26c743eaf665f4e82801b"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.loader.js",
+      "bytes": 26983,
+      "sha256": "88dfc9e2c3faac900a123d16f3cf1c72095e839f7211f4f39c4c6375dbbab1a1"
+    },
+    {
+      "path": "Builds/WebGL/Build/WebGL.wasm.br",
+      "bytes": 8676980,
+      "sha256": "15a43a1f90dd591e37b2e7654b1434e1d2084c6d1e5f830d8cbcf1cc6da56a70"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/MemoryProfiler.png",
+      "bytes": 665,
+      "sha256": "0ce87be20d0c24ab6cb73b57de2004da261cc2a641e69319c6ae3fe11fc85483"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/favicon.ico",
+      "bytes": 2305,
+      "sha256": "9c13beb90ee8f70580d52a21d5233970d1c89e71e4a34a462c22610941c3c77f"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/fullscreen-button.png",
+      "bytes": 175,
+      "sha256": "21221581673a54b8139d408d4a3f8d2b879e86827d4b6fc53b995ff7a99ee3e9"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-empty-dark.png",
+      "bytes": 96,
+      "sha256": "bbee7131afe8a3365906240d89184dc86234c119467f390bc4bc6802328fdb4d"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-empty-light.png",
+      "bytes": 109,
+      "sha256": "143696c060ad43d6c30f19ff5f49000927a139a2a1e4c9f45fafaa2b90d7d2be"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-full-dark.png",
+      "bytes": 74,
+      "sha256": "3306a6244dcb3926fca38a28e3ced589df8ff1beed955eb17c0bbf01c918bc62"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/progress-bar-full-light.png",
+      "bytes": 84,
+      "sha256": "12395ea785480c5cdf12fade6e6cbf49666d5bb1cef7240c113dbcba6bdc5c87"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/style.css",
+      "bytes": 1448,
+      "sha256": "80acab5f9147ed15876d638d776c0f9c6b4c273c01c96d82d23b6c53ea96f9cf"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-dark.png",
+      "bytes": 3042,
+      "sha256": "c1b72d26c096487dabc948b54bc203f8dac7ed4e3f5733918798e858acb4b159"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-light.png",
+      "bytes": 3077,
+      "sha256": "002990aea0d946833cadc1519d5b7e50a4570bd537a0517dd79a59d3eec84da7"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/unity-logo-title-footer.png",
+      "bytes": 1151,
+      "sha256": "9e8b3bdb67c2446d16362fe59449d892100931dbbadfe6a9d923a4142b57a79f"
+    },
+    {
+      "path": "Builds/WebGL/TemplateData/webmemd-icon.png",
+      "bytes": 1670,
+      "sha256": "c56f5494640cedda273aad38d58e6ab9da625d5b3f4d875c0ff92c6192a569c2"
+    },
+    {
+      "path": "Builds/WebGL/index.html",
+      "bytes": 6113,
+      "sha256": "fc0cc611a9d778dd14a75016dacc90b452e849ecaac5226ec55cbbe94635102e"
+    }
+  ]
+}

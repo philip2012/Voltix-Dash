@@ -1,0 +1,115 @@
+{
+  "fullTraversal": {
+    "source": "BrowserMetrics-1791286555.json",
+    "windowMs": [
+      8606.3,
+      70056.6
+    ],
+    "fps": 59.99999999999999,
+    "intervalMs": {
+      "count": 3687,
+      "mean": 16.666666666666668,
+      "p50": 16.69999999999709,
+      "p95": 17.600000000002183,
+      "p99": 17.700000000000728,
+      "max": 17.80000000000291
+    },
+    "renderCallbackMs": {
+      "count": 3687,
+      "mean": 1.144290753454576,
+      "p50": 1.0999999046325684,
+      "p95": 1.9000000953674316,
+      "p99": 2.3000000715255737,
+      "max": 6.900000095367432
+    },
+    "drawCallsPerRenderedCallback": {
+      "count": 3687,
+      "mean": 10.105505831299158,
+      "p50": 10,
+      "p95": 13,
+      "p99": 14,
+      "max": 15
+    },
+    "heapBytes": 128516096
+  },
+  "doubledRenderResolution": {
+    "source": "BrowserMetrics-1791286808.json",
+    "windowMs": [
+      27931.800000071526,
+      57330.1
+    ],
+    "fps": 59.998163321530974,
+    "intervalMs": {
+      "count": 1764,
+      "mean": 16.6671768707483,
+      "p50": 16.69999999999709,
+      "p95": 17.599999999998545,
+      "p99": 17.700000000004366,
+      "max": 17.80000000000291
+    },
+    "renderCallbackMs": {
+      "count": 1764,
+      "mean": 2.077324263295349,
+      "p50": 2.100000023841858,
+      "p95": 2.899999976158142,
+      "p99": 3.100000023841858,
+      "max": 3.899999976158142
+    },
+    "drawCallsPerRenderedCallback": {
+      "count": 1764,
+      "mean": 8.004535147392291,
+      "p50": 8,
+      "p95": 8,
+      "p99": 8,
+      "max": 9
+    },
+    "heapBytes": 128516096
+  },
+  "sceneLoads": [
+    {
+      "click": {
+        "t": 3492.9000000953674,
+        "kind": "pointer",
+        "target": "unity-canvas",
+        "x": 640,
+        "y": 428
+      },
+      "firstLandingCueDelayMs": 227.89999997615814,
+      "largestCallbackMs": 45.39999997615814
+    },
+    {
+      "click": {
+        "t": 95392.70000004768,
+        "kind": "pointer",
+        "target": "unity-canvas",
+        "x": 640,
+        "y": 493
+      },
+      "firstLandingCueDelayMs": 178.20000004768372,
+      "largestCallbackMs": 8.899999976158142
+    },
+    {
+      "click": {
+        "t": 111142,
+        "kind": "pointer",
+        "target": "unity-canvas",
+        "x": 640,
+        "y": 416
+      },
+      "firstLandingCueDelayMs": 195.5,
+      "largestCallbackMs": 9.299999952316284
+    },
+    {
+      "click": {
+        "t": 123658.30000007153,
+        "kind": "pointer",
+        "target": "unity-canvas",
+        "x": 640,
+        "y": 428
+      },
+      "firstLandingCueDelayMs": 195.79999995231628,
+      "largestCallbackMs": 27.299999952316284
+    }
+  ],
+  "note": "Browser rAF intervals and instrumented Unity callback wall time, not Unity Profiler main-thread or GPU timers. Observer overhead is present. Load delay is an upper bound to first grounded-player landing cue, not exact scene deserialization time."
+}

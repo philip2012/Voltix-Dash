@@ -1,0 +1,15 @@
+{
+  "browser": "Chromium 154 WebGL",
+  "browserObservation": "Standing motionless near x=-89.64 inside StaticSpikes stopped repeated damage at HP 1/3. A short left movement produced the lethal hit and immediate full-HP respawn.",
+  "editorReproduction": {
+    "setup": "Play-mode-only teleport of player Rigidbody2D to (-89.7,40.11), zero velocity. No saved scene or gameplay change.",
+    "initialTime": 5.95115042,
+    "initialHP": 3,
+    "sampleTime": 15.77818,
+    "sampleHP": 2,
+    "position": [-89.7,40.1049919],
+    "rigidbodySleeping": true
+  },
+  "likelyCause": "Physics2D stops sending stay callbacks for a sleeping body; HazardDamage relies on OnTriggerStay2D/OnCollisionStay2D for subsequent cooldown-protected hits.",
+  "classification": "Pre-existing cross-platform behavior; not a WebGL regression. Left unchanged to preserve gameplay and the scope of this build QA pass. Follow up separately if sustained damage is intended while stationary."
+}

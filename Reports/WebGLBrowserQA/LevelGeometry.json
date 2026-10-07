@@ -1,0 +1,368 @@
+{
+  "platforms": [
+    {
+      "name": "Platform_01_Opening",
+      "minX": -140.0,
+      "maxX": -122.0,
+      "top": 37.5
+    },
+    {
+      "name": "Platform_02_EasyJump",
+      "minX": -120.0,
+      "maxX": -112.0,
+      "top": 38.3
+    },
+    {
+      "name": "Platform_03_EasyJump",
+      "minX": -109.7,
+      "maxX": -99.7,
+      "top": 39.1
+    },
+    {
+      "name": "Platform_04_SpikeIntro",
+      "minX": -97.7,
+      "maxX": -81.7,
+      "top": 39.1
+    },
+    {
+      "name": "Platform_05_BotIntro",
+      "minX": -79.7,
+      "maxX": -61.6999969,
+      "top": 39.1
+    },
+    {
+      "name": "Platform_06_Elevated",
+      "minX": -59.7,
+      "maxX": -51.7,
+      "top": 40.3
+    },
+    {
+      "name": "Platform_07_Elevated",
+      "minX": -49.7,
+      "maxX": -42.7,
+      "top": 41.5
+    },
+    {
+      "name": "Platform_08_Elevated",
+      "minX": -40.7,
+      "maxX": -31.7,
+      "top": 42.3
+    },
+    {
+      "name": "Platform_09_SafeLanding",
+      "minX": -29.7,
+      "maxX": -17.7,
+      "top": 41.5
+    },
+    {
+      "name": "Platform_10_MoverIntro",
+      "minX": -15.7,
+      "maxX": 2.30000019,
+      "top": 41.5
+    },
+    {
+      "name": "Platform_11_BarrierStaging",
+      "minX": 4.3,
+      "maxX": 12.3,
+      "top": 42.5
+    },
+    {
+      "name": "Platform_12_BarrierIntro",
+      "minX": 14.2999992,
+      "maxX": 28.3,
+      "top": 41.5
+    },
+    {
+      "name": "Platform_13_Recovery",
+      "minX": 30.3,
+      "maxX": 40.3,
+      "top": 41.5
+    },
+    {
+      "name": "Platform_14_BotReturn",
+      "minX": 42.3,
+      "maxX": 60.3,
+      "top": 41.5
+    },
+    {
+      "name": "Platform_15_Descent",
+      "minX": 62.3000031,
+      "maxX": 70.3,
+      "top": 40.5
+    },
+    {
+      "name": "Platform_16_SpikeReturn",
+      "minX": 72.3,
+      "maxX": 88.3,
+      "top": 39.5
+    },
+    {
+      "name": "Platform_17_Climb",
+      "minX": 90.5,
+      "maxX": 97.5,
+      "top": 40.7
+    },
+    {
+      "name": "Platform_18_Climb",
+      "minX": 99.7,
+      "maxX": 107.7,
+      "top": 41.9
+    },
+    {
+      "name": "Platform_19_Climb",
+      "minX": 109.7,
+      "maxX": 119.7,
+      "top": 43.1
+    },
+    {
+      "name": "Platform_20_Breather",
+      "minX": 121.7,
+      "maxX": 135.7,
+      "top": 43.1
+    },
+    {
+      "name": "Platform_21_Descent",
+      "minX": 137.7,
+      "maxX": 146.7,
+      "top": 42.3
+    },
+    {
+      "name": "Platform_22_MoverCombination",
+      "minX": 148.7,
+      "maxX": 166.7,
+      "top": 42.3
+    },
+    {
+      "name": "Platform_23_BotCombination",
+      "minX": 168.7,
+      "maxX": 190.7,
+      "top": 42.3
+    },
+    {
+      "name": "Platform_24_SpikeCombination",
+      "minX": 192.7,
+      "maxX": 208.7,
+      "top": 42.3
+    },
+    {
+      "name": "Platform_25_FinalClimb",
+      "minX": 211.2,
+      "maxX": 219.2,
+      "top": 43.5
+    },
+    {
+      "name": "Platform_26_FinalClimb",
+      "minX": 221.7,
+      "maxX": 228.7,
+      "top": 44.7
+    },
+    {
+      "name": "Platform_27_FinalLanding",
+      "minX": 230.7,
+      "maxX": 240.7,
+      "top": 45.5
+    },
+    {
+      "name": "Platform_28_FinalBot",
+      "minX": 242.700012,
+      "maxX": 264.7,
+      "top": 45.5
+    },
+    {
+      "name": "Platform_29_FinalBarrierStaging",
+      "minX": 266.7,
+      "maxX": 274.7,
+      "top": 46.5
+    },
+    {
+      "name": "Platform_30_FinalBarrier",
+      "minX": 276.7,
+      "maxX": 290.7,
+      "top": 45.5
+    },
+    {
+      "name": "Platform_31_FinalJump",
+      "minX": 293.2,
+      "maxX": 301.2,
+      "top": 46.7
+    },
+    {
+      "name": "Platform_32_GoalDeck",
+      "minX": 303.2,
+      "maxX": 323.2,
+      "top": 46.7
+    }
+  ],
+  "objects": [
+    {
+      "name": "ElectricBarrier_02",
+      "type": "HazardDamage",
+      "x": 277.45,
+      "y": 46.5,
+      "minX": 277.175018,
+      "maxX": 277.725,
+      "minY": 45.5,
+      "maxY": 47.5
+    },
+    {
+      "name": "ElectricBarrier",
+      "type": "HazardDamage",
+      "x": 15.05,
+      "y": 42.5,
+      "minX": 14.7750006,
+      "maxX": 15.325,
+      "minY": 41.5,
+      "maxY": 43.5
+    },
+    {
+      "name": "MovingHorizontalHazard",
+      "type": "HazardDamage",
+      "x": -6.7,
+      "y": 42.15,
+      "minX": -7.35,
+      "maxX": -6.04999971,
+      "minY": 41.5,
+      "maxY": 42.8000031
+    },
+    {
+      "name": "PatrolBot_04",
+      "type": "HazardDamage",
+      "x": 251.7,
+      "y": 46.1,
+      "minX": 251.099991,
+      "maxX": 252.3,
+      "minY": 45.5,
+      "maxY": 46.6999969
+    },
+    {
+      "name": "MovingHorizontalHazard_02",
+      "type": "HazardDamage",
+      "x": 157.7,
+      "y": 42.95,
+      "minX": 157.05,
+      "maxX": 158.349991,
+      "minY": 42.3,
+      "maxY": 43.6000023
+    },
+    {
+      "name": "PatrolBot_02",
+      "type": "HazardDamage",
+      "x": 51.3,
+      "y": 42.1,
+      "minX": 50.7,
+      "maxX": 51.8999977,
+      "minY": 41.5,
+      "maxY": 42.6999969
+    },
+    {
+      "name": "StaticSpikes",
+      "type": "HazardDamage",
+      "x": -89.7,
+      "y": 39.6,
+      "minX": -91.2,
+      "maxX": -88.2,
+      "minY": 39.1,
+      "maxY": 40.1
+    },
+    {
+      "name": "StaticSpikes_03",
+      "type": "HazardDamage",
+      "x": 200.7,
+      "y": 42.8,
+      "minX": 199.2,
+      "maxX": 202.2,
+      "minY": 42.3,
+      "maxY": 43.3
+    },
+    {
+      "name": "PatrolBot_02",
+      "type": "PatrolEnemy",
+      "x": 51.3,
+      "y": 42.1,
+      "minX": 50.7,
+      "maxX": 51.8999977,
+      "minY": 41.5,
+      "maxY": 42.6999969
+    },
+    {
+      "name": "StaticSpikes_05_Final",
+      "type": "HazardDamage",
+      "x": 260.7,
+      "y": 46.0,
+      "minX": 259.2,
+      "maxX": 262.2,
+      "minY": 45.5,
+      "maxY": 46.5
+    },
+    {
+      "name": "PatrolBot_03",
+      "type": "HazardDamage",
+      "x": 177.7,
+      "y": 42.8999977,
+      "minX": 177.099991,
+      "maxX": 178.3,
+      "minY": 42.3,
+      "maxY": 43.4999962
+    },
+    {
+      "name": "PatrolBot",
+      "type": "PatrolEnemy",
+      "x": -70.7,
+      "y": 39.6999969,
+      "minX": -71.2999954,
+      "maxX": -70.1,
+      "minY": 39.1,
+      "maxY": 40.2999954
+    },
+    {
+      "name": "StaticSpikes_04_Combat",
+      "type": "HazardDamage",
+      "x": 186.7,
+      "y": 42.8,
+      "minX": 185.2,
+      "maxX": 188.2,
+      "minY": 42.3,
+      "maxY": 43.3
+    },
+    {
+      "name": "PatrolBot_03",
+      "type": "PatrolEnemy",
+      "x": 177.7,
+      "y": 42.8999977,
+      "minX": 177.099991,
+      "maxX": 178.3,
+      "minY": 42.3,
+      "maxY": 43.4999962
+    },
+    {
+      "name": "PatrolBot",
+      "type": "HazardDamage",
+      "x": -70.7,
+      "y": 39.6999969,
+      "minX": -71.2999954,
+      "maxX": -70.1,
+      "minY": 39.1,
+      "maxY": 40.2999954
+    },
+    {
+      "name": "PatrolBot_04",
+      "type": "PatrolEnemy",
+      "x": 251.7,
+      "y": 46.1,
+      "minX": 251.099991,
+      "maxX": 252.3,
+      "minY": 45.5,
+      "maxY": 46.6999969
+    },
+    {
+      "name": "StaticSpikes_02",
+      "type": "HazardDamage",
+      "x": 80.3,
+      "y": 40.0,
+      "minX": 78.8,
+      "maxX": 81.8,
+      "minY": 39.5,
+      "maxY": 40.5
+    }
+  ]
+}

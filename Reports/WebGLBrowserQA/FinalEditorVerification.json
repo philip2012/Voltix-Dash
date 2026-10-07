@@ -1,0 +1,17 @@
+{
+  "utc": "2026-10-06T11:48:10.4524800Z",
+  "editMode": true,
+  "compiling": false,
+  "activeScene": "Assets/Scenes/Level01.unity",
+  "template": "PROJECT:Voltix",
+  "scenes": [
+    {
+      "index": 0,
+      "path": "Assets/Scenes/MainMenu.unity"
+    },
+    {
+      "index": 1,
+      "path": "Assets/Scenes/Level01.unity"
+    }
+  ]
+}

@@ -1,0 +1,555 @@
+{
+  "files": [
+    {
+      "category": "modified_project",
+      "path": "ProjectSettings/ProjectSettings.asset",
+      "bytes": 20686
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates.meta",
+      "bytes": 172
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix.meta",
+      "bytes": 172
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData.meta",
+      "bytes": 172
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/MemoryProfiler.png",
+      "bytes": 665
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/MemoryProfiler.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/favicon.ico",
+      "bytes": 2305
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/favicon.ico.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/fullscreen-button.png",
+      "bytes": 175
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/fullscreen-button.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-empty-dark.png",
+      "bytes": 96
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-empty-dark.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-empty-light.png",
+      "bytes": 109
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-empty-light.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-full-dark.png",
+      "bytes": 74
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-full-dark.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-full-light.png",
+      "bytes": 84
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-full-light.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/style.css",
+      "bytes": 1576
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/style.css.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-dark.png",
+      "bytes": 3042
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-dark.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-light.png",
+      "bytes": 3077
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-light.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-title-footer.png",
+      "bytes": 1151
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-title-footer.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/webmemd-icon.png",
+      "bytes": 1670
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/TemplateData/webmemd-icon.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/index.html",
+      "bytes": 9744
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/index.html.meta",
+      "bytes": 155
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/thumbnail.png",
+      "bytes": 5256
+    },
+    {
+      "category": "created_project",
+      "path": "Assets/WebGLTemplates/Voltix/thumbnail.png.meta",
+      "bytes": 155
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/Build/WebGL.data.br",
+      "bytes": 4488450
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/Build/WebGL.framework.js.br",
+      "bytes": 71964
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/Build/WebGL.loader.js",
+      "bytes": 26983
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/Build/WebGL.wasm.br",
+      "bytes": 8676980
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/MemoryProfiler.png",
+      "bytes": 665
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/favicon.ico",
+      "bytes": 2305
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/fullscreen-button.png",
+      "bytes": 175
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/progress-bar-empty-dark.png",
+      "bytes": 96
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/progress-bar-empty-light.png",
+      "bytes": 109
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/progress-bar-full-dark.png",
+      "bytes": 74
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/progress-bar-full-light.png",
+      "bytes": 84
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/style.css",
+      "bytes": 1448
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/unity-logo-dark.png",
+      "bytes": 3042
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/unity-logo-light.png",
+      "bytes": 3077
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/unity-logo-title-footer.png",
+      "bytes": 1151
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/TemplateData/webmemd-icon.png",
+      "bytes": 1670
+    },
+    {
+      "category": "generated_build",
+      "path": "Builds/WebGL/index.html",
+      "bytes": 6113
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/AutomaticBuildSerialization.diff",
+      "bytes": 5649
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserConsole.json",
+      "bytes": 710
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791284068.json",
+      "bytes": 2190006
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791284226.json",
+      "bytes": 2534502
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791284556.json",
+      "bytes": 4600688
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791284590.json",
+      "bytes": 5131874
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791284609.json",
+      "bytes": 5424667
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791284616.json",
+      "bytes": 5529684
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791284625.json",
+      "bytes": 5676776
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791284653.json",
+      "bytes": 6111621
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791285008.json",
+      "bytes": 241807
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791285173.json",
+      "bytes": 3242774
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791285479.json",
+      "bytes": 5410232
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791285490.json",
+      "bytes": 208498
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791285543.json",
+      "bytes": 1150438
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791285614.json",
+      "bytes": 149065
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791285693.json",
+      "bytes": 149418
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791285755.json",
+      "bytes": 134073
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286372.json",
+      "bytes": 864319
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286469.json",
+      "bytes": 1544789
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286555.json",
+      "bytes": 3038173
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286580.json",
+      "bytes": 510103
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286717.json",
+      "bytes": 3090803
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286741.json",
+      "bytes": 3507492
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286756.json",
+      "bytes": 121945
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286808.json",
+      "bytes": 1058511
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BrowserMetrics-1791286883.json",
+      "bytes": 645374
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/BuildSizesAndHeaders.json",
+      "bytes": 3307
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/EditorInputRoute.json",
+      "bytes": 4109
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/FinalBuildInventory.json",
+      "bytes": 3061
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/FinalEditorVerification.json",
+      "bytes": 334
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/FinalHTTPHeaders.json",
+      "bytes": 1863
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/HTTPRequests.jsonl",
+      "bytes": 43315
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/InvalidInputReplayNotes.txt",
+      "bytes": 459
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/LevelGeometry.json",
+      "bytes": 7072
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/PerformanceAnalysis.json",
+      "bytes": 2889
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/ProjectAfter.json",
+      "bytes": 41315
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/ProjectBefore.json",
+      "bytes": 37178
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/ProjectChanges.json",
+      "bytes": 2194
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/QAReport.md",
+      "bytes": 14165
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/RecordInput.cs.txt",
+      "bytes": 5265
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/StationaryHazardObservation.json",
+      "bytes": 962
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/UnityBuildReport-Rebuilt.json",
+      "bytes": 421018
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/UnityBuildReport.json",
+      "bytes": 432001
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/adaptive.js",
+      "bytes": 4752
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/analyze_metrics.py",
+      "bytes": 2171
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/browser-proof-1791285016227.jpg",
+      "bytes": 38134
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/browser-proof-1791286476791.jpg",
+      "bytes": 54095
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/browser-proof-1791286718210.jpg",
+      "bytes": 54911
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/browser-proof-1791287009463.jpg",
+      "bytes": 24369
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/capture-1791284556538.png",
+      "bytes": 13676
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/capture-1791284633154.png",
+      "bytes": 13676
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/create_harness.py",
+      "bytes": 2010
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/framework-inspection.txt",
+      "bytes": 13039
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/harness.js",
+      "bytes": 7761
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/input-replay-recorded.json",
+      "bytes": 11943
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/input-replay.json",
+      "bytes": 31464
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/qa.html",
+      "bytes": 7522
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/serve_webgl.py",
+      "bytes": 2594
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/ArtifactManifest.json",
+      "bytes": null
+    },
+    {
+      "category": "generated_qa",
+      "path": "Reports/WebGLBrowserQA/ArtifactManifest.md",
+      "bytes": null
+    }
+  ],
+  "note": "Manifest files list themselves without size. HTTPRequests.jsonl continues to append while server runs. Build output is ignored by git. No generated QA artifact is a production gameplay script."
+}

@@ -1,0 +1,39 @@
+{
+  "modified": [
+    "ProjectSettings/ProjectSettings.asset"
+  ],
+  "created": [
+    "Assets/WebGLTemplates.meta",
+    "Assets/WebGLTemplates/Voltix.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/MemoryProfiler.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/MemoryProfiler.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/favicon.ico",
+    "Assets/WebGLTemplates/Voltix/TemplateData/favicon.ico.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/fullscreen-button.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/fullscreen-button.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-empty-dark.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-empty-dark.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-empty-light.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-empty-light.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-full-dark.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-full-dark.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-full-light.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/progress-bar-full-light.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/style.css",
+    "Assets/WebGLTemplates/Voltix/TemplateData/style.css.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-dark.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-dark.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-light.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-light.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-title-footer.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/unity-logo-title-footer.png.meta",
+    "Assets/WebGLTemplates/Voltix/TemplateData/webmemd-icon.png",
+    "Assets/WebGLTemplates/Voltix/TemplateData/webmemd-icon.png.meta",
+    "Assets/WebGLTemplates/Voltix/index.html",
+    "Assets/WebGLTemplates/Voltix/index.html.meta",
+    "Assets/WebGLTemplates/Voltix/thumbnail.png",
+    "Assets/WebGLTemplates/Voltix/thumbnail.png.meta"
+  ],
+  "deleted": []
+}

@@ -1,0 +1,64 @@
+[
+  {
+    "file": "WebGL.data.br",
+    "status": 200,
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Tue, 06 Oct 2026 11:42:02 GMT",
+      "Content-type": "application/octet-stream",
+      "Content-Length": "4488450",
+      "Last-Modified": "Tue, 06 Oct 2026 11:08:57 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "wireBytes": 4488450
+  },
+  {
+    "file": "WebGL.framework.js.br",
+    "status": 200,
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Tue, 06 Oct 2026 11:42:02 GMT",
+      "Content-type": "application/javascript",
+      "Content-Length": "71964",
+      "Last-Modified": "Tue, 06 Oct 2026 10:46:30 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "wireBytes": 71964
+  },
+  {
+    "file": "WebGL.loader.js",
+    "status": 200,
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Tue, 06 Oct 2026 11:42:02 GMT",
+      "Content-type": "application/javascript",
+      "Content-Length": "26983",
+      "Last-Modified": "Tue, 06 Oct 2026 10:46:30 GMT",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "wireBytes": 26983
+  },
+  {
+    "file": "WebGL.wasm.br",
+    "status": 200,
+    "headers": {
+      "Server": "SimpleHTTP/0.6 Python/3.14.7",
+      "Date": "Tue, 06 Oct 2026 11:42:02 GMT",
+      "Content-type": "application/wasm",
+      "Content-Length": "8676980",
+      "Last-Modified": "Tue, 06 Oct 2026 10:46:30 GMT",
+      "Content-Encoding": "br",
+      "Vary": "Accept-Encoding",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff"
+    },
+    "wireBytes": 8676980
+  }
+]

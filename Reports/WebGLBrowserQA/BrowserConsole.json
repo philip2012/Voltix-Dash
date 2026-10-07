@@ -1,0 +1,13 @@
+{
+  "browser": "Codex In-app Browser / Chromium 154.0.0.0 on macOS",
+  "finalErrorQuery": [],
+  "uniqueWarnings": [
+    {
+      "message": "Shader 'Hidden/Universal Render Pipeline/Edge Adaptive Spatial Upsampling' is not supported (in 'Blit FSR Upscaling'). PostProcessing render passes will not execute.",
+      "occurrence": "Once on engine initialization for each page load, not every scene reload.",
+      "impact": "No visible failure observed. Level01 camera post-processing is disabled and render scale is 1. No renderer configuration change was justified."
+    }
+  ],
+  "unityFinalErrors": 0,
+  "unityBuildWarning": "Existing CS0618: ContactFilter2D.NoFilter() obsolete in PlayerCombat; unchanged."
+}

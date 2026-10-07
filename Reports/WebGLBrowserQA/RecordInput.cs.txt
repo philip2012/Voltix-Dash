@@ -1,0 +1,28 @@
+Application.runInBackground=true;Time.timeScale=.2f;UnityEditorInternal.ProfilerDriver.enabled=false;
+var original=UnityEngine.LowLevel.PlayerLoop.GetCurrentPlayerLoop();
+Func<string,Type> type=n=>Type.GetType(n+", Assembly-CSharp",true);
+var flags=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;
+GameObject p=null; Rigidbody2D rb=null; Component movement=null,combat=null,health=null,manager=null; Transform ground=null;
+BoxCollider2D[] platforms=null;Collider2D[] hazards=null;Component[] bots=null;
+var commands=new System.Collections.Generic.List<object>();var route=new System.Collections.Generic.List<object>();
+int dir=-1;float begin=0,lastJump=-10,lastAttack=-10;bool done=false;float nextSpaceUp=-1,nextAttackUp=-1;Action<float> jump=null;Action<bool> move=null;Func<bool> attack=null;Func<bool> complete=null;int lastPlatform=-1;
+Action<string,bool,float> record=(code,down,t)=>commands.Add(new{t=t,code=code,down=down});
+Action finish=()=>{if(done)return;done=true;Time.timeScale=1;UnityEngine.LowLevel.PlayerLoop.SetPlayerLoop(original);commands.Add(new{t=Time.time-begin,code="KeyD",down=false});System.IO.File.WriteAllText("Reports/WebGLBrowserQA/input-replay.json",Newtonsoft.Json.JsonConvert.SerializeObject(commands));System.IO.File.WriteAllText("Reports/WebGLBrowserQA/EditorInputRoute.json",Newtonsoft.Json.JsonConvert.SerializeObject(route));UnityEditor.SessionState.SetString("BrowserInputRecording","finished "+(Time.time-begin));};
+Action driver=()=>{try{
+ if(done)return;
+ if(p==null){p=GameObject.Find("Player");if(p==null)return;rb=p.GetComponent<Rigidbody2D>();movement=p.GetComponent(type("PlayerMovement"));combat=p.GetComponent(type("PlayerCombat"));health=p.GetComponent(type("PlayerHealth"));manager=(Component)UnityEngine.Object.FindFirstObjectByType(type("LevelManager"));ground=p.transform.Find("GroundCheck");platforms=GameObject.Find("Environment/Platforms").GetComponentsInChildren<BoxCollider2D>().OrderBy(x=>x.bounds.min.x).ToArray();hazards=GameObject.Find("Hazards").GetComponentsInChildren<Collider2D>();bots=GameObject.Find("Enemies").GetComponentsInChildren(type("EnemyHealth")).Cast<Component>().ToArray();begin=Time.time;
+ var obj=System.Linq.Expressions.Expression.Constant(movement);var val=System.Linq.Expressions.Expression.Parameter(typeof(float));jump=System.Linq.Expressions.Expression.Lambda<Action<float>>(System.Linq.Expressions.Expression.Assign(System.Linq.Expressions.Expression.Field(obj,"jumpBufferCounter"),val),val).Compile();move=right=>movement.GetType().GetField("moveInput",flags).SetValue(movement,right?Vector2.right:Vector2.zero);attack=(Func<bool>)Delegate.CreateDelegate(typeof(Func<bool>),combat,combat.GetType().GetMethod("TryAttack"));complete=(Func<bool>)Delegate.CreateDelegate(typeof(Func<bool>),manager,manager.GetType().GetProperty("IsComplete").GetGetMethod());}
+ float t=Time.time-begin;if(complete()||t>85){finish();return;}
+ if(nextSpaceUp>=0&&t>=nextSpaceUp){record("Space",false,t);nextSpaceUp=-1;}
+ if(nextAttackUp>=0&&t>=nextAttackUp){record("KeyJ",false,t);nextAttackUp=-1;}
+ var pos=rb.position;bool grounded=rb.linearVelocity.y<=.01f&&Physics2D.OverlapCircle(ground.position,.15f,8)!=null;int platform=-1;for(int i=0;i<platforms.Length;i++){var b=platforms[i].bounds;if(pos.x>=b.min.x-.3f&&pos.x<=b.max.x+.3f&&Mathf.Abs(pos.y-1-b.max.y)<.3f){platform=i;break;}}
+ if(grounded&&platform!=lastPlatform){route.Add(new{t=t,x=pos.x,y=pos.y,platform=platform+1});lastPlatform=platform;}
+ bool stop=false,hit=false;foreach(var b in bots){if(b==null||!b.gameObject.activeInHierarchy)continue;float dx=b.transform.position.x-pos.x;if(dx>0&&dx<3&&Mathf.Abs(b.transform.position.y-pos.y)<1.4f)stop=true;var box=b.GetComponent<Collider2D>().bounds;if(box.max.x>=pos.x&&box.min.x<=pos.x+1.4f&&box.max.y>=pos.y-.75f&&box.min.y<=pos.y+.75f)hit=true;}
+ int want=stop?0:1;move(want==1);if(dir!=want){record("KeyD",want==1,t);dir=want;}
+ bool j=grounded&&platform>=0&&platform<platforms.Length-1&&pos.x>platforms[platform].bounds.max.x-1.15f;
+ if(grounded)foreach(var h in hazards){if(!h.name.StartsWith("StaticSpikes")&&!h.name.StartsWith("MovingHorizontalHazard"))continue;float dx=h.bounds.min.x-pos.x;float trigger=h.name.StartsWith("StaticSpikes")?1.65f:2.45f;if(dx>0&&dx<trigger&&Mathf.Abs(h.bounds.min.y-(pos.y-1))<.25f)j=true;}
+ if(j&&t-lastJump>.42f){if(nextSpaceUp>=0)record("Space",false,t-.025f);jump(.12f+Time.deltaTime);record("Space",true,t);nextSpaceUp=t+.76f;lastJump=t;route.Add(new{t=t,x=pos.x,y=pos.y,jump=true});}
+ if(hit&&t-lastAttack>.36f){if(attack()){record("KeyJ",true,t);nextAttackUp=t+.03f;lastAttack=t;}}
+ UnityEditor.SessionState.SetString("BrowserInputRecording",t.ToString("F1")+"s x="+pos.x.ToString("F1"));
+}catch(Exception e){UnityEditor.SessionState.SetString("BrowserInputRecording",e.ToString());finish();}};
+var loop=original;var list=loop.subSystemList.ToList();list.Insert(1,new UnityEngine.LowLevel.PlayerLoopSystem{type=typeof(object),updateDelegate=()=>driver()});loop.subSystemList=list.ToArray();UnityEngine.LowLevel.PlayerLoop.SetPlayerLoop(loop);UnityEngine.SceneManagement.SceneManager.LoadScene("Assets/Scenes/Level01.unity");return "Recording input timeline for browser replay; no project scripts changed";
