@@ -1,0 +1,18 @@
+[
+  {
+    "platform": "Lift_Intro_Horizontal",
+    "maxRelativeXError": 0.0,
+    "maxRelativeYError": 0.0,
+    "riderY": 20.205,
+    "platformY": 18.95,
+    "velocityY": 0.0
+  },
+  {
+    "platform": "Lift_Intro_Vertical",
+    "maxRelativeXError": 0.0,
+    "maxRelativeYError": 0.0340309143,
+    "riderY": 20.6447887,
+    "platformY": 19.3900089,
+    "velocityY": -2.79998875
+  }
+]

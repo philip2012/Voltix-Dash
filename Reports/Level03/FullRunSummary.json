@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "route": "main",
+  "elapsed": 123.741257,
+  "platformIndex": 60,
+  "platform": "ExitDeck",
+  "finalHP": 2,
+  "deaths": 0,
+  "score": 1100,
+  "lowestPlayerY": 1.004936,
+  "highestPlayerY": 53.3512421,
+  "cameraMinX": 8.888889,
+  "cameraMaxX": 823.5111,
+  "cameraMinY": 1.5,
+  "cameraMaxY": 53.0740433
+}

@@ -1,0 +1,36 @@
+Func<string,Type> type=n=>Type.GetType(n+", Assembly-CSharp");var flags=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;
+var player=GameObject.Find("Player");var rb=player.GetComponent<Rigidbody2D>();var health=player.GetComponent(type("PlayerHealth"));var move=player.GetComponent(type("PlayerMovement"));var lm=GameObject.Find("GameManager").GetComponent(type("LevelManager"));var pause=GameObject.Find("GameManager").GetComponent(type("LevelPause"));var sentry=GameObject.Find("Sentry_Intro").GetComponent(type("SentryTurret"));var prefab=AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Enemies/EnergyProjectile.prefab");
+Func<Component,string,object> value=(c,n)=>c.GetType().GetProperty(n).GetValue(c,null);Action<float,float> place=(x,y)=>{rb.position=new Vector2(x,y);player.transform.position=rb.position;rb.linearVelocity=Vector2.zero;move.GetType().GetField("moveInput",flags).SetValue(move,Vector2.zero);Physics2D.SyncTransforms();};
+GameObject projectile=null;Vector2 before=Vector2.zero,velocityBefore=Vector2.zero;int stage=-1,initialShots=0;float start=0;double wall=0;bool dodged=false;var results=new Newtonsoft.Json.Linq.JArray();var shotTimes=new Newtonsoft.Json.Linq.JArray();Action<Vector3> onFire=p=>shotTimes.Add(Time.time);type("SentryTurret").GetEvent("Fired").AddEventHandler(null,onFire);
+Action<string,object> record=(name,data)=>{results.Add(Newtonsoft.Json.Linq.JObject.FromObject(new{name=name,data=data}));System.IO.File.WriteAllText("Reports/Level03/ExtendedQA.json",results.ToString());};
+Func<float,float,GameObject> spawn=(x,y)=>{var g=UnityEngine.Object.Instantiate(prefab,new Vector3(x,y,0),Quaternion.identity);var c=g.GetComponent(type("EnergyProjectile"));c.GetType().GetMethod("Initialize").Invoke(c,new object[]{null,Vector2.right});return g;};
+var original=UnityEngine.LowLevel.PlayerLoop.GetCurrentPlayerLoop();Action<PlayModeStateChange> exit=null;Action restore=()=>{UnityEngine.LowLevel.PlayerLoop.SetPlayerLoop(original);EditorApplication.playModeStateChanged-=exit;type("SentryTurret").GetEvent("Fired").RemoveEventHandler(null,onFire);};exit=s=>{if(s==PlayModeStateChange.ExitingPlayMode)restore();};EditorApplication.playModeStateChanged+=exit;
+Action next=()=>{stage++;start=Time.time;wall=EditorApplication.timeSinceStartup;
+ switch(stage){case 0:projectile=spawn(50,70);before=projectile.GetComponent<Rigidbody2D>().position;break;
+ case 1:pause.GetType().GetMethod("Pause").Invoke(pause,null);before=projectile.GetComponent<Rigidbody2D>().position;break;
+ case 2:pause.GetType().GetMethod("Resume").Invoke(pause,null);break;
+ case 3:projectile=spawn(43.8f,.7f);break;
+ case 4:place(184.2f,23.81f);initialShots=(int)value(sentry,"ShotsFired");break;
+ case 5:place(195.2f,23.81f);shotTimes.Clear();initialShots=(int)value(sentry,"ShotsFired");break;
+ case 6:health.GetType().GetMethod("Respawn").Invoke(health,null);place(195.2f,23.81f);dodged=false;break;
+ case 7:place(70.4f,3.2f);break;
+ case 8:pause.GetType().GetMethod("Pause").Invoke(pause,null);before=rb.position;velocityBefore=rb.linearVelocity;break;
+ case 9:pause.GetType().GetMethod("Resume").Invoke(pause,null);break;
+ case 10:health.GetType().GetMethod("Respawn").Invoke(health,null);break;
+ }
+};
+Action step=()=>{try{float elapsed=Time.time-start;
+ switch(stage){case 0:if(elapsed>.3f){record("projectile speed",new{dx=projectile.GetComponent<Rigidbody2D>().position.x-before.x,seconds=elapsed});next();}break;
+ case 1:if(EditorApplication.timeSinceStartup-wall>.8){record("projectile paused",new{dx=projectile.GetComponent<Rigidbody2D>().position.x-before.x,timeScale=Time.timeScale,audioPaused=AudioListener.pause});next();}break;
+ case 2:if(elapsed>2.7f){record("projectile resume/lifetime cleanup",new{destroyed=projectile==null,timeScale=Time.timeScale,audioPaused=AudioListener.pause});next();}break;
+ case 3:if(elapsed>.5f){record("projectile environment hit cleanup",new{destroyed=projectile==null});next();}break;
+ case 4:if(elapsed>1.8f){record("sentry outside range",new{shots=(int)value(sentry,"ShotsFired")-initialShots});next();}break;
+ case 5:if(elapsed>5.6f){record("sentry repeated fire cadence",new{times=shotTimes.DeepClone(),shots=(int)value(sentry,"ShotsFired")-initialShots,hp=value(health,"CurrentHealth"),deaths=value(lm,"DeathCount")});next();}break;
+ case 6:foreach(var c in UnityEngine.Object.FindObjectsByType(type("EnergyProjectile"),FindObjectsSortMode.None).Cast<Component>()){float dx=c.transform.position.x-rb.position.x;if(!dodged&&dx>0&&dx<2.4f){move.GetType().GetField("jumpBufferCounter",flags).SetValue(move,.12f);dodged=true;}}if(elapsed>3.3f){record("normal jump dodges projectile",new{jumpRequested=dodged,hp=value(health,"CurrentHealth")});next();}break;
+ case 7:if(rb.linearVelocity.y>20){next();}else if(elapsed>2){record("launch missing",new{y=rb.position.y,vy=rb.linearVelocity.y});restore();}break;
+ case 8:if(EditorApplication.timeSinceStartup-wall>.8){record("launch pause preserves momentum",new{dx=rb.position.x-before.x,dy=rb.position.y-before.y,dvy=rb.linearVelocity.y-velocityBefore.y});next();}break;
+ case 9:if(elapsed>.4f){record("launch resumes/control retained",new{rise=rb.position.y-before.y,vy=rb.linearVelocity.y,movementEnabled=((Behaviour)move).enabled});next();}break;
+ case 10:if(elapsed>.2f){var audio=GameObject.Find("GameplayAudio").GetComponent(type("GameplayAudio"));var sound=type("GameplayAudio").GetNestedType("Sound");var method=audio.GetType().GetMethod("Play");record("new centralized audio cues",new{launch=method.Invoke(audio,new[]{Enum.Parse(sound,"Launch")}),checkpoint=method.Invoke(audio,new[]{Enum.Parse(sound,"Checkpoint")}),turret=method.Invoke(audio,new[]{Enum.Parse(sound,"TurretFire")}),sources=UnityEngine.Object.FindObjectsByType<AudioSource>(FindObjectsSortMode.None).Length});restore();record("extended fixture complete",new{stage=stage});}break;
+ }
+}catch(Exception e){record("ERROR",e.ToString());restore();}};
+next();var loop=original;loop.subSystemList=(UnityEngine.LowLevel.PlayerLoopSystem[])original.subSystemList.Clone();for(int i=0;i<loop.subSystemList.Length;i++)if(loop.subSystemList[i].type==typeof(UnityEngine.PlayerLoop.Update)){var s=loop.subSystemList[i];var children=new UnityEngine.LowLevel.PlayerLoopSystem[s.subSystemList.Length+1];children[0]=new UnityEngine.LowLevel.PlayerLoopSystem{type=typeof(EditorApplication),updateDelegate=()=>step()};Array.Copy(s.subSystemList,0,children,1,s.subSystemList.Length);s.subSystemList=children;loop.subSystemList[i]=s;}UnityEngine.LowLevel.PlayerLoop.SetPlayerLoop(loop);return "Extended fixtures running";

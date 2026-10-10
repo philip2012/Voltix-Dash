@@ -1,0 +1,6102 @@
+{
+  "scene": "Assets/Scenes/Level03.unity",
+  "editMode": true,
+  "roots": [
+    "Main Camera",
+    "Global Light 2D",
+    "Player",
+    "Environment",
+    "Enemies",
+    "Hazards",
+    "LevelObjects",
+    "CameraBounds"
+  ],
+  "gameObjects": 405,
+  "components": 875,
+  "missingScripts": 0,
+  "platforms": 64,
+  "patrolBots": 5,
+  "sentries": 4,
+  "pads": 9,
+  "movingPlatforms": 7,
+  "checkpoints": 1,
+  "hazards": 9,
+  "audioSources": 3,
+  "audioListeners": 1,
+  "animators": 26,
+  "spriteRenderers": 179,
+  "rigidbodies": 15,
+  "colliders": 95,
+  "decorationColliders": 0,
+  "decorationScripts": 0,
+  "buildScenes": [
+    {
+      "index": 0,
+      "path": "Assets/Scenes/MainMenu.unity",
+      "enabled": true
+    },
+    {
+      "index": 1,
+      "path": "Assets/Scenes/Level01.unity",
+      "enabled": true
+    },
+    {
+      "index": 2,
+      "path": "Assets/Scenes/Level02.unity",
+      "enabled": true
+    },
+    {
+      "index": 3,
+      "path": "Assets/Scenes/Level03.unity",
+      "enabled": true
+    }
+  ],
+  "enemyValues": [
+    {
+      "name": "PatrolBot_Entry",
+      "hp": 1,
+      "score": 100
+    },
+    {
+      "name": "PatrolBot_Ascent",
+      "hp": 1,
+      "score": 100
+    },
+    {
+      "name": "PatrolBot_Chamber_A",
+      "hp": 1,
+      "score": 100
+    },
+    {
+      "name": "PatrolBot_Chamber_B",
+      "hp": 1,
+      "score": 100
+    },
+    {
+      "name": "PatrolBot_Final",
+      "hp": 1,
+      "score": 100
+    },
+    {
+      "name": "Sentry_Intro",
+      "hp": 1,
+      "score": 150
+    },
+    {
+      "name": "Sentry_Ascent",
+      "hp": 1,
+      "score": 150
+    },
+    {
+      "name": "Sentry_Core",
+      "hp": 1,
+      "score": 150
+    },
+    {
+      "name": "Sentry_ChamberOverwatch",
+      "hp": 1,
+      "score": 150
+    }
+  ],
+  "sceneObjects": [
+    {
+      "path": "Main Camera",
+      "x": 8.9,
+      "y": 1.5,
+      "z": -10.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "Camera",
+        "AudioListener",
+        "UniversalAdditionalCameraData",
+        "CameraFollow",
+        "CameraShake"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Global Light 2D",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "Light2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Player",
+      "x": 4.0,
+      "y": 1.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "Rigidbody2D",
+        "CapsuleCollider2D",
+        "PlayerInput",
+        "PlayerMovement",
+        "PlayerHealth",
+        "PlayerCombat",
+        "PlayerAttackVisual",
+        "PlayerFeedback",
+        "PlayerAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Player/GroundCheck",
+      "x": 4.0,
+      "y": 0.100000024,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Player/ElectricSlash",
+      "x": 4.0,
+      "y": 1.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Player/Visual",
+      "x": 4.0,
+      "y": 1.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/PlayerIdle.png",
+          "material": "Assets/Art/Materials/PlayerFlash.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_01",
+      "x": 6.0,
+      "y": -0.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_01/PlatformVisual",
+      "x": 6.0,
+      "y": -0.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_01/PlatformVisual/Body",
+      "x": 6.0,
+      "y": -0.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Entry_01/PlatformVisual/Surface",
+      "x": 6.0,
+      "y": -0.07999998,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Entry_02",
+      "x": 20.2,
+      "y": 0.100000024,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_02/PlatformVisual",
+      "x": 20.2,
+      "y": 0.100000024,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_02/PlatformVisual/Body",
+      "x": 20.2,
+      "y": 0.100000024,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Entry_02/PlatformVisual/Surface",
+      "x": 20.2,
+      "y": 0.520000041,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Entry_03",
+      "x": 35.4,
+      "y": -0.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_03/PlatformVisual",
+      "x": 35.4,
+      "y": -0.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_03/PlatformVisual/Body",
+      "x": 35.4,
+      "y": -0.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Entry_03/PlatformVisual/Surface",
+      "x": 35.4,
+      "y": 0.120000005,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Entry_04",
+      "x": 51.6,
+      "y": 0.700000048,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_04/PlatformVisual",
+      "x": 51.6,
+      "y": 0.700000048,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Entry_04/PlatformVisual/Body",
+      "x": 51.6,
+      "y": 0.700000048,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Entry_04/PlatformVisual/Surface",
+      "x": 51.6,
+      "y": 1.12000012,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Launch_01",
+      "x": 66.8,
+      "y": 0.700000048,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Launch_01/PlatformVisual",
+      "x": 66.8,
+      "y": 0.700000048,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Launch_01/PlatformVisual/Body",
+      "x": 66.8,
+      "y": 0.700000048,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Launch_01/PlatformVisual/Surface",
+      "x": 66.8,
+      "y": 1.12000012,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Launch_02",
+      "x": 81.0,
+      "y": 6.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Launch_02/PlatformVisual",
+      "x": 81.0,
+      "y": 6.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Launch_02/PlatformVisual/Body",
+      "x": 81.0,
+      "y": 6.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Launch_02/PlatformVisual/Surface",
+      "x": 81.0,
+      "y": 7.12,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Launch_03",
+      "x": 95.2,
+      "y": 12.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Launch_03/PlatformVisual",
+      "x": 95.2,
+      "y": 12.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Launch_03/PlatformVisual/Body",
+      "x": 95.2,
+      "y": 12.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Launch_03/PlatformVisual/Surface",
+      "x": 95.2,
+      "y": 13.12,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/LaunchExit",
+      "x": 112.2,
+      "y": 18.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/LaunchExit/PlatformVisual",
+      "x": 112.2,
+      "y": 18.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/LaunchExit/PlatformVisual/Body",
+      "x": 112.2,
+      "y": 18.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/LaunchExit/PlatformVisual/Surface",
+      "x": 112.2,
+      "y": 19.12,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Intro_Horizontal",
+      "x": 127.2,
+      "y": 18.95,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "MovingPlatform",
+        "PlatformEffector2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Intro_Horizontal/PlatformVisual",
+      "x": 127.2,
+      "y": 18.95,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Intro_Horizontal/PlatformVisual/Body",
+      "x": 127.2,
+      "y": 18.95,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Intro_Horizontal/PlatformVisual/Surface",
+      "x": 127.2,
+      "y": 19.12,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/MovingLanding",
+      "x": 146.4,
+      "y": 19.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/MovingLanding/PlatformVisual",
+      "x": 146.4,
+      "y": 19.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/MovingLanding/PlatformVisual/Body",
+      "x": 146.4,
+      "y": 19.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/MovingLanding/PlatformVisual/Surface",
+      "x": 146.4,
+      "y": 19.52,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Intro_Vertical",
+      "x": 159.6,
+      "y": 19.35,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "MovingPlatform",
+        "PlatformEffector2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Intro_Vertical/PlatformVisual",
+      "x": 159.6,
+      "y": 19.35,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Intro_Vertical/PlatformVisual/Body",
+      "x": 159.6,
+      "y": 19.35,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Intro_Vertical/PlatformVisual/Surface",
+      "x": 159.6,
+      "y": 19.52,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/MovingExit",
+      "x": 169.4,
+      "y": 22.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/MovingExit/PlatformVisual",
+      "x": 169.4,
+      "y": 22.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/MovingExit/PlatformVisual/Body",
+      "x": 169.4,
+      "y": 22.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/MovingExit/PlatformVisual/Surface",
+      "x": 169.4,
+      "y": 22.72,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/MovingExit_Step",
+      "x": 178.5,
+      "y": 23.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/MovingExit_Step/PlatformVisual",
+      "x": 178.5,
+      "y": 23.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/MovingExit_Step/PlatformVisual/Body",
+      "x": 178.5,
+      "y": 23.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/MovingExit_Step/PlatformVisual/Surface",
+      "x": 178.5,
+      "y": 23.52,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/IntroRecovery",
+      "x": 131.299988,
+      "y": 11.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/IntroRecovery/PlatformVisual",
+      "x": 131.299988,
+      "y": 11.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/IntroRecovery/PlatformVisual/Body",
+      "x": 131.299988,
+      "y": 11.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/IntroRecovery/PlatformVisual/Surface",
+      "x": 131.299988,
+      "y": 12.12,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/FirstSentryDeck",
+      "x": 195.0,
+      "y": 22.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/FirstSentryDeck/PlatformVisual",
+      "x": 195.0,
+      "y": 22.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/FirstSentryDeck/PlatformVisual/Body",
+      "x": 195.0,
+      "y": 22.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/FirstSentryDeck/PlatformVisual/Surface",
+      "x": 195.0,
+      "y": 22.72,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/FirstSentryCover",
+      "x": 190.5,
+      "y": 23.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/FirstSentryCover/PlatformVisual",
+      "x": 190.5,
+      "y": 23.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/FirstSentryCover/PlatformVisual/Body",
+      "x": 190.5,
+      "y": 23.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/FirstSentryCover/PlatformVisual/Surface",
+      "x": 190.5,
+      "y": 23.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Ascent_01",
+      "x": 215.2,
+      "y": 23.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Ascent_01/PlatformVisual",
+      "x": 215.2,
+      "y": 23.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Ascent_01/PlatformVisual/Body",
+      "x": 215.2,
+      "y": 23.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Ascent_01/PlatformVisual/Surface",
+      "x": 215.2,
+      "y": 23.82,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Ascent_02",
+      "x": 231.4,
+      "y": 29.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Ascent_02/PlatformVisual",
+      "x": 231.4,
+      "y": 29.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Ascent_02/PlatformVisual/Body",
+      "x": 231.4,
+      "y": 29.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Ascent_02/PlatformVisual/Surface",
+      "x": 231.4,
+      "y": 29.82,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Ascent_03",
+      "x": 215.85,
+      "y": 35.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Ascent_03/PlatformVisual",
+      "x": 215.85,
+      "y": 35.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Ascent_03/PlatformVisual/Body",
+      "x": 215.85,
+      "y": 35.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Ascent_03/PlatformVisual/Surface",
+      "x": 215.85,
+      "y": 35.82,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Ascent",
+      "x": 203.3,
+      "y": 35.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "MovingPlatform",
+        "PlatformEffector2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Ascent/PlatformVisual",
+      "x": 203.3,
+      "y": 35.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Ascent/PlatformVisual/Body",
+      "x": 203.3,
+      "y": 35.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Ascent/PlatformVisual/Surface",
+      "x": 203.3,
+      "y": 35.82,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentSentryDeck",
+      "x": 215.85,
+      "y": 40.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentSentryDeck/PlatformVisual",
+      "x": 215.85,
+      "y": 40.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentSentryDeck/PlatformVisual/Body",
+      "x": 215.85,
+      "y": 40.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentSentryDeck/PlatformVisual/Surface",
+      "x": 215.85,
+      "y": 40.42,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentBarrierDeck",
+      "x": 234.6,
+      "y": 40.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentBarrierDeck/PlatformVisual",
+      "x": 234.6,
+      "y": 40.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentBarrierDeck/PlatformVisual/Body",
+      "x": 234.6,
+      "y": 40.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentBarrierDeck/PlatformVisual/Surface",
+      "x": 234.6,
+      "y": 41.32,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentChargeDeck",
+      "x": 245.6,
+      "y": 42.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentChargeDeck/PlatformVisual",
+      "x": 245.6,
+      "y": 42.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentChargeDeck/PlatformVisual/Body",
+      "x": 245.6,
+      "y": 42.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentChargeDeck/PlatformVisual/Surface",
+      "x": 245.6,
+      "y": 42.5199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentSummit",
+      "x": 259.8,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentSummit/PlatformVisual",
+      "x": 259.8,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentSummit/PlatformVisual/Body",
+      "x": 259.8,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentSummit/PlatformVisual/Surface",
+      "x": 259.8,
+      "y": 48.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentExit",
+      "x": 275.0,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentExit/PlatformVisual",
+      "x": 275.0,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentExit/PlatformVisual/Body",
+      "x": 275.0,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentExit/PlatformVisual/Surface",
+      "x": 275.0,
+      "y": 48.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CheckpointDeck",
+      "x": 323.6,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CheckpointDeck/PlatformVisual",
+      "x": 323.6,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CheckpointDeck/PlatformVisual/Body",
+      "x": 323.6,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CheckpointDeck/PlatformVisual/Surface",
+      "x": 323.6,
+      "y": 48.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreApproach",
+      "x": 338.4,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreApproach/PlatformVisual",
+      "x": 338.4,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreApproach/PlatformVisual/Body",
+      "x": 338.4,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreApproach/PlatformVisual/Surface",
+      "x": 338.4,
+      "y": 48.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreApproach_Step",
+      "x": 345.5,
+      "y": 49.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreApproach_Step/PlatformVisual",
+      "x": 345.5,
+      "y": 49.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreApproach_Step/PlatformVisual/Body",
+      "x": 345.5,
+      "y": 49.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreApproach_Step/PlatformVisual/Surface",
+      "x": 345.5,
+      "y": 49.7199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Core_A",
+      "x": 354.0,
+      "y": 48.75,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "MovingPlatform",
+        "PlatformEffector2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Core_A/PlatformVisual",
+      "x": 354.0,
+      "y": 48.75,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Core_A/PlatformVisual/Body",
+      "x": 354.0,
+      "y": 48.75,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Core_A/PlatformVisual/Surface",
+      "x": 354.0,
+      "y": 48.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreIsland",
+      "x": 374.2,
+      "y": 49.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreIsland/PlatformVisual",
+      "x": 374.2,
+      "y": 49.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreIsland/PlatformVisual/Body",
+      "x": 374.2,
+      "y": 49.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreIsland/PlatformVisual/Surface",
+      "x": 374.2,
+      "y": 49.82,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Core_B",
+      "x": 386.4,
+      "y": 49.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "MovingPlatform",
+        "PlatformEffector2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Core_B/PlatformVisual",
+      "x": 386.4,
+      "y": 49.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Core_B/PlatformVisual/Body",
+      "x": 386.4,
+      "y": 49.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Core_B/PlatformVisual/Surface",
+      "x": 386.4,
+      "y": 49.82,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreSentryDeck",
+      "x": 409.6,
+      "y": 49.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreSentryDeck/PlatformVisual",
+      "x": 409.6,
+      "y": 49.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreSentryDeck/PlatformVisual/Body",
+      "x": 409.6,
+      "y": 49.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreSentryDeck/PlatformVisual/Surface",
+      "x": 409.6,
+      "y": 49.82,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreCover",
+      "x": 370.55,
+      "y": 50.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreCover/PlatformVisual",
+      "x": 370.55,
+      "y": 50.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CoreCover/PlatformVisual/Body",
+      "x": 370.55,
+      "y": 50.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CoreCover/PlatformVisual/Surface",
+      "x": 370.55,
+      "y": 51.02,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_01",
+      "x": 426.8,
+      "y": 47.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_01/PlatformVisual",
+      "x": 426.8,
+      "y": 47.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_01/PlatformVisual/Body",
+      "x": 426.8,
+      "y": 47.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_01/PlatformVisual/Surface",
+      "x": 426.8,
+      "y": 48.0199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_02",
+      "x": 441.0,
+      "y": 45.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_02/PlatformVisual",
+      "x": 441.0,
+      "y": 45.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_02/PlatformVisual/Body",
+      "x": 441.0,
+      "y": 45.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_02/PlatformVisual/Surface",
+      "x": 441.0,
+      "y": 46.2199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_03",
+      "x": 455.2,
+      "y": 44.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_03/PlatformVisual",
+      "x": 455.2,
+      "y": 44.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_03/PlatformVisual/Body",
+      "x": 455.2,
+      "y": 44.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_03/PlatformVisual/Surface",
+      "x": 455.2,
+      "y": 44.42,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_04",
+      "x": 470.4,
+      "y": 42.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_04/PlatformVisual",
+      "x": 470.4,
+      "y": 42.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_04/PlatformVisual/Body",
+      "x": 470.4,
+      "y": 42.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_04/PlatformVisual/Surface",
+      "x": 470.4,
+      "y": 42.62,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_05",
+      "x": 489.900024,
+      "y": 40.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_05/PlatformVisual",
+      "x": 489.900024,
+      "y": 40.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_05/PlatformVisual/Body",
+      "x": 489.900024,
+      "y": 40.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_05/PlatformVisual/Surface",
+      "x": 489.900024,
+      "y": 40.82,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_06",
+      "x": 502.8,
+      "y": 38.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_06/PlatformVisual",
+      "x": 502.8,
+      "y": 38.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_06/PlatformVisual/Body",
+      "x": 502.8,
+      "y": 38.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_06/PlatformVisual/Surface",
+      "x": 502.8,
+      "y": 39.0199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_07",
+      "x": 520.0,
+      "y": 39.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_07/PlatformVisual",
+      "x": 520.0,
+      "y": 39.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_07/PlatformVisual/Body",
+      "x": 520.0,
+      "y": 39.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_07/PlatformVisual/Surface",
+      "x": 520.0,
+      "y": 40.0199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_08",
+      "x": 533.300049,
+      "y": 37.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_08/PlatformVisual",
+      "x": 533.300049,
+      "y": 37.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_08/PlatformVisual/Body",
+      "x": 533.300049,
+      "y": 37.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_08/PlatformVisual/Surface",
+      "x": 533.300049,
+      "y": 38.2199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_08_Step",
+      "x": 541.4,
+      "y": 38.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_08_Step/PlatformVisual",
+      "x": 541.4,
+      "y": 38.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_08_Step/PlatformVisual/Body",
+      "x": 541.4,
+      "y": 38.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_08_Step/PlatformVisual/Surface",
+      "x": 541.4,
+      "y": 39.0199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_09",
+      "x": 553.4,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_09/PlatformVisual",
+      "x": 553.4,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_09/PlatformVisual/Body",
+      "x": 553.4,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_09/PlatformVisual/Surface",
+      "x": 553.4,
+      "y": 36.42,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CombatDeck",
+      "x": 580.6,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CombatDeck/PlatformVisual",
+      "x": 580.6,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CombatDeck/PlatformVisual/Body",
+      "x": 580.6,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CombatDeck/PlatformVisual/Surface",
+      "x": 580.6,
+      "y": 36.42,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_01",
+      "x": 604.9,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_01/PlatformVisual",
+      "x": 604.9,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_01/PlatformVisual/Body",
+      "x": 604.9,
+      "y": 36.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_01/PlatformVisual/Surface",
+      "x": 604.9,
+      "y": 36.42,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_01_Step",
+      "x": 615.0,
+      "y": 36.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_01_Step/PlatformVisual",
+      "x": 615.0,
+      "y": 36.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_01_Step/PlatformVisual/Body",
+      "x": 615.0,
+      "y": 36.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_01_Step/PlatformVisual/Surface",
+      "x": 615.0,
+      "y": 37.2199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Final_A",
+      "x": 625.0,
+      "y": 37.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "MovingPlatform",
+        "PlatformEffector2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Final_A/PlatformVisual",
+      "x": 625.0,
+      "y": 37.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Final_A/PlatformVisual/Body",
+      "x": 625.0,
+      "y": 37.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Final_A/PlatformVisual/Surface",
+      "x": 625.0,
+      "y": 37.2199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_02",
+      "x": 642.2,
+      "y": 37.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_02/PlatformVisual",
+      "x": 642.2,
+      "y": 37.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_02/PlatformVisual/Body",
+      "x": 642.2,
+      "y": 37.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_02/PlatformVisual/Surface",
+      "x": 642.2,
+      "y": 38.2199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_03",
+      "x": 656.4,
+      "y": 38.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_03/PlatformVisual",
+      "x": 656.4,
+      "y": 38.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_03/PlatformVisual/Body",
+      "x": 656.4,
+      "y": 38.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_03/PlatformVisual/Surface",
+      "x": 656.4,
+      "y": 39.32,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_04",
+      "x": 672.6,
+      "y": 44.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_04/PlatformVisual",
+      "x": 672.6,
+      "y": 44.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_04/PlatformVisual/Body",
+      "x": 672.6,
+      "y": 44.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_04/PlatformVisual/Surface",
+      "x": 672.6,
+      "y": 44.7199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Final_B",
+      "x": 686.8,
+      "y": 44.55,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "MovingPlatform",
+        "PlatformEffector2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Final_B/PlatformVisual",
+      "x": 686.8,
+      "y": 44.55,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lift_Final_B/PlatformVisual/Body",
+      "x": 686.8,
+      "y": 44.55,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lift_Final_B/PlatformVisual/Surface",
+      "x": 686.8,
+      "y": 44.7199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_05",
+      "x": 704.0,
+      "y": 47.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_05/PlatformVisual",
+      "x": 704.0,
+      "y": 47.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_05/PlatformVisual/Body",
+      "x": 704.0,
+      "y": 47.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_05/PlatformVisual/Surface",
+      "x": 704.0,
+      "y": 47.7199974,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_06",
+      "x": 721.2,
+      "y": 46.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_06/PlatformVisual",
+      "x": 721.2,
+      "y": 46.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_06/PlatformVisual/Body",
+      "x": 721.2,
+      "y": 46.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_06/PlatformVisual/Surface",
+      "x": 721.2,
+      "y": 46.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_07",
+      "x": 743.4,
+      "y": 47.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_07/PlatformVisual",
+      "x": 743.4,
+      "y": 47.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_07/PlatformVisual/Body",
+      "x": 743.4,
+      "y": 47.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_07/PlatformVisual/Surface",
+      "x": 743.4,
+      "y": 48.12,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_08",
+      "x": 760.6,
+      "y": 48.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_08/PlatformVisual",
+      "x": 760.6,
+      "y": 48.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_08/PlatformVisual/Body",
+      "x": 760.6,
+      "y": 48.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_08/PlatformVisual/Surface",
+      "x": 760.6,
+      "y": 49.32,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_09",
+      "x": 775.8,
+      "y": 47.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_09/PlatformVisual",
+      "x": 775.8,
+      "y": 47.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_09/PlatformVisual/Body",
+      "x": 775.8,
+      "y": 47.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_09/PlatformVisual/Surface",
+      "x": 775.8,
+      "y": 48.32,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_10",
+      "x": 791.0,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_10/PlatformVisual",
+      "x": 791.0,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_10/PlatformVisual/Body",
+      "x": 791.0,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_10/PlatformVisual/Surface",
+      "x": 791.0,
+      "y": 49.5199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ExitApproach",
+      "x": 804.2,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ExitApproach/PlatformVisual",
+      "x": 804.2,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ExitApproach/PlatformVisual/Body",
+      "x": 804.2,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ExitApproach/PlatformVisual/Surface",
+      "x": 804.2,
+      "y": 49.5199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ExitDeck",
+      "x": 822.4,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ExitDeck/PlatformVisual",
+      "x": 822.4,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ExitDeck/PlatformVisual/Body",
+      "x": 822.4,
+      "y": 49.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ExitDeck/PlatformVisual/Surface",
+      "x": 822.4,
+      "y": 49.5199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentExit_Second",
+      "x": 290.2,
+      "y": 49.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentExit_Second/PlatformVisual",
+      "x": 290.2,
+      "y": 49.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentExit_Second/PlatformVisual/Body",
+      "x": 290.2,
+      "y": 49.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentExit_Second/PlatformVisual/Surface",
+      "x": 290.2,
+      "y": 49.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentExit_Third",
+      "x": 305.4,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentExit_Third/PlatformVisual",
+      "x": 305.4,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentExit_Third/PlatformVisual/Body",
+      "x": 305.4,
+      "y": 48.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentExit_Third/PlatformVisual/Surface",
+      "x": 305.4,
+      "y": 48.92,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentBarrierDeck_Approach",
+      "x": 227.1,
+      "y": 41.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentBarrierDeck_Approach/PlatformVisual",
+      "x": 227.1,
+      "y": 41.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/AscentBarrierDeck_Approach/PlatformVisual/Body",
+      "x": 227.1,
+      "y": 41.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/AscentBarrierDeck_Approach/PlatformVisual/Surface",
+      "x": 227.1,
+      "y": 42.12,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_05_Approach",
+      "x": 482.400024,
+      "y": 41.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_05_Approach/PlatformVisual",
+      "x": 482.400024,
+      "y": 41.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_05_Approach/PlatformVisual/Body",
+      "x": 482.400024,
+      "y": 41.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_05_Approach/PlatformVisual/Surface",
+      "x": 482.400024,
+      "y": 41.62,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_05_Approach",
+      "x": 695.5,
+      "y": 48.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_05_Approach/PlatformVisual",
+      "x": 695.5,
+      "y": 48.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Final_05_Approach/PlatformVisual/Body",
+      "x": 695.5,
+      "y": 48.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Final_05_Approach/PlatformVisual/Surface",
+      "x": 695.5,
+      "y": 48.5199966,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Background",
+      "x": 416.2,
+      "y": 27.5,
+      "z": 3.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Background.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/RouteCues",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/SectorTitle",
+      "x": 7.0,
+      "y": 4.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/LaunchHint",
+      "x": 65.0,
+      "y": 5.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/LaunchDestination",
+      "x": 75.0,
+      "y": 10.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/MovingHint",
+      "x": 121.0,
+      "y": 23.4,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/RecoveryHint",
+      "x": 128.0,
+      "y": 15.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/SentryHint",
+      "x": 187.0,
+      "y": 27.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/AscentTitle",
+      "x": 211.0,
+      "y": 28.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/CheckpointHint",
+      "x": 316.0,
+      "y": 53.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/CoreTitle",
+      "x": 338.0,
+      "y": 53.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/DescentTitle",
+      "x": 422.0,
+      "y": 52.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/RedirectHint",
+      "x": 500.0,
+      "y": 42.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/ChamberTitle",
+      "x": 567.0,
+      "y": 41.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/FinalTitle",
+      "x": 603.0,
+      "y": 41.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/ExitTitle",
+      "x": 811.0,
+      "y": 54.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "MeshRenderer",
+        "TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_72",
+      "x": 72.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_72",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_96",
+      "x": 96.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_96",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_217",
+      "x": 217.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_217",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_236",
+      "x": 236.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_236",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_352",
+      "x": 352.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_352",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_389",
+      "x": 389.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_389",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_500",
+      "x": 500.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_500",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_590",
+      "x": 590.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_590",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_679",
+      "x": 679.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_679",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorPylon_744",
+      "x": 744.0,
+      "y": 24.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/EnergyBus_744",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorRing_359",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorCore_359",
+      "x": 359.0,
+      "y": 49.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorRing_390",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/ReactorCore_390",
+      "x": 390.0,
+      "y": 49.0,
+      "z": 2.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Intro_1",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Intro_2",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Intro_3",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Recovery",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Ascent_A",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Ascent_B",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Ascent_C",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Redirect",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchTrajectory_LaunchPad_Final",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Guide_Lift_Intro_Horizontal",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Guide_Lift_Intro_Vertical",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Guide_Lift_Ascent",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Guide_Lift_Core_A",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Guide_Lift_Core_B",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Guide_Lift_Final_A",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Guide_Lift_Final_B",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Entry",
+      "x": 35.4,
+      "y": 0.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Entry/Visual",
+      "x": 35.4,
+      "y": 0.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Ascent",
+      "x": 215.7,
+      "y": 36.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Ascent/Visual",
+      "x": 215.7,
+      "y": 36.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Chamber_A",
+      "x": 572.0,
+      "y": 37.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Chamber_A/Visual",
+      "x": 572.0,
+      "y": 37.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Chamber_B",
+      "x": 585.0,
+      "y": 37.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Chamber_B/Visual",
+      "x": 585.0,
+      "y": 37.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Final",
+      "x": 721.2,
+      "y": 47.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Final/Visual",
+      "x": 721.2,
+      "y": 47.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Enemies/Sentry_Intro",
+      "x": 201.0,
+      "y": 23.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "EnemyHealth",
+        "SentryTurret",
+        "SentryPresentation"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/Sentry_Intro/Muzzle",
+      "x": 200.05,
+      "y": 23.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/Sentry_Intro/Visual",
+      "x": 201.0,
+      "y": 23.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/SentryTurret.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Enemies/Sentry_Ascent",
+      "x": 216.7,
+      "y": 41.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "EnemyHealth",
+        "SentryTurret",
+        "SentryPresentation"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/Sentry_Ascent/Muzzle",
+      "x": 215.75,
+      "y": 41.3999977,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/Sentry_Ascent/Visual",
+      "x": 216.7,
+      "y": 41.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/SentryTurret.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Enemies/Sentry_Core",
+      "x": 372.8,
+      "y": 50.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "EnemyHealth",
+        "SentryTurret",
+        "SentryPresentation"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/Sentry_Core/Muzzle",
+      "x": 371.849976,
+      "y": 50.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/Sentry_Core/Visual",
+      "x": 372.8,
+      "y": 50.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/SentryTurret.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Enemies/Sentry_ChamberOverwatch",
+      "x": 594.3,
+      "y": 37.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "EnemyHealth",
+        "SentryTurret",
+        "SentryPresentation"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/Sentry_ChamberOverwatch/Muzzle",
+      "x": 593.35,
+      "y": 37.3999977,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/Sentry_ChamberOverwatch/Visual",
+      "x": 594.3,
+      "y": 37.3,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/SentryTurret.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/spikes_Entry_04",
+      "x": 52.0,
+      "y": 1.7,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/spikes_Entry_04/Spike_1",
+      "x": 51.0,
+      "y": 1.48866677,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/spikes_Entry_04/Spike_2",
+      "x": 52.0,
+      "y": 1.48866677,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/spikes_Entry_04/Spike_3",
+      "x": 53.0,
+      "y": 1.48866677,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/barrier_AscentBarrierDeck",
+      "x": 232.4,
+      "y": 42.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/barrier_AscentBarrierDeck/BarrierField",
+      "x": 232.4,
+      "y": 42.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/barrier_AscentBarrierDeck/ElectricBolt",
+      "x": 232.4,
+      "y": 42.65,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/moving_Descent_03",
+      "x": 455.2,
+      "y": 45.35,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "CircleCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/moving_Descent_03/HazardDiamond",
+      "x": 455.2,
+      "y": 45.35,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/moving_Descent_03/HazardCore",
+      "x": 455.2,
+      "y": 45.35,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/spikes_Descent_04",
+      "x": 470.4,
+      "y": 43.2,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/spikes_Descent_04/Spike_1",
+      "x": 469.4,
+      "y": 42.9886665,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/spikes_Descent_04/Spike_2",
+      "x": 470.4,
+      "y": 42.9886665,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/spikes_Descent_04/Spike_3",
+      "x": 471.4,
+      "y": 42.9886665,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/barrier_Descent_05",
+      "x": 487.0,
+      "y": 42.15,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/barrier_Descent_05/BarrierField",
+      "x": 487.0,
+      "y": 42.15,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/barrier_Descent_05/ElectricBolt",
+      "x": 487.0,
+      "y": 42.15,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/spikes_Final_02",
+      "x": 642.2,
+      "y": 38.8,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/spikes_Final_02/Spike_1",
+      "x": 641.2,
+      "y": 38.588665,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/spikes_Final_02/Spike_2",
+      "x": 642.2,
+      "y": 38.588665,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/spikes_Final_02/Spike_3",
+      "x": 643.2,
+      "y": 38.588665,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/barrier_Final_05",
+      "x": 701.0,
+      "y": 49.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/barrier_Final_05/BarrierField",
+      "x": 701.0,
+      "y": 49.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/barrier_Final_05/ElectricBolt",
+      "x": 701.0,
+      "y": 49.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/moving_Final_07",
+      "x": 743.4,
+      "y": 49.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "CircleCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/moving_Final_07/HazardDiamond",
+      "x": 743.4,
+      "y": 49.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/moving_Final_07/HazardCore",
+      "x": 743.4,
+      "y": 49.05,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/spikes_Final_09",
+      "x": 775.8,
+      "y": 48.9,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/spikes_Final_09/Spike_1",
+      "x": 774.8,
+      "y": 48.6886673,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/spikes_Final_09/Spike_2",
+      "x": 775.8,
+      "y": 48.6886673,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "Hazards/spikes_Final_09/Spike_3",
+      "x": 776.8,
+      "y": 48.6886673,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/GameManager",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "ScoreManager",
+        "LevelManager",
+        "LevelPause"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/HUD",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "UIDocument",
+        "GameHUD",
+        "LevelCompletionUI",
+        "PauseMenuUI"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/GoalExitPortalVisual",
+      "x": 825.4,
+      "y": 51.6,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "BoxCollider2D",
+        "GoalTrigger",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Animation/GoalPortalLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/GameplayFeedback",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "ParticleSystem",
+        "ParticleSystemRenderer",
+        "EnemyDeathFeedback"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/GameplayAudio",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "GameplayAudio",
+        "AudioSource",
+        "AudioSource",
+        "AudioSource"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms",
+      "x": 0.0,
+      "y": 0.0,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Intro_1",
+      "x": 70.4,
+      "y": 1.32,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Intro_1/Visual",
+      "x": 70.4,
+      "y": 1.17000008,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Intro_2",
+      "x": 84.4,
+      "y": 7.32,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Intro_2/Visual",
+      "x": 84.4,
+      "y": 7.17,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Intro_3",
+      "x": 98.6,
+      "y": 13.32,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Intro_3/Visual",
+      "x": 98.6,
+      "y": 13.17,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Recovery",
+      "x": 134.5,
+      "y": 12.32,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Recovery/Visual",
+      "x": 134.5,
+      "y": 12.17,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Ascent_A",
+      "x": 220.2,
+      "y": 24.02,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Ascent_A/Visual",
+      "x": 220.2,
+      "y": 23.87,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Ascent_B",
+      "x": 227.5,
+      "y": 30.02,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Ascent_B/Visual",
+      "x": 227.5,
+      "y": 29.87,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Ascent_C",
+      "x": 248.2,
+      "y": 42.72,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Ascent_C/Visual",
+      "x": 248.2,
+      "y": 42.57,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Redirect",
+      "x": 507.6,
+      "y": 39.22,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Redirect/Visual",
+      "x": 507.6,
+      "y": 39.07,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Final",
+      "x": 660.0,
+      "y": 39.52,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "LaunchPad"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/TraversalMechanisms/LaunchPad_Final/Visual",
+      "x": 660.0,
+      "y": 39.37,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/LaunchPad.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/Checkpoint_Midpoint",
+      "x": 323.2,
+      "y": 50.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Checkpoint"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/Checkpoint_Midpoint/Visual",
+      "x": 323.2,
+      "y": 50.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "Animator"
+      ],
+      "sprites": [
+        {
+          "asset": "Assets/Art/Sprites/Checkpoint.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/Checkpoint_Midpoint/RespawnPoint",
+      "x": 323.2,
+      "y": 50.1,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "CameraBounds",
+      "x": 416.2,
+      "y": 27.5,
+      "z": 0.0,
+      "active": true,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "sprites": []
+    }
+  ]
+}

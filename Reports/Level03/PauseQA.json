@@ -1,0 +1,39 @@
+[
+  {
+    "name": "paused checkpoint state",
+    "data": {
+      "bodyDx": 0.0,
+      "deckDx": 0.0,
+      "animationDelta": 0.0,
+      "timerDelta": 0.0,
+      "hp": 2,
+      "timeScale": 0.0,
+      "audioPaused": true,
+      "movement": false,
+      "attack": false,
+      "checkpoint": true
+    }
+  },
+  {
+    "name": "UI Resume preserves state",
+    "data": {
+      "hp": 2,
+      "timerDelta": 0.30381558248302554,
+      "deckDx": 1.05010986,
+      "movement": true,
+      "timeScale": 1.0,
+      "audioPaused": false
+    }
+  },
+  {
+    "name": "three repeated pause/resume cycles",
+    "data": {
+      "cycles": 3,
+      "timeScale": 1.0,
+      "audioPaused": false,
+      "audioSources": 3,
+      "listeners": 1,
+      "documents": 1
+    }
+  }
+]

@@ -1,0 +1,124 @@
+[
+  {
+    "name": "normal launch",
+    "data": {
+      "launches": 2,
+      "peak": 9.983311,
+      "velocity": 24.2152
+    }
+  },
+  {
+    "name": "repeat launch and control",
+    "data": {
+      "launches": 3,
+      "peak": 9.983311,
+      "x": 77.56541
+    }
+  },
+  {
+    "name": "stationary platform carry",
+    "data": {
+      "platformTravel": -3.8079834,
+      "relativeError": 0.0,
+      "y": 20.21,
+      "hp": 3
+    }
+  },
+  {
+    "name": "walking aboard",
+    "data": {
+      "relativeTravel": 1.94403076
+    }
+  },
+  {
+    "name": "jump off",
+    "data": {
+      "rise": 2.361477,
+      "vy": 0.148287177
+    }
+  },
+  {
+    "name": "landing on moving platform",
+    "data": {
+      "relative": 0.232025146,
+      "y": 20.2049961,
+      "platformTop": 19.2,
+      "vy": 0.0
+    }
+  },
+  {
+    "name": "paused platform",
+    "data": {
+      "dx": 0.0,
+      "timeScale": 0.0
+    }
+  },
+  {
+    "name": "resumed platform",
+    "data": {
+      "dx": 1.3999939,
+      "timeScale": 1.0
+    }
+  },
+  {
+    "name": "sentry front detection/cadence/projectile damage",
+    "data": {
+      "shots": 1,
+      "hp": 2,
+      "projectiles": 0
+    }
+  },
+  {
+    "name": "sentry ignores rear target",
+    "data": {
+      "shots": 0
+    }
+  },
+  {
+    "name": "sentry line of sight blocked",
+    "data": {
+      "shots": 0
+    }
+  },
+  {
+    "name": "sentry melee kill/score once",
+    "data": {
+      "dead": true,
+      "score": 150
+    }
+  },
+  {
+    "name": "checkpoint activates once",
+    "data": {
+      "events": 1,
+      "respawnX": 323.2,
+      "respawnY": 50.1
+    }
+  },
+  {
+    "name": "checkpoint lethal respawn",
+    "data": {
+      "x": 323.2,
+      "y": 50.0049934,
+      "hp": 3,
+      "deaths": 2,
+      "events": 1
+    }
+  },
+  {
+    "name": "checkpoint fall respawn",
+    "data": {
+      "x": 323.2,
+      "y": 50.0049934,
+      "hp": 3,
+      "deaths": 3,
+      "projectiles": 0
+    }
+  },
+  {
+    "name": "fixture complete",
+    "data": {
+      "stage": 16
+    }
+  }
+]

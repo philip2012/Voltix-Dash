@@ -1,0 +1,56 @@
+{
+  "status": "complete",
+  "elapsed": 130.703308,
+  "respawnTransitions": [
+    {
+      "before": {
+        "t": 60.01676,
+        "x": 335.126526,
+        "y": -38.215538,
+        "vx": 0.0,
+        "vy": -26.1772,
+        "grounded": false,
+        "floor": "",
+        "index": 26,
+        "phase": 0,
+        "hp": 3,
+        "deaths": 0,
+        "score": 500,
+        "cameraX": 335.926575,
+        "cameraY": 0.0
+      },
+      "after": {
+        "t": 60.1173172,
+        "x": 323.224,
+        "y": 50.0843,
+        "vx": 1.19999957,
+        "vy": -0.7847997,
+        "grounded": true,
+        "floor": "CheckpointDeck",
+        "index": 26,
+        "phase": 0,
+        "hp": 3,
+        "deaths": 1,
+        "score": 500,
+        "cameraX": 334.3286,
+        "cameraY": 2.47392821
+      }
+    }
+  ],
+  "final": {
+    "t": 130.605316,
+    "x": 823.341736,
+    "y": 50.6049919,
+    "vx": 7.68608,
+    "vy": 0.0,
+    "grounded": true,
+    "floor": "ExitDeck",
+    "index": 60,
+    "phase": 0,
+    "hp": 2,
+    "deaths": 1,
+    "score": 1100,
+    "cameraX": 823.5111,
+    "cameraY": 51.855
+  }
+}

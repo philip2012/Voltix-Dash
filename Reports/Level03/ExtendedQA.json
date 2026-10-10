@@ -1,0 +1,88 @@
+[
+  {
+    "name": "projectile speed",
+    "data": {
+      "dx": 2.37998962,
+      "seconds": 0.3333435
+    }
+  },
+  {
+    "name": "projectile paused",
+    "data": {
+      "dx": 0.0,
+      "timeScale": 0.0,
+      "audioPaused": true
+    }
+  },
+  {
+    "name": "projectile resume/lifetime cleanup",
+    "data": {
+      "destroyed": true,
+      "timeScale": 1.0,
+      "audioPaused": false
+    }
+  },
+  {
+    "name": "projectile environment hit cleanup",
+    "data": {
+      "destroyed": true
+    }
+  },
+  {
+    "name": "sentry outside range",
+    "data": {
+      "shots": 0
+    }
+  },
+  {
+    "name": "sentry repeated fire cadence",
+    "data": {
+      "times": [
+        467.783936,
+        469.284546,
+        470.784637
+      ],
+      "shots": 3,
+      "hp": 3,
+      "deaths": 1
+    }
+  },
+  {
+    "name": "normal jump dodges projectile",
+    "data": {
+      "jumpRequested": true,
+      "hp": 3
+    }
+  },
+  {
+    "name": "launch pause preserves momentum",
+    "data": {
+      "dx": 0.0,
+      "dy": 0.0,
+      "dvy": 0.0
+    }
+  },
+  {
+    "name": "launch resumes/control retained",
+    "data": {
+      "rise": 6.703839,
+      "vy": 9.30400848,
+      "movementEnabled": true
+    }
+  },
+  {
+    "name": "new centralized audio cues",
+    "data": {
+      "launch": true,
+      "checkpoint": true,
+      "turret": true,
+      "sources": 3
+    }
+  },
+  {
+    "name": "extended fixture complete",
+    "data": {
+      "stage": 10
+    }
+  }
+]

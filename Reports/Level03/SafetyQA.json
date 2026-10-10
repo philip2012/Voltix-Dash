@@ -1,0 +1,25 @@
+[
+  {
+    "name": "off-screen sentry suppressed",
+    "data": {
+      "shots": 0
+    }
+  },
+  {
+    "name": "turret body contact harmless",
+    "data": {
+      "hp": 3
+    }
+  },
+  {
+    "name": "intro catch deck recovery",
+    "data": {
+      "passed": true,
+      "x": 141.564163,
+      "y": 20.6302071,
+      "peak": 21.5943432,
+      "seconds": 0.9038696,
+      "hp": 3
+    }
+  }
+]

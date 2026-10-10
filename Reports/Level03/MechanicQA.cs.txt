@@ -1,0 +1,55 @@
+var flags=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;
+Func<string,Type> type=n=>Type.GetType(n+", Assembly-CSharp");
+var player=GameObject.Find("Player");var rb=player.GetComponent<Rigidbody2D>();var move=player.GetComponent(type("PlayerMovement"));var health=player.GetComponent(type("PlayerHealth"));var combat=player.GetComponent(type("PlayerCombat"));var manager=GameObject.Find("GameManager").GetComponent(type("LevelManager"));var pause=GameObject.Find("GameManager").GetComponent(type("LevelPause"));
+Action<float> input=x=>move.GetType().GetField("moveInput",flags).SetValue(move,new Vector2(x,0));
+Action<float,float> place=(x,y)=>{rb.position=new Vector2(x,y);player.transform.position=new Vector3(x,y,0);rb.linearVelocity=Vector2.zero;Physics2D.SyncTransforms();input(0);};
+Func<Component,string,object> prop=(c,n)=>c.GetType().GetProperty(n).GetValue(c,null);
+var results=new Newtonsoft.Json.Linq.JArray();int stage=-1;float start=0,peak=0;double wall=0;Vector2 before=Vector2.zero;float relative=0;int initialShots=0;var pad=GameObject.Find("LaunchPad_Intro_1");var lift=GameObject.Find("Lift_Intro_Horizontal");var liftBody=lift.GetComponent<Rigidbody2D>();var sentry=GameObject.Find("Sentry_Intro");var sentryComponent=sentry.GetComponent(type("SentryTurret"));GameObject cover=null;int launches=0,activated=0;
+Action<Vector3> onLaunch=p=>launches++;Action<Vector3> onCheckpoint=p=>activated++;
+type("LaunchPad").GetEvent("Launched").AddEventHandler(null,onLaunch);type("Checkpoint").GetEvent("Activated").AddEventHandler(null,onCheckpoint);
+Action<string,object> record=(name,data)=>{results.Add(Newtonsoft.Json.Linq.JObject.FromObject(new{name=name,data=data}));System.IO.File.WriteAllText("Reports/Level03/MechanicQA.json",results.ToString());};
+Application.runInBackground=true;UnityEditorInternal.InternalEditorUtility.OnGameViewFocus(true);typeof(EditorApplication).GetProperty("isFocused",System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic).SetValue(null,true,null);
+var original=UnityEngine.LowLevel.PlayerLoop.GetCurrentPlayerLoop();Action<PlayModeStateChange> exit=null;Action restore=()=>{UnityEngine.LowLevel.PlayerLoop.SetPlayerLoop(original);if(exit!=null)EditorApplication.playModeStateChanged-=exit;type("LaunchPad").GetEvent("Launched").RemoveEventHandler(null,onLaunch);type("Checkpoint").GetEvent("Activated").RemoveEventHandler(null,onCheckpoint);input(0);};exit=s=>{if(s==PlayModeStateChange.ExitingPlayMode)restore();};EditorApplication.playModeStateChanged+=exit;
+Action next=()=>{stage++;start=Time.time;wall=EditorApplication.timeSinceStartup;
+ switch(stage){
+ case 0:place(70.4f,3.2f);peak=0;break;
+ case 1:place(70.4f,3.2f);peak=0;break;
+ case 2:place(liftBody.position.x,20.21f);relative=rb.position.x-liftBody.position.x;before=liftBody.position;break;
+ case 3:input(1);relative=rb.position.x-liftBody.position.x;break;
+ case 4:move.GetType().GetField("jumpBufferCounter",flags).SetValue(move,.12f);peak=rb.position.y;break;
+ case 5:place(liftBody.position.x,23.3f);break;
+ case 6:pause.GetType().GetMethod("Pause").Invoke(pause,null);before=liftBody.position;break;
+ case 7:pause.GetType().GetMethod("Resume").Invoke(pause,null);before=liftBody.position;break;
+ case 8:place(195.2f,23.81f);initialShots=(int)prop(sentryComponent,"ShotsFired");break;
+ case 9:place(203.5f,23.81f);initialShots=(int)prop(sentryComponent,"ShotsFired");break;
+ case 10:place(195.2f,23.81f);cover=new GameObject("QA_SentryCover");cover.layer=3;cover.transform.position=new Vector3(198,24.5f,0);cover.AddComponent<BoxCollider2D>().size=new Vector2(1,4);initialShots=(int)prop(sentryComponent,"ShotsFired");break;
+ case 11:UnityEngine.Object.Destroy(cover);place(199.2f,23.81f);combat.GetType().GetField("facingDirection",flags).SetValue(combat,1);combat.GetType().GetMethod("TryAttack").Invoke(combat,null);sentry.GetComponent(type("EnemyHealth")).GetType().GetMethod("TakeDamage").Invoke(sentry.GetComponent(type("EnemyHealth")),new object[]{1});break;
+ case 12:health.GetType().GetMethod("Respawn").Invoke(health,null);place(323.2f,50.11f);break;
+ case 13:health.GetType().GetMethod("TakeDamage").Invoke(health,new object[]{1});break;
+ case 14:health.GetType().GetMethod("TakeDamage").Invoke(health,new object[]{1});break;
+ case 15:health.GetType().GetMethod("TakeDamage").Invoke(health,new object[]{1});break;
+ case 16:place(500,-42);break;
+ }
+};
+Action step=()=>{try{
+ float elapsed=Time.time-start;
+ switch(stage){
+ case 0:peak=Mathf.Max(peak,rb.position.y);if(elapsed>1.4f){record("normal launch",new{launches=launches,peak=peak,velocity=rb.linearVelocity.y});next();}break;
+ case 1:peak=Mathf.Max(peak,rb.position.y);if(launches>=2&&elapsed>.35f)input(1);if(elapsed>1.4f){record("repeat launch and control",new{launches=launches,peak=peak,x=rb.position.x});next();}break;
+ case 2:if(elapsed>1.5f){record("stationary platform carry",new{platformTravel=liftBody.position.x-before.x,relativeError=rb.position.x-liftBody.position.x-relative,y=rb.position.y,hp=prop(health,"CurrentHealth")});next();}break;
+ case 3:if(elapsed>.3f){record("walking aboard",new{relativeTravel=rb.position.x-liftBody.position.x-relative});input(0);next();}break;
+ case 4:peak=Mathf.Max(peak,rb.position.y);if(elapsed>.35f){record("jump off",new{rise=peak-20.21f,vy=rb.linearVelocity.y});next();}break;
+ case 5:if(elapsed>1.1f){record("landing on moving platform",new{relative=rb.position.x-liftBody.position.x,y=rb.position.y,platformTop=lift.GetComponent<BoxCollider2D>().bounds.max.y,vy=rb.linearVelocity.y});next();}break;
+ case 6:if(EditorApplication.timeSinceStartup-wall>.8){record("paused platform",new{dx=liftBody.position.x-before.x,timeScale=Time.timeScale});next();}break;
+ case 7:if(elapsed>.5f){record("resumed platform",new{dx=liftBody.position.x-before.x,timeScale=Time.timeScale});next();}break;
+ case 8:if(elapsed>2.5f){record("sentry front detection/cadence/projectile damage",new{shots=(int)prop(sentryComponent,"ShotsFired")-initialShots,hp=prop(health,"CurrentHealth"),projectiles=UnityEngine.Object.FindObjectsByType(type("EnergyProjectile"),FindObjectsSortMode.None).Length});next();}break;
+ case 9:if(elapsed>1.8f){record("sentry ignores rear target",new{shots=(int)prop(sentryComponent,"ShotsFired")-initialShots});next();}break;
+ case 10:if(elapsed>1.8f){record("sentry line of sight blocked",new{shots=(int)prop(sentryComponent,"ShotsFired")-initialShots});next();}break;
+ case 11:if(elapsed>.4f){record("sentry melee kill/score once",new{dead=sentry==null,score=prop(GameObject.Find("GameManager").GetComponent(type("ScoreManager")),"Score")});next();}break;
+ case 12:if(elapsed>.8f){var v=(Vector3)prop(health,"RespawnPosition");record("checkpoint activates once",new{events=activated,respawnX=v.x,respawnY=v.y});next();}break;
+ case 13:case 14:if(elapsed>.8f)next();break;
+ case 15:if(elapsed>.8f){record("checkpoint lethal respawn",new{x=rb.position.x,y=rb.position.y,hp=prop(health,"CurrentHealth"),deaths=prop(manager,"DeathCount"),events=activated});next();}break;
+ case 16:if(elapsed>.4f){record("checkpoint fall respawn",new{x=rb.position.x,y=rb.position.y,hp=prop(health,"CurrentHealth"),deaths=prop(manager,"DeathCount"),projectiles=UnityEngine.Object.FindObjectsByType(type("EnergyProjectile"),FindObjectsSortMode.None).Length});restore();record("fixture complete",new{stage=stage});}break;
+ }
+}catch(Exception e){record("ERROR",e.ToString());restore();}};
+next();var loop=original;loop.subSystemList=(UnityEngine.LowLevel.PlayerLoopSystem[])original.subSystemList.Clone();for(int i=0;i<loop.subSystemList.Length;i++)if(loop.subSystemList[i].type==typeof(UnityEngine.PlayerLoop.Update)){var s=loop.subSystemList[i];var children=new UnityEngine.LowLevel.PlayerLoopSystem[s.subSystemList.Length+1];children[0]=new UnityEngine.LowLevel.PlayerLoopSystem{type=typeof(EditorApplication),updateDelegate=()=>step()};Array.Copy(s.subSystemList,0,children,1,s.subSystemList.Length);s.subSystemList=children;loop.subSystemList[i]=s;}UnityEngine.LowLevel.PlayerLoop.SetPlayerLoop(loop);return "Mechanic fixtures running";

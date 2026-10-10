@@ -1,0 +1,53 @@
+var data=Newtonsoft.Json.Linq.JObject.Parse(System.IO.File.ReadAllText("Reports/Level03/Layout.json"));
+var scene=UnityEngine.SceneManagement.SceneManager.GetActiveScene();if(scene.name!="Level03"||EditorApplication.isPlaying)throw new Exception("Expected Level03 Edit mode");
+Func<string,Type> type=n=>Type.GetType(n+", Assembly-CSharp");
+Func<string,GameObject> template=n=>{var g=UnityEngine.Object.Instantiate(GameObject.Find(n));g.transform.SetParent(null);g.name="Template_"+n;g.SetActive(false);return g;};
+var platformTemplate=template("Fast_01");var botTemplate=template("PatrolBot_Shaft");var spikesTemplate=template("Spikes_Shaft");var barrierTemplate=template("Barrier_Corridor_1");var moverTemplate=template("Mover_Timing_A");var cueTemplate=template("SectorTitle");var templates=new[]{platformTemplate,botTemplate,spikesTemplate,barrierTemplate,moverTemplate,cueTemplate};
+var platforms=GameObject.Find("Environment/Platforms").transform;var hazards=GameObject.Find("Hazards").transform;var enemies=GameObject.Find("Enemies").transform;var decoration=GameObject.Find("Environment/Decoration").transform;
+var background=GameObject.Find("Background");background.transform.SetParent(null,true);
+foreach(var parent in new[]{platforms,hazards,enemies,decoration})foreach(var child in parent.Cast<Transform>().ToArray())UnityEngine.Object.DestroyImmediate(child.gameObject);
+background.transform.SetParent(decoration,true);background.transform.position=new Vector3(416.2f,27.5f,3);var bg=background.GetComponent<SpriteRenderer>();bg.drawMode=SpriteDrawMode.Tiled;bg.size=new Vector2(852.4f,75);bg.color=new Color(.35f,.23f,.48f,1);bg.sortingOrder=-40;
+var cues=new GameObject("RouteCues").transform;cues.SetParent(decoration,false);
+var objects=new GameObject("TraversalMechanisms").transform;objects.SetParent(GameObject.Find("LevelObjects").transform,false);
+var movingPrefab=AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/LevelObjects/MovingPlatform.prefab");
+foreach(var row in data["platforms"]){bool moving=(bool?)row["moving"]??false;var g=moving?(GameObject)PrefabUtility.InstantiatePrefab(movingPrefab):UnityEngine.Object.Instantiate(platformTemplate);g.transform.SetParent(platforms,false);g.name=(string)row["name"];float a=(float)row["minX"],b=(float)row["maxX"],top=(float)row["top"],height=(float)row["thickness"];g.transform.position=new Vector3((a+b)/2,top-height/2,0);g.transform.localScale=Vector3.one;var box=g.GetComponent<BoxCollider2D>();box.size=new Vector2(b-a,height);box.offset=Vector2.zero;
+ var body=g.transform.Find("PlatformVisual/Body").GetComponent<SpriteRenderer>();body.drawMode=SpriteDrawMode.Tiled;body.size=new Vector2(b-a,height);body.color=new Color(.85f,.5f,.85f,1);
+ var surface=g.transform.Find("PlatformVisual/Surface").GetComponent<SpriteRenderer>();surface.drawMode=SpriteDrawMode.Tiled;surface.size=new Vector2(b-a,.16f);surface.transform.localPosition=new Vector3(0,height/2-.08f,0);surface.color=Color.white;
+ if(moving){var so=new SerializedObject(g.GetComponent(type("MovingPlatform")));so.FindProperty("pointB").vector2Value=new Vector2((float)row["pointB"][0],(float)row["pointB"][1]);so.FindProperty("speed").floatValue=(float)row["speed"];so.ApplyModifiedPropertiesWithoutUndo();}
+ g.SetActive(true);
+}
+foreach(var row in data["hazards"]){string kind=(string)row["type"];var g=UnityEngine.Object.Instantiate(kind=="spikes"?spikesTemplate:kind=="barrier"?barrierTemplate:moverTemplate,hazards);g.name=(string)row["name"];g.transform.position=new Vector3((float)row["x"],(float)row["y"],0);g.SetActive(true);}
+foreach(var row in data["enemies"]){var g=UnityEngine.Object.Instantiate(botTemplate,enemies);g.name=(string)row["name"];g.transform.position=new Vector3((float)row["x"],(float)row["y"],0);var so=new SerializedObject(g.GetComponent(type("PatrolEnemy")));so.FindProperty("patrolDistance").floatValue=3;so.ApplyModifiedPropertiesWithoutUndo();g.SetActive(true);}
+foreach(var row in data["turrets"]){var g=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/Enemies/SentryTurret.prefab"));g.transform.SetParent(enemies,false);g.name=(string)row["name"];g.transform.position=new Vector3((float)row["x"],(float)row["y"],0);var so=new SerializedObject(g.GetComponent(type("SentryTurret")));so.FindProperty("target").objectReferenceValue=GameObject.Find("Player").GetComponent(type("PlayerHealth"));so.FindProperty("swivelTowardTarget").boolValue=(bool)row["swivel"];so.ApplyModifiedPropertiesWithoutUndo();}
+foreach(var row in data["pads"]){var g=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/LevelObjects/LaunchPad.prefab"));g.transform.SetParent(objects,false);g.name=(string)row["name"];g.transform.position=new Vector3((float)row["x"],(float)row["y"],0);var so=new SerializedObject(g.GetComponent(type("LaunchPad")));so.FindProperty("upwardVelocity").floatValue=(float)row["force"];so.FindProperty("horizontalVelocity").floatValue=(float)row["horizontal"];so.ApplyModifiedPropertiesWithoutUndo();}
+var checkpoint=(GameObject)PrefabUtility.InstantiatePrefab(AssetDatabase.LoadAssetAtPath<GameObject>("Assets/Prefabs/LevelObjects/Checkpoint.prefab"));checkpoint.transform.SetParent(GameObject.Find("LevelObjects").transform,false);checkpoint.name="Checkpoint_Midpoint";checkpoint.transform.position=new Vector3((float)data["checkpoint"][0],(float)data["checkpoint"][1],0);
+Action<string,string,float,float,Color> cue=(name,text,x,y,color)=>{var g=UnityEngine.Object.Instantiate(cueTemplate,cues);g.name=name;g.transform.position=new Vector3(x,y,0);var tm=g.GetComponent<TextMesh>();tm.text=text;tm.color=color;tm.characterSize=.045f;g.SetActive(true);};
+Color cyan=new Color(.35f,.95f,1),magenta=new Color(1,.4f,.7f),orange=new Color(1,.6f,.3f);
+cue("SectorTitle","03 / REACTOR HEART",7,4.5f,magenta);
+cue("LaunchHint","CHARGE LIFT  /  LAND TO LAUNCH",65,5,cyan);
+cue("LaunchDestination","LAUNCH DECK  >",75,10.8f,cyan);
+cue("MovingHint","TRANSFER MACHINERY / RIDE THEN JUMP",121,23.4f,cyan);
+cue("RecoveryHint","RECOVERY LIFT",128,15.5f,cyan);
+cue("SentryHint","SENTRY / JUMP SHOTS / STRIKE CLOSE",187,27.2f,orange);
+cue("AscentTitle","REACTOR ASCENT",211,28.8f,magenta);
+cue("CheckpointHint","MIDPOINT / RESPAWN SAVED",316,53,cyan);
+cue("CoreTitle","CORE CROSSING / READ THE CYCLE",338,53.2f,magenta);
+cue("DescentTitle","OVERLOAD RELEASE",422,52,orange);
+cue("RedirectHint","REDIRECT  >",500,42.5f,cyan);
+cue("ChamberTitle","SECURITY CHAMBER",567,41,magenta);
+cue("FinalTitle","FINAL REACTOR RUN",603,41.2f,magenta);
+cue("ExitTitle","REACTOR CLEAR / CAMPAIGN EXIT",811,54,cyan);
+var material=AssetDatabase.LoadAssetAtPath<Material>("Assets/Art/Materials/NeonSprite.mat");var tile=AssetDatabase.LoadAssetAtPath<Sprite>("Assets/Art/Sprites/PlatformBody.png");
+Action<string,float,float,float,float,Color> panel=(name,x,y,w,h,color)=>{var g=new GameObject(name);g.transform.SetParent(decoration,false);g.transform.position=new Vector3(x,y,2);var sr=g.AddComponent<SpriteRenderer>();sr.sharedMaterial=material;sr.sprite=tile;sr.drawMode=SpriteDrawMode.Tiled;sr.size=new Vector2(w,h);sr.color=color;sr.sortingOrder=-25;};
+Action<string,Vector3[],Color,float> line=(name,points,color,width)=>{var g=new GameObject(name);g.transform.SetParent(decoration,false);var lr=g.AddComponent<LineRenderer>();lr.sharedMaterial=material;lr.useWorldSpace=true;lr.positionCount=points.Length;lr.SetPositions(points);lr.startColor=lr.endColor=color;lr.startWidth=lr.endWidth=width;lr.sortingOrder=-20;};
+foreach(float x in new[]{72f,96f,217f,236f,352f,389f,500f,590f,679f,744f}){panel("ReactorPylon_"+x,x,24,3,60,new Color(.18f,.1f,.23f,.75f));line("EnergyBus_"+x,new[]{new Vector3(x,-3,1),new Vector3(x,55,1)},new Color(.8f,.15f,.35f,.45f),.08f);}
+foreach(float x in new[]{359f,390f}){var points=new Vector3[33];for(int i=0;i<points.Length;i++){float angle=i/32f*Mathf.PI*2;points[i]=new Vector3(x+Mathf.Cos(angle)*8,40+Mathf.Sin(angle)*8,2);}line("ReactorRing_"+x,points,new Color(1,.2f,.5f,.65f),.16f);panel("ReactorCore_"+x,x,40,5,9,new Color(.8f,.08f,.2f,.35f));}
+foreach(var row in data["pads"]){float x=(float)row["x"],y=(float)row["y"];line("LaunchTrajectory_"+(string)row["name"],new[]{new Vector3(x,y+1,1),new Vector3(x,y+4,1)},new Color(.3f,.7f,.9f,.3f),.045f);}
+foreach(var row in data["platforms"].Where(r=>(bool?)r["moving"]??false)){float a=(float)row["minX"],b=(float)row["maxX"],y=(float)row["top"]-.25f,dx=(float)row["pointB"][0],dy=(float)row["pointB"][1];line("Guide_"+(string)row["name"],new[]{new Vector3((a+b)/2,y,1),new Vector3((a+b)/2+dx,y+dy,1)},new Color(.4f,.8f,1,.4f),.06f);}
+var bounds=GameObject.Find("CameraBounds");bounds.transform.position=new Vector3(416.2f,27.5f,0);bounds.GetComponent<BoxCollider2D>().size=new Vector2(832.4f,65);
+GameObject.Find("Player").transform.position=new Vector3(4,1.1f,0);Camera.main.transform.position=new Vector3(8.9f,1.5f,-10);
+GameObject.Find("GoalExitPortalVisual").transform.position=new Vector3((float)data["goal"][0],(float)data["goal"][1],0);
+var gm=new SerializedObject(GameObject.Find("GameManager").GetComponent(type("LevelManager")));gm.FindProperty("nextLevelScene").stringValue="";gm.FindProperty("completionTitle").stringValue="VOLTIX DASH COMPLETE";gm.ApplyModifiedPropertiesWithoutUndo();
+var audio=new SerializedObject(GameObject.Find("GameplayAudio").GetComponent(type("GameplayAudio")));foreach(string sound in new[]{"Launch","Checkpoint","TurretFire"})audio.FindProperty(char.ToLowerInvariant(sound[0])+sound.Substring(1)+"Clip").objectReferenceValue=AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/Audio/SFX/"+sound+".wav");audio.ApplyModifiedPropertiesWithoutUndo();
+foreach(var g in templates)UnityEngine.Object.DestroyImmediate(g);
+UnityEditor.SceneManagement.EditorSceneManager.MarkSceneDirty(scene);UnityEditor.SceneManagement.EditorSceneManager.SaveScene(scene);return new{platforms=platforms.childCount,enemies=enemies.childCount,hazards=hazards.childCount,pads=objects.childCount};

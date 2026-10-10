@@ -1,0 +1,861 @@
+{
+  "concept": "Level03 \u2014 Reactor Heart",
+  "platforms": [
+    {
+      "name": "Entry_01",
+      "minX": 0,
+      "maxX": 12,
+      "top": 0,
+      "section": "FastEntry",
+      "thickness": 1
+    },
+    {
+      "name": "Entry_02",
+      "minX": 14.2,
+      "maxX": 26.2,
+      "top": 0.6,
+      "section": "FastEntry",
+      "thickness": 1
+    },
+    {
+      "name": "Entry_03",
+      "minX": 28.4,
+      "maxX": 42.4,
+      "top": 0.2,
+      "section": "FastEntry",
+      "thickness": 1
+    },
+    {
+      "name": "Entry_04",
+      "minX": 44.6,
+      "maxX": 58.6,
+      "top": 1.2,
+      "section": "FastEntry",
+      "thickness": 1
+    },
+    {
+      "name": "Launch_01",
+      "minX": 60.8,
+      "maxX": 72.8,
+      "top": 1.2,
+      "section": "LaunchIntroduction",
+      "thickness": 1
+    },
+    {
+      "name": "Launch_02",
+      "minX": 75,
+      "maxX": 87,
+      "top": 7.2,
+      "section": "LaunchIntroduction",
+      "thickness": 1
+    },
+    {
+      "name": "Launch_03",
+      "minX": 89.2,
+      "maxX": 101.2,
+      "top": 13.2,
+      "section": "LaunchIntroduction",
+      "thickness": 1
+    },
+    {
+      "name": "LaunchExit",
+      "minX": 103.4,
+      "maxX": 121,
+      "top": 19.2,
+      "section": "LaunchIntroduction",
+      "thickness": 1
+    },
+    {
+      "name": "Lift_Intro_Horizontal",
+      "minX": 123.2,
+      "maxX": 131.2,
+      "top": 19.2,
+      "section": "MovingIntroduction",
+      "thickness": 0.5,
+      "moving": true,
+      "pointB": [
+        6,
+        0
+      ],
+      "speed": 2.8,
+      "endpointPause": 0.2
+    },
+    {
+      "name": "MovingLanding",
+      "minX": 139.4,
+      "maxX": 153.4,
+      "top": 19.6,
+      "section": "MovingIntroduction",
+      "thickness": 1
+    },
+    {
+      "name": "Lift_Intro_Vertical",
+      "minX": 155.6,
+      "maxX": 163.6,
+      "top": 19.6,
+      "section": "MovingIntroduction",
+      "thickness": 0.5,
+      "moving": true,
+      "pointB": [
+        0,
+        2
+      ],
+      "speed": 2.8,
+      "endpointPause": 0.55
+    },
+    {
+      "name": "MovingExit",
+      "minX": 165.8,
+      "maxX": 173.0,
+      "top": 22.8,
+      "section": "MovingIntroduction",
+      "thickness": 1
+    },
+    {
+      "name": "MovingExit_Step",
+      "minX": 175.20000000000002,
+      "maxX": 181.8,
+      "top": 23.6,
+      "section": "MovingIntroduction",
+      "thickness": 1
+    },
+    {
+      "name": "IntroRecovery",
+      "minX": 123.2,
+      "maxX": 139.4,
+      "top": 12.2,
+      "section": "MovingIntroduction",
+      "thickness": 1,
+      "optional": true
+    },
+    {
+      "name": "FirstSentryDeck",
+      "minX": 184,
+      "maxX": 206,
+      "top": 22.8,
+      "section": "FirstSentry",
+      "thickness": 1
+    },
+    {
+      "name": "FirstSentryCover",
+      "minX": 189,
+      "maxX": 192,
+      "top": 24,
+      "section": "FirstSentry",
+      "thickness": 1.2,
+      "optional": true
+    },
+    {
+      "name": "Ascent_01",
+      "minX": 208.2,
+      "maxX": 222.2,
+      "top": 23.9,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "Ascent_02",
+      "minX": 224.4,
+      "maxX": 238.4,
+      "top": 29.9,
+      "section": "ReactorAscent",
+      "thickness": 0.5
+    },
+    {
+      "name": "Ascent_03",
+      "minX": 209.5,
+      "maxX": 222.2,
+      "top": 35.9,
+      "section": "ReactorAscent",
+      "thickness": 0.5
+    },
+    {
+      "name": "Lift_Ascent",
+      "minX": 199.3,
+      "maxX": 207.3,
+      "top": 35.9,
+      "section": "ReactorAscent",
+      "thickness": 0.5,
+      "moving": true,
+      "pointB": [
+        0,
+        3.4
+      ],
+      "speed": 2.8,
+      "endpointPause": 0.55
+    },
+    {
+      "name": "AscentSentryDeck",
+      "minX": 209.5,
+      "maxX": 222.2,
+      "top": 40.5,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "AscentBarrierDeck_Approach",
+      "minX": 224.4,
+      "maxX": 229.8,
+      "top": 42.199999999999996,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "AscentBarrierDeck",
+      "minX": 230.8,
+      "maxX": 238.4,
+      "top": 41.4,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "AscentChargeDeck",
+      "minX": 240.6,
+      "maxX": 250.6,
+      "top": 42.6,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "AscentSummit",
+      "minX": 252.8,
+      "maxX": 266.8,
+      "top": 49,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "AscentExit",
+      "minX": 269,
+      "maxX": 281,
+      "top": 49,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "AscentExit_Second",
+      "minX": 283.2,
+      "maxX": 297.2,
+      "top": 50,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "AscentExit_Third",
+      "minX": 299.4,
+      "maxX": 311.4,
+      "top": 49,
+      "section": "ReactorAscent",
+      "thickness": 1
+    },
+    {
+      "name": "CheckpointDeck",
+      "minX": 313.6,
+      "maxX": 333.6,
+      "top": 49,
+      "section": "Checkpoint",
+      "thickness": 1
+    },
+    {
+      "name": "CoreApproach",
+      "minX": 335.8,
+      "maxX": 341.0,
+      "top": 49,
+      "section": "CoreCrossing",
+      "thickness": 1
+    },
+    {
+      "name": "CoreApproach_Step",
+      "minX": 343.2,
+      "maxX": 347.8,
+      "top": 49.8,
+      "section": "CoreCrossing",
+      "thickness": 1
+    },
+    {
+      "name": "Lift_Core_A",
+      "minX": 350,
+      "maxX": 358,
+      "top": 49,
+      "section": "CoreCrossing",
+      "thickness": 0.5,
+      "moving": true,
+      "pointB": [
+        8,
+        0
+      ],
+      "speed": 3.5,
+      "endpointPause": 0.2
+    },
+    {
+      "name": "CoreIsland",
+      "minX": 368.2,
+      "maxX": 380.2,
+      "top": 49.9,
+      "section": "CoreCrossing",
+      "thickness": 1
+    },
+    {
+      "name": "Lift_Core_B",
+      "minX": 382.4,
+      "maxX": 390.4,
+      "top": 49.9,
+      "section": "CoreCrossing",
+      "thickness": 0.5,
+      "moving": true,
+      "pointB": [
+        8,
+        0
+      ],
+      "speed": 3.5,
+      "endpointPause": 0.2
+    },
+    {
+      "name": "CoreSentryDeck",
+      "minX": 400.6,
+      "maxX": 418.6,
+      "top": 49.9,
+      "section": "CoreCrossing",
+      "thickness": 1
+    },
+    {
+      "name": "CoreCover",
+      "minX": 369.8,
+      "maxX": 371.3,
+      "top": 51.1,
+      "section": "CoreCrossing",
+      "thickness": 1.2,
+      "optional": true
+    },
+    {
+      "name": "Descent_01",
+      "minX": 420.8,
+      "maxX": 432.8,
+      "top": 48.1,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_02",
+      "minX": 435,
+      "maxX": 447,
+      "top": 46.3,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_03",
+      "minX": 449.2,
+      "maxX": 461.2,
+      "top": 44.5,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_04",
+      "minX": 463.4,
+      "maxX": 477.4,
+      "top": 42.7,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_05_Approach",
+      "minX": 479.6,
+      "maxX": 485.2,
+      "top": 41.699999999999996,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_05",
+      "minX": 486.2,
+      "maxX": 493.6,
+      "top": 40.9,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_06",
+      "minX": 495.8,
+      "maxX": 509.8,
+      "top": 39.1,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_07",
+      "minX": 512,
+      "maxX": 528,
+      "top": 40.1,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_08",
+      "minX": 530.2,
+      "maxX": 536.4000000000001,
+      "top": 38.3,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_08_Step",
+      "minX": 538.6,
+      "maxX": 544.2,
+      "top": 39.099999999999994,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_09",
+      "minX": 546.4,
+      "maxX": 560.4,
+      "top": 36.5,
+      "section": "OverloadDescent",
+      "thickness": 1
+    },
+    {
+      "name": "CombatDeck",
+      "minX": 562.6,
+      "maxX": 598.6,
+      "top": 36.5,
+      "section": "CombatChamber",
+      "thickness": 1
+    },
+    {
+      "name": "Final_01",
+      "minX": 600.8,
+      "maxX": 609.0,
+      "top": 36.5,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_01_Step",
+      "minX": 611.1999999999999,
+      "maxX": 618.8,
+      "top": 37.3,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Lift_Final_A",
+      "minX": 621,
+      "maxX": 629,
+      "top": 37.3,
+      "section": "FinalRun",
+      "thickness": 0.5,
+      "moving": true,
+      "pointB": [
+        5,
+        0
+      ],
+      "speed": 3,
+      "endpointPause": 0.2
+    },
+    {
+      "name": "Final_02",
+      "minX": 636.2,
+      "maxX": 648.2,
+      "top": 38.3,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_03",
+      "minX": 650.4,
+      "maxX": 662.4,
+      "top": 39.4,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_04",
+      "minX": 664.6,
+      "maxX": 680.6,
+      "top": 44.8,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Lift_Final_B",
+      "minX": 682.8,
+      "maxX": 690.8,
+      "top": 44.8,
+      "section": "FinalRun",
+      "thickness": 0.5,
+      "moving": true,
+      "pointB": [
+        0,
+        2
+      ],
+      "speed": 3,
+      "endpointPause": 0.55
+    },
+    {
+      "name": "Final_05_Approach",
+      "minX": 693,
+      "maxX": 698,
+      "top": 48.599999999999994,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_05",
+      "minX": 699.0,
+      "maxX": 709,
+      "top": 47.8,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_06",
+      "minX": 711.2,
+      "maxX": 731.2,
+      "top": 47,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_07",
+      "minX": 733.4,
+      "maxX": 753.4,
+      "top": 48.2,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_08",
+      "minX": 755.6,
+      "maxX": 765.6,
+      "top": 49.4,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_09",
+      "minX": 767.8,
+      "maxX": 783.8,
+      "top": 48.4,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "Final_10",
+      "minX": 786,
+      "maxX": 796,
+      "top": 49.6,
+      "section": "FinalRun",
+      "thickness": 1
+    },
+    {
+      "name": "ExitApproach",
+      "minX": 798.2,
+      "maxX": 810.2,
+      "top": 49.6,
+      "section": "Goal",
+      "thickness": 1
+    },
+    {
+      "name": "ExitDeck",
+      "minX": 812.4,
+      "maxX": 832.4,
+      "top": 49.6,
+      "section": "Goal",
+      "thickness": 1
+    }
+  ],
+  "hazards": [
+    {
+      "name": "spikes_Entry_04",
+      "type": "spikes",
+      "platform": "Entry_04",
+      "x": 52,
+      "y": 1.7
+    },
+    {
+      "name": "barrier_AscentBarrierDeck",
+      "type": "barrier",
+      "platform": "AscentBarrierDeck",
+      "x": 232.4,
+      "y": 42.65
+    },
+    {
+      "name": "moving_Descent_03",
+      "type": "moving",
+      "platform": "Descent_03",
+      "x": 455.2,
+      "y": 45.35
+    },
+    {
+      "name": "spikes_Descent_04",
+      "type": "spikes",
+      "platform": "Descent_04",
+      "x": 470.4,
+      "y": 43.2
+    },
+    {
+      "name": "barrier_Descent_05",
+      "type": "barrier",
+      "platform": "Descent_05",
+      "x": 487,
+      "y": 42.15
+    },
+    {
+      "name": "spikes_Final_02",
+      "type": "spikes",
+      "platform": "Final_02",
+      "x": 642.2,
+      "y": 38.8
+    },
+    {
+      "name": "barrier_Final_05",
+      "type": "barrier",
+      "platform": "Final_05",
+      "x": 701,
+      "y": 49.05
+    },
+    {
+      "name": "moving_Final_07",
+      "type": "moving",
+      "platform": "Final_07",
+      "x": 743.4,
+      "y": 49.050000000000004
+    },
+    {
+      "name": "spikes_Final_09",
+      "type": "spikes",
+      "platform": "Final_09",
+      "x": 775.8,
+      "y": 48.9
+    }
+  ],
+  "enemies": [
+    {
+      "name": "PatrolBot_Entry",
+      "platform": "Entry_03",
+      "x": 35.4,
+      "y": 0.8,
+      "patrolDistance": 3,
+      "speed": 2
+    },
+    {
+      "name": "PatrolBot_Ascent",
+      "platform": "Ascent_03",
+      "x": 215.7,
+      "y": 36.5,
+      "patrolDistance": 3,
+      "speed": 2
+    },
+    {
+      "name": "PatrolBot_Chamber_A",
+      "platform": "CombatDeck",
+      "x": 572,
+      "y": 37.1,
+      "patrolDistance": 3,
+      "speed": 2
+    },
+    {
+      "name": "PatrolBot_Chamber_B",
+      "platform": "CombatDeck",
+      "x": 585,
+      "y": 37.1,
+      "patrolDistance": 3,
+      "speed": 2
+    },
+    {
+      "name": "PatrolBot_Final",
+      "platform": "Final_06",
+      "x": 721.2,
+      "y": 47.6,
+      "patrolDistance": 3,
+      "speed": 2
+    }
+  ],
+  "turrets": [
+    {
+      "name": "Sentry_Intro",
+      "platform": "FirstSentryDeck",
+      "x": 201,
+      "y": 23.6,
+      "swivel": false
+    },
+    {
+      "name": "Sentry_Ascent",
+      "platform": "AscentSentryDeck",
+      "x": 216.7,
+      "y": 41.3,
+      "swivel": false
+    },
+    {
+      "name": "Sentry_Core",
+      "platform": "CoreIsland",
+      "x": 372.8,
+      "y": 50.699999999999996,
+      "swivel": false
+    },
+    {
+      "name": "Sentry_ChamberOverwatch",
+      "platform": "CombatDeck",
+      "x": 594.3,
+      "y": 37.3,
+      "swivel": true
+    }
+  ],
+  "pads": [
+    {
+      "name": "LaunchPad_Intro_1",
+      "platform": "Launch_01",
+      "x": 70.4,
+      "y": 1.3199999999999998,
+      "force": 25,
+      "horizontal": 0
+    },
+    {
+      "name": "LaunchPad_Intro_2",
+      "platform": "Launch_02",
+      "x": 84.4,
+      "y": 7.32,
+      "force": 25,
+      "horizontal": 0
+    },
+    {
+      "name": "LaunchPad_Intro_3",
+      "platform": "Launch_03",
+      "x": 98.6,
+      "y": 13.319999999999999,
+      "force": 25,
+      "horizontal": 0
+    },
+    {
+      "name": "LaunchPad_Recovery",
+      "platform": "IntroRecovery",
+      "x": 134.5,
+      "y": 12.319999999999999,
+      "force": 26,
+      "horizontal": 7
+    },
+    {
+      "name": "LaunchPad_Ascent_A",
+      "platform": "Ascent_01",
+      "x": 220.2,
+      "y": 24.02,
+      "force": 25,
+      "horizontal": 0
+    },
+    {
+      "name": "LaunchPad_Ascent_B",
+      "platform": "Ascent_02",
+      "x": 227.5,
+      "y": 30.02,
+      "force": 25,
+      "horizontal": 0
+    },
+    {
+      "name": "LaunchPad_Ascent_C",
+      "platform": "AscentChargeDeck",
+      "x": 248.2,
+      "y": 42.72,
+      "force": 26,
+      "horizontal": 0
+    },
+    {
+      "name": "LaunchPad_Redirect",
+      "platform": "Descent_06",
+      "x": 507.6,
+      "y": 39.22,
+      "force": 20,
+      "horizontal": 7
+    },
+    {
+      "name": "LaunchPad_Final",
+      "platform": "Final_03",
+      "x": 660,
+      "y": 39.519999999999996,
+      "force": 24,
+      "horizontal": 0
+    }
+  ],
+  "route": [
+    "Entry_01",
+    "Entry_02",
+    "Entry_03",
+    "Entry_04",
+    "Launch_01",
+    "Launch_02",
+    "Launch_03",
+    "LaunchExit",
+    "Lift_Intro_Horizontal",
+    "MovingLanding",
+    "Lift_Intro_Vertical",
+    "MovingExit",
+    "MovingExit_Step",
+    "FirstSentryDeck",
+    "Ascent_01",
+    "Ascent_02",
+    "Ascent_03",
+    "Lift_Ascent",
+    "AscentSentryDeck",
+    "AscentBarrierDeck_Approach",
+    "AscentBarrierDeck",
+    "AscentChargeDeck",
+    "AscentSummit",
+    "AscentExit",
+    "AscentExit_Second",
+    "AscentExit_Third",
+    "CheckpointDeck",
+    "CoreApproach",
+    "CoreApproach_Step",
+    "Lift_Core_A",
+    "CoreIsland",
+    "Lift_Core_B",
+    "CoreSentryDeck",
+    "Descent_01",
+    "Descent_02",
+    "Descent_03",
+    "Descent_04",
+    "Descent_05_Approach",
+    "Descent_05",
+    "Descent_06",
+    "Descent_07",
+    "Descent_08",
+    "Descent_08_Step",
+    "Descent_09",
+    "CombatDeck",
+    "Final_01",
+    "Final_01_Step",
+    "Lift_Final_A",
+    "Final_02",
+    "Final_03",
+    "Final_04",
+    "Lift_Final_B",
+    "Final_05_Approach",
+    "Final_05",
+    "Final_06",
+    "Final_07",
+    "Final_08",
+    "Final_09",
+    "Final_10",
+    "ExitApproach",
+    "ExitDeck"
+  ],
+  "spawn": [
+    4,
+    1.1
+  ],
+  "goal": [
+    825.4,
+    51.6
+  ],
+  "checkpoint": [
+    323.2,
+    50.1
+  ],
+  "cameraBounds": {
+    "minX": 0,
+    "maxX": 832.4,
+    "minY": -5,
+    "maxY": 60
+  }
+}

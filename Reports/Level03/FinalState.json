@@ -1,0 +1,16 @@
+{
+  "editMode": true,
+  "compiling": false,
+  "scene": "Assets/Scenes/Level03.unity",
+  "sceneDirty": false,
+  "timeScale": 1.0,
+  "audioPaused": false,
+  "loadedScenes": 1,
+  "temporaryPlayerLoopHook": false,
+  "buildOrder": [
+    "Assets/Scenes/MainMenu.unity",
+    "Assets/Scenes/Level01.unity",
+    "Assets/Scenes/Level02.unity",
+    "Assets/Scenes/Level03.unity"
+  ]
+}

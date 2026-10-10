@@ -1,0 +1,433 @@
+{
+  "textures": [
+    {
+      "asset": "Assets/Art/Sprites/LaunchPad.png",
+      "type": "Sprite",
+      "mipmaps": false,
+      "readWrite": false,
+      "maxSize": 256,
+      "compression": "Uncompressed",
+      "filter": "Bilinear"
+    },
+    {
+      "asset": "Assets/Art/Sprites/Checkpoint.png",
+      "type": "Sprite",
+      "mipmaps": false,
+      "readWrite": false,
+      "maxSize": 256,
+      "compression": "Uncompressed",
+      "filter": "Bilinear"
+    },
+    {
+      "asset": "Assets/Art/Sprites/SentryTurret.png",
+      "type": "Sprite",
+      "mipmaps": false,
+      "readWrite": false,
+      "maxSize": 256,
+      "compression": "Uncompressed",
+      "filter": "Bilinear"
+    },
+    {
+      "asset": "Assets/Art/Sprites/SentryProjectile.png",
+      "type": "Sprite",
+      "mipmaps": false,
+      "readWrite": false,
+      "maxSize": 256,
+      "compression": "Uncompressed",
+      "filter": "Bilinear"
+    }
+  ],
+  "clips": [
+    {
+      "asset": "Assets/Art/Animation/Reactor/Checkpoint_Active.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        }
+      ]
+    },
+    {
+      "asset": "Assets/Art/Animation/Reactor/Checkpoint_Inactive.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        }
+      ]
+    },
+    {
+      "asset": "Assets/Art/Animation/Reactor/EnergyProjectile_Pulse.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        }
+      ]
+    },
+    {
+      "asset": "Assets/Art/Animation/Reactor/LaunchPad_Activation.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        }
+      ]
+    },
+    {
+      "asset": "Assets/Art/Animation/Reactor/LaunchPad_Idle.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        }
+      ]
+    },
+    {
+      "asset": "Assets/Art/Animation/Reactor/Sentry_Charge.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        }
+      ]
+    },
+    {
+      "asset": "Assets/Art/Animation/Reactor/Sentry_Death.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        },
+        {
+          "path": "",
+          "type": "Transform",
+          "property": "m_LocalScale.x"
+        },
+        {
+          "path": "",
+          "type": "Transform",
+          "property": "m_LocalScale.y"
+        }
+      ]
+    },
+    {
+      "asset": "Assets/Art/Animation/Reactor/Sentry_Fire.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        }
+      ]
+    },
+    {
+      "asset": "Assets/Art/Animation/Reactor/Sentry_Idle.anim",
+      "bindings": [
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.r"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.g"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.b"
+        },
+        {
+          "path": "",
+          "type": "SpriteRenderer",
+          "property": "m_Color.a"
+        }
+      ]
+    }
+  ],
+  "prefabs": [
+    {
+      "asset": "Assets/Prefabs/Enemies/EnergyProjectile.prefab",
+      "missingScripts": 0,
+      "audioSources": 0
+    },
+    {
+      "asset": "Assets/Prefabs/Enemies/SentryDeathVisual.prefab",
+      "missingScripts": 0,
+      "audioSources": 0
+    },
+    {
+      "asset": "Assets/Prefabs/Enemies/SentryTurret.prefab",
+      "missingScripts": 0,
+      "audioSources": 0
+    },
+    {
+      "asset": "Assets/Prefabs/LevelObjects/Checkpoint.prefab",
+      "missingScripts": 0,
+      "audioSources": 0
+    },
+    {
+      "asset": "Assets/Prefabs/LevelObjects/LaunchPad.prefab",
+      "missingScripts": 0,
+      "audioSources": 0
+    },
+    {
+      "asset": "Assets/Prefabs/LevelObjects/MovingPlatform.prefab",
+      "missingScripts": 0,
+      "audioSources": 0
+    }
+  ],
+  "sourceArtworkReferenced": false,
+  "sourceAudioReferenced": false,
+  "dependencies": [
+    "Assets/Art/Sprites/SentryProjectile.png",
+    "Assets/Art/Sprites/Animation/GoalPortalLoop.png",
+    "Assets/Art/Sprites/ElectricSlash.png",
+    "Assets/Prefabs/Enemies/SentryTurret.prefab",
+    "Assets/Scripts/Player/PlayerCombat.cs",
+    "Assets/Audio/SFX/Launch.wav",
+    "Assets/Scripts/Animation/PlayerAnimationController.cs",
+    "Assets/UI/HUD/HUD.uxml",
+    "Assets/Scripts/Feedback/EnemyDeathFeedback.cs",
+    "Assets/Art/Sprites/Animation/PlayerJumpStart.png",
+    "Assets/Art/Animation/Reactor/Checkpoint.controller",
+    "Assets/Art/Sprites/Animation/PatrolBotDeath.png",
+    "Assets/Scripts/Enemies/PatrolEnemy.cs",
+    "Assets/Art/Animation/Reactor/LaunchPad_Idle.anim",
+    "Assets/Scripts/Animation/EnemyDeathPresentation.cs",
+    "Assets/Art/Sprites/Animation/PlayerIdle.png",
+    "Assets/Scripts/Hazards/HazardDamage.cs",
+    "Assets/Art/Animation/Clips/PlayerHurt.anim",
+    "Assets/Art/Sprites/StaticSpike.png",
+    "Assets/Physics/MovingPlatformSurface.physicsMaterial2D",
+    "Assets/Art/Sprites/PlatformBody.png",
+    "Assets/Art/Animation/Reactor/Sentry_Charge.anim",
+    "Assets/Art/Animation/Clips/PlayerRise.anim",
+    "Assets/Art/Animation/Clips/GoalPortalLoop.anim",
+    "Assets/UI/HUD/HUD.uss",
+    "Assets/UI/HUD/HUDTheme.tss",
+    "Assets/Art/Materials/NeonSprite.mat",
+    "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+    "Packages/com.unity.inputsystem/InputSystem/Runtime/Plugins/PlayerInput/PlayerInput.cs",
+    "Assets/UI/Menus/Menus.uss",
+    "Assets/Prefabs/Enemies/EnergyProjectile.prefab",
+    "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+    "Assets/Art/Animation/Clips/PlayerFall.anim",
+    "Assets/Art/Animation/Clips/PlayerRun.anim",
+    "Assets/Audio/SFX/Checkpoint.wav",
+    "Assets/Scripts/Feedback/PlayerFeedback.cs",
+    "Assets/Prefabs/LevelObjects/Checkpoint.prefab",
+    "Assets/Scripts/Animation/EnemyAnimationController.cs",
+    "Assets/Art/Sprites/Animation/PlayerLand.png",
+    "Assets/UI/HUD/HUDPanelSettings.asset",
+    "Assets/Scripts/UI/LevelCompletionUI.cs",
+    "Assets/Art/Sprites/Background.png",
+    "Assets/Art/Animation/Controllers/GoalPortal.controller",
+    "Assets/Audio/SFX/TurretFire.wav",
+    "Packages/com.unity.render-pipelines.universal/Shaders/2D/Sprite-Unlit-Default.shader",
+    "Assets/Art/Sprites/PlatformSurface.png",
+    "Assets/Audio/SFX/Completion.wav",
+    "Assets/Scripts/Game/LevelPause.cs",
+    "Assets/Art/Animation/Clips/MovingHazardLoop.anim",
+    "Assets/Art/Animation/Reactor/Sentry_Fire.anim",
+    "Assets/Scripts/LevelObjects/LaunchPad.cs",
+    "Assets/Art/Prefabs/Background.prefab",
+    "Assets/Art/Sprites/Animation/PlayerRise.png",
+    "Assets/Audio/SFX/Jump.wav",
+    "Assets/Art/Animation/Reactor/Checkpoint_Inactive.anim",
+    "Assets/Art/Animation/Reactor/LaunchPad.controller",
+    "Assets/Art/Animation/Controllers/Player.controller",
+    "Assets/Scripts/LevelObjects/MovingPlatform.cs",
+    "Assets/Art/Sprites/Animation/PlayerHurt.png",
+    "Assets/Art/Animation/Clips/PlayerLand.anim",
+    "Assets/Scripts/Animation/SentryPresentation.cs",
+    "Assets/Art/Prefabs/PatrolBotDeathVisual.prefab",
+    "Assets/Input/PlayerControls.inputactions",
+    "Assets/Audio/SFX/Damage.wav",
+    "Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionAsset.cs",
+    "Assets/Scripts/Player/PlayerHealth.cs",
+    "Assets/Audio/SFX/Landing.wav",
+    "Assets/Scripts/UI/GameHUD.cs",
+    "Assets/Art/Sprites/Animation/PlayerRun.png",
+    "Assets/Art/Animation/Reactor/Sentry.controller",
+    "Assets/Scripts/Player/PlayerAttackVisual.cs",
+    "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+    "Assets/Art/Sprites/LaunchPad.png",
+    "Assets/Scripts/Player/PlayerMovement.cs",
+    "Assets/Scripts/Game/GoalTrigger.cs",
+    "Assets/Scripts/Enemies/EnemyHealth.cs",
+    "Assets/Prefabs/Enemies/SentryDeathVisual.prefab",
+    "Assets/Art/Animation/Reactor/Sentry_Idle.anim",
+    "Assets/Scripts/UI/PauseMenuUI.cs",
+    "Assets/Art/Sprites/Animation/PlayerAttack.png",
+    "Assets/Scripts/Game/Checkpoint.cs",
+    "Assets/Art/Animation/Reactor/EnergyProjectile.controller",
+    "Assets/Audio/SFX/EnemyDeath.wav",
+    "Packages/com.unity.inputsystem/InputSystem/Runtime/Actions/InputActionReference.cs",
+    "Packages/com.unity.inputsystem/InputSystem/Editor/Icons/InputAction.png",
+    "Assets/Art/Materials/ElectricSlash.mat",
+    "Assets/Art/Animation/Controllers/ElectricBarrier.controller",
+    "Assets/Scripts/Camera/CameraFollow.cs",
+    "Assets/Scripts/Game/ScoreManager.cs",
+    "Assets/Audio/SFX/Attack.wav",
+    "Assets/Scripts/Enemies/EnergyProjectile.cs",
+    "Assets/Art/Materials/PlayerFlash.mat",
+    "Assets/Scripts/Enemies/SentryTurret.cs",
+    "Assets/Art/Animation/Clips/PatrolBotPatrol.anim",
+    "Assets/Art/Animation/Reactor/Sentry_Death.anim",
+    "Assets/Prefabs/LevelObjects/MovingPlatform.prefab",
+    "Assets/Art/Animation/Controllers/MovingHazard.controller",
+    "Assets/Art/Animation/Clips/PatrolBotDeath.anim",
+    "Assets/Art/Prefabs/GoalPortalVisual.prefab",
+    "Packages/com.unity.render-pipelines.universal/Runtime/UniversalAdditionalCameraData.cs",
+    "Assets/Art/Animation/Clips/PlayerAttack.anim",
+    "Assets/Scripts/Feedback/CameraShake.cs",
+    "Packages/com.unity.render-pipelines.universal/Runtime/2D/Lights/Light2D.cs",
+    "Packages/com.unity.inputsystem/InputSystem/Editor/AssetImporter/InputActionImporter.cs",
+    "Assets/Art/Shaders/PlayerFlash.shader",
+    "Assets/Art/Animation/Clips/PlayerJumpStart.anim",
+    "Assets/Art/Animation/Reactor/EnergyProjectile_Pulse.anim",
+    "Assets/Art/Sprites/SentryTurret.png",
+    "Assets/Scripts/Audio/GameplayAudio.cs",
+    "Assets/Art/Animation/Clips/PlayerIdle.anim",
+    "Assets/Art/Sprites/Animation/PlayerFall.png",
+    "Assets/Prefabs/LevelObjects/LaunchPad.prefab",
+    "Assets/Scripts/Hazards/HorizontalHazardMover.cs",
+    "Assets/Art/Sprites/Checkpoint.png",
+    "Assets/Scenes/Level03.unity",
+    "Assets/Art/Animation/Controllers/PatrolBot.controller",
+    "Assets/Art/Animation/Reactor/Checkpoint_Active.anim",
+    "Assets/Art/Animation/Reactor/LaunchPad_Activation.anim",
+    "Assets/Art/Animation/Clips/ElectricBarrierLoop.anim",
+    "Assets/Scripts/Game/LevelManager.cs"
+  ]
+}

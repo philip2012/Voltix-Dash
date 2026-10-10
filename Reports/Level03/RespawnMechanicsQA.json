@@ -1,0 +1,31 @@
+[
+  {
+    "name": "respawn clears launch overlap",
+    "data": {
+      "x": 4.0,
+      "hp": 3,
+      "latched": 0
+    }
+  },
+  {
+    "name": "pad launches after respawn",
+    "data": {
+      "launches": 2,
+      "vy": 25.0
+    }
+  },
+  {
+    "name": "platform registered rider",
+    "data": {
+      "riders": 1
+    }
+  },
+  {
+    "name": "respawn clears platform rider",
+    "data": {
+      "x": 4.0,
+      "hp": 3,
+      "riders": 0
+    }
+  }
+]
