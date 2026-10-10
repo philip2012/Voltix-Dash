@@ -1,0 +1,70 @@
+var data=Newtonsoft.Json.Linq.JObject.Parse(System.IO.File.ReadAllText("Reports/Level02/Layout.json"));
+string routeName="lower",runName="LowerFinalV4";
+var names=data["routes"][routeName].Select(t=>(string)t).ToArray();
+var rows=data["platforms"].ToDictionary(t=>(string)t["name"],t=>t);
+var player=GameObject.Find("Player");var rb=player.GetComponent<Rigidbody2D>();
+var move=player.GetComponent(Type.GetType("PlayerMovement, Assembly-CSharp"));var combat=player.GetComponent(Type.GetType("PlayerCombat, Assembly-CSharp"));
+var health=player.GetComponent(Type.GetType("PlayerHealth, Assembly-CSharp"));var manager=GameObject.Find("GameManager").GetComponent(Type.GetType("LevelManager, Assembly-CSharp"));
+var flags=System.Reflection.BindingFlags.Instance|System.Reflection.BindingFlags.NonPublic;
+var moveField=move.GetType().GetField("moveInput",flags);var jumpField=move.GetType().GetField("jumpBufferCounter",flags);var facingField=combat.GetType().GetField("facingDirection",flags);var groundedMethod=move.GetType().GetMethod("IsGrounded",flags);
+var gc=(Transform)move.GetType().GetField("groundCheck",flags).GetValue(move);
+var log=new Newtonsoft.Json.Linq.JArray();int index=0,phase=0;float lastJump=-10f,start=Time.time,lastSample=-10f;string status="running";float lastProgress=Time.time,lastX=rb.position.x,lastY=rb.position.y;
+Application.runInBackground=true;
+UnityEditorInternal.InternalEditorUtility.OnGameViewFocus(true);
+typeof(EditorApplication).GetProperty("isFocused",System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic|System.Reflection.BindingFlags.Static).SetValue(null,true,null);
+typeof(EditorApplication).GetMethod("UpdateInteractionModeSettings",System.Reflection.BindingFlags.Static|System.Reflection.BindingFlags.Public|System.Reflection.BindingFlags.NonPublic).Invoke(null,null);
+Action<string> save=state=>{status=state;var report=new Newtonsoft.Json.Linq.JObject();report["status"]=state;report["route"]=routeName;report["elapsed"]=Time.time-start;report["platformIndex"]=index;report["platform"]=names[index];report["frames"]=log;System.IO.File.WriteAllText("Reports/Level02/"+runName+".json",report.ToString());};
+Action<float> direction=d=>{moveField.SetValue(move,new Vector2(d,0));if(d!=0)facingField.SetValue(combat,d>0?1:-1);};
+Action jump=()=>{jumpField.SetValue(move,.12f);lastJump=Time.time;phase=1;};
+var originalLoop=UnityEngine.LowLevel.PlayerLoop.GetCurrentPlayerLoop();
+Action<PlayModeStateChange> onExit=null;
+Action restore=()=>{UnityEngine.LowLevel.PlayerLoop.SetPlayerLoop(originalLoop);if(onExit!=null)EditorApplication.playModeStateChanged-=onExit;};
+onExit=state=>{if(state==PlayModeStateChange.ExitingPlayMode)restore();};EditorApplication.playModeStateChanged+=onExit;
+Action step=null;
+step=()=>{try{
+ if(!EditorApplication.isPlaying||player==null){restore();save("stopped");return;}
+ bool complete=(bool)manager.GetType().GetProperty("IsComplete").GetValue(manager,null);
+ int deaths=(int)manager.GetType().GetProperty("DeathCount").GetValue(manager,null);int hp=(int)health.GetType().GetProperty("CurrentHealth").GetValue(health,null);
+ int score=(int)GameObject.Find("GameManager").GetComponent(Type.GetType("ScoreManager, Assembly-CSharp")).GetType().GetProperty("Score").GetValue(GameObject.Find("GameManager").GetComponent(Type.GetType("ScoreManager, Assembly-CSharp")),null);
+ bool grounded=(bool)groundedMethod.Invoke(move,null);var hit=Physics2D.OverlapCircle(gc.position,.15f,1<<3);string floor=hit==null?"":hit.gameObject.name;
+ if(Time.time-lastSample>.1f){lastSample=Time.time;var p=rb.position;var c=Camera.main.transform.position;log.Add(Newtonsoft.Json.Linq.JObject.FromObject(new{t=Time.time-start,x=p.x,y=p.y,vx=rb.linearVelocity.x,vy=rb.linearVelocity.y,grounded=grounded,floor=floor,index=index,phase=phase,hp=hp,deaths=deaths,score=score,cameraX=c.x,cameraY=c.y}));save("running");}
+ if(complete){direction(0);restore();save("complete");return;}
+ if(deaths>0||Time.time-start>160){direction(0);restore();save(deaths>0?"respawned":"timeout");return;}
+ if(Mathf.Abs(rb.position.x-lastX)+Mathf.Abs(rb.position.y-lastY)>.5f){lastProgress=Time.time;lastX=rb.position.x;lastY=rb.position.y;}
+ if(Time.time-lastProgress>8){direction(0);restore();save("stuck");return;}
+ if(index+1<names.Length&&floor==names[index+1]&&rb.linearVelocity.y<.1f){index++;phase=0;}
+ if(index==names.Length-1){direction(1);return;}
+ var current=rows[names[index]];var next=rows[names[index+1]];float a=(float)current["minX"],b=(float)current["maxX"],top=(float)current["top"],na=(float)next["minX"],nb=(float)next["maxX"],ntop=(float)next["top"];
+ float dir=(na+nb>a+b)?1f:-1f;float pos=rb.position.x;
+ if(phase==1&&grounded&&Time.time-lastJump>.3f&&floor==names[index]&&Mathf.Abs(rb.position.y-(top+1))<.2f){phase=0;}
+ if(phase==1){
+  bool shaft=(string)current["section"]=="VerticalShaft"&&names[index]!="ShaftExit"&&names[index+1]!="ShaftExit";
+  if(shaft){float target=dir>0?na+.85f:nb-.85f;float predicted=pos+rb.linearVelocity.x*.12f;direction(Mathf.Abs(target-predicted)<.28f?0:Mathf.Sign(target-predicted));}
+  else direction(dir);
+  return;
+ }
+ if(!grounded){direction(dir);return;}
+ // Combat is performed through the real PlayerCombat overlap/cooldown path.
+ foreach(var enemyRow in data["enemies"].Where(r=>(string)r["platform"]==names[index])){
+  var enemy=GameObject.Find((string)enemyRow["name"]);if(enemy==null)continue;float dx=enemy.transform.position.x-pos;direction(Mathf.Abs(dx)<1.8f?0:Mathf.Sign(dx));facingField.SetValue(combat,dx>=0?1:-1);
+  if(Mathf.Abs(dx)<=1.9f&&Mathf.Abs(enemy.transform.position.y-rb.position.y)<1.3f)combat.GetType().GetMethod("TryAttack").Invoke(combat,null);
+  return;
+ }
+ // Read active hazard position; jump over its existing collision shape.
+ foreach(var hazardRow in data["hazards"].Where(r=>(string)r["platform"]==names[index])){
+  var hazard=GameObject.Find((string)hazardRow["name"]);var col=hazard.GetComponent<Collider2D>();float leading=dir>0?col.bounds.min.x:col.bounds.max.x;float distance=(leading-pos)*dir;
+  float threshold=(string)hazardRow["type"]=="spikes"?1.45f:2.3f;
+  if((string)hazardRow["type"]=="moving"){float hv=hazard.GetComponent<Rigidbody2D>().linearVelocity.x;threshold=Mathf.Max(1.25f,(8f-dir*hv)*.33f-.65f);}
+  
+  if(distance>=.5f&&distance<=threshold&&Time.time-lastJump>.5f){direction(dir);jump();return;}
+ }
+ bool zigzag=(string)current["section"]=="VerticalShaft"&&names[index]!="ShaftExit"&&names[index+1]!="ShaftExit";
+ float launch=dir>0?b-(zigzag?.25f:1.25f):a+(zigzag?.25f:1.25f);
+ direction(dir);
+ if(names[index]=="RouteFork"&&names[index+1]=="Lower_01"){phase=1;return;}
+ if((pos-launch)*dir>=0&&Time.time-lastJump>.45f){jump();}
+ }catch(Exception ex){restore();direction(0);save("exception "+ex);}};
+var loop=originalLoop;loop.subSystemList=(UnityEngine.LowLevel.PlayerLoopSystem[])originalLoop.subSystemList.Clone();
+for(int i=0;i<loop.subSystemList.Length;i++){if(loop.subSystemList[i].type==typeof(UnityEngine.PlayerLoop.Update)){var child=loop.subSystemList[i];var systems=new UnityEngine.LowLevel.PlayerLoopSystem[child.subSystemList.Length+1];systems[0]=new UnityEngine.LowLevel.PlayerLoopSystem{type=typeof(EditorApplication),updateDelegate=()=>step()};Array.Copy(child.subSystemList,0,systems,1,child.subSystemList.Length);child.subSystemList=systems;loop.subSystemList[i]=child;}}
+UnityEngine.LowLevel.PlayerLoop.SetPlayerLoop(loop);
+return new{run=runName,route=routeName,platforms=names.Length};

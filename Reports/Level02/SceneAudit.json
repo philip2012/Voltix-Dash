@@ -1,0 +1,8454 @@
+{
+  "scene": "Assets/Scenes/Level02.unity",
+  "playing": false,
+  "dirty": false,
+  "roots": [
+    "Main Camera",
+    "Global Light 2D",
+    "Player",
+    "Environment",
+    "Enemies",
+    "Hazards",
+    "LevelObjects",
+    "CameraBounds"
+  ],
+  "objects": [
+    {
+      "path": "Main Camera",
+      "active": true,
+      "position": {
+        "x": 4.0,
+        "y": 1.5,
+        "z": -10.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.Camera",
+        "UnityEngine.AudioListener",
+        "UnityEngine.Rendering.Universal.UniversalAdditionalCameraData",
+        "CameraFollow",
+        "CameraShake"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Global Light 2D",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.Rendering.Universal.Light2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Player",
+      "active": true,
+      "position": {
+        "x": 4.0,
+        "y": 1.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 2.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.Rigidbody2D",
+        "UnityEngine.CapsuleCollider2D",
+        "UnityEngine.InputSystem.PlayerInput",
+        "PlayerMovement",
+        "PlayerHealth",
+        "PlayerCombat",
+        "PlayerAttackVisual",
+        "PlayerFeedback",
+        "PlayerAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Player/GroundCheck",
+      "active": true,
+      "position": {
+        "x": 4.0,
+        "y": 0.100000024,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Player/ElectricSlash",
+      "active": true,
+      "position": {
+        "x": 4.0,
+        "y": 1.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Player/Visual",
+      "active": true,
+      "position": {
+        "x": 4.0,
+        "y": 1.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/PlayerIdle.png",
+          "material": "Assets/Art/Materials/PlayerFlash.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_01",
+      "active": true,
+      "position": {
+        "x": 6.0,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_01/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 6.0,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_01/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 6.0,
+        "y": -0.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_01/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 6.0,
+        "y": -0.07999998,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_02",
+      "active": true,
+      "position": {
+        "x": 19.2,
+        "y": 0.149999976,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_02/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 19.2,
+        "y": 0.149999976,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_02/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 19.2,
+        "y": 0.149999976,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_02/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 19.2,
+        "y": 0.57,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_03",
+      "active": true,
+      "position": {
+        "x": 32.4,
+        "y": 0.85,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_03/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 32.4,
+        "y": 0.85,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_03/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 32.4,
+        "y": 0.85,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_03/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 32.4,
+        "y": 1.27,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_04",
+      "active": true,
+      "position": {
+        "x": 47.6,
+        "y": 0.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_04/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 47.6,
+        "y": 0.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_04/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 47.6,
+        "y": 0.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_04/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 47.6,
+        "y": 0.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_05",
+      "active": true,
+      "position": {
+        "x": 62.8000031,
+        "y": 1.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_05/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 62.8000031,
+        "y": 1.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Fast_05/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 62.8000031,
+        "y": 1.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Fast_05/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 62.8000031,
+        "y": 1.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_00",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 2.475,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_00/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 2.475,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_00/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 2.475,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_00/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 2.46999979,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_01",
+      "active": true,
+      "position": {
+        "x": 84.6,
+        "y": 4.125,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_01/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 84.6,
+        "y": 4.125,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_01/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 84.6,
+        "y": 4.125,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_01/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 84.6,
+        "y": 4.12,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_02",
+      "active": true,
+      "position": {
+        "x": 74.3,
+        "y": 5.97500038,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_02/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 74.3,
+        "y": 5.97500038,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_02/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 74.3,
+        "y": 5.97500038,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_02/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 74.3,
+        "y": 5.97000027,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_03",
+      "active": true,
+      "position": {
+        "x": 85.1,
+        "y": 7.57500029,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_03/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 85.1,
+        "y": 7.57500029,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_03/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 85.1,
+        "y": 7.57500029,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_03/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 85.1,
+        "y": 7.57,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_04",
+      "active": true,
+      "position": {
+        "x": 75.3,
+        "y": 9.475,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_04/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 75.3,
+        "y": 9.475,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_04/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 75.3,
+        "y": 9.475,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_04/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 75.3,
+        "y": 9.47,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_05",
+      "active": true,
+      "position": {
+        "x": 84.1,
+        "y": 11.175,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_05/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 84.1,
+        "y": 11.175,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_05/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 84.1,
+        "y": 11.175,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_05/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 84.1,
+        "y": 11.17,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_06",
+      "active": true,
+      "position": {
+        "x": 74.5,
+        "y": 12.975,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_06/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 74.5,
+        "y": 12.975,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_06/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 74.5,
+        "y": 12.975,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_06/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 74.5,
+        "y": 12.97,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_07",
+      "active": true,
+      "position": {
+        "x": 84.8,
+        "y": 14.625,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_07/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 84.8,
+        "y": 14.625,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_07/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 84.8,
+        "y": 14.625,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_07/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 84.8,
+        "y": 14.62,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_08",
+      "active": true,
+      "position": {
+        "x": 75.0,
+        "y": 16.4749985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_08/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 75.0,
+        "y": 16.4749985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_08/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 75.0,
+        "y": 16.4749985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_08/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 75.0,
+        "y": 16.47,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_09",
+      "active": true,
+      "position": {
+        "x": 84.3999939,
+        "y": 18.125,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_09/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 84.3999939,
+        "y": 18.125,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_09/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 84.3999939,
+        "y": 18.125,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_09/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 84.3999939,
+        "y": 18.12,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_10",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 20.025,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_10/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 20.025,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_10/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 20.025,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_10/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 20.02,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_11",
+      "active": true,
+      "position": {
+        "x": 84.6,
+        "y": 21.7249985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_11/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 84.6,
+        "y": 21.7249985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Shaft_11/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 84.6,
+        "y": 21.7249985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Shaft_11/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 84.6,
+        "y": 21.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ShaftExit",
+      "active": true,
+      "position": {
+        "x": 97.6,
+        "y": 21.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ShaftExit/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 97.6,
+        "y": 21.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ShaftExit/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 97.6,
+        "y": 21.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ShaftExit/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 97.6,
+        "y": 21.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Timing_01",
+      "active": true,
+      "position": {
+        "x": 116.8,
+        "y": 20.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Timing_01/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 116.8,
+        "y": 20.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Timing_01/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 116.8,
+        "y": 20.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Timing_01/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 116.8,
+        "y": 20.92,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Timing_02",
+      "active": true,
+      "position": {
+        "x": 134.0,
+        "y": 21.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Timing_02/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 134.0,
+        "y": 21.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Timing_02/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 134.0,
+        "y": 21.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Timing_02/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 134.0,
+        "y": 22.32,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Timing_03",
+      "active": true,
+      "position": {
+        "x": 151.2,
+        "y": 21.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Timing_03/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 151.2,
+        "y": 21.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Timing_03/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 151.2,
+        "y": 21.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Timing_03/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 151.2,
+        "y": 21.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Timing_04",
+      "active": true,
+      "position": {
+        "x": 170.4,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Timing_04/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 170.4,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Timing_04/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 170.4,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Timing_04/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 170.4,
+        "y": 22.92,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_01",
+      "active": true,
+      "position": {
+        "x": 187.6,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_01/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 187.6,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_01/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 187.6,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_01/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 187.6,
+        "y": 22.92,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_02",
+      "active": true,
+      "position": {
+        "x": 202.8,
+        "y": 23.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_02/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 202.8,
+        "y": 23.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_02/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 202.8,
+        "y": 23.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_02/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 202.8,
+        "y": 24.12,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_03",
+      "active": true,
+      "position": {
+        "x": 220.0,
+        "y": 22.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_03/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 220.0,
+        "y": 22.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_03/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 220.0,
+        "y": 22.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_03/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 220.0,
+        "y": 23.22,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_04",
+      "active": true,
+      "position": {
+        "x": 237.2,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_04/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 237.2,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_04/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 237.2,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_04/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 237.2,
+        "y": 24.42,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_05",
+      "active": true,
+      "position": {
+        "x": 252.4,
+        "y": 23.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_05/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 252.4,
+        "y": 23.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Corridor_05/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 252.4,
+        "y": 23.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Corridor_05/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 252.4,
+        "y": 23.52,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/RouteFork",
+      "active": true,
+      "position": {
+        "x": 269.6,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/RouteFork/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 269.6,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/RouteFork/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 269.6,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/RouteFork/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 269.6,
+        "y": 24.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_01",
+      "active": true,
+      "position": {
+        "x": 282.8,
+        "y": 26.3499985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_01/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 282.8,
+        "y": 26.3499985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_01/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 282.8,
+        "y": 26.3499985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_01/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 282.8,
+        "y": 26.47,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_02",
+      "active": true,
+      "position": {
+        "x": 294.0,
+        "y": 28.1999989,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_02/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 294.0,
+        "y": 28.1999989,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_02/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 294.0,
+        "y": 28.1999989,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_02/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 294.0,
+        "y": 28.32,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_03",
+      "active": true,
+      "position": {
+        "x": 307.2,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_03/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 307.2,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_03/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 307.2,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_03/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 307.2,
+        "y": 29.22,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_04",
+      "active": true,
+      "position": {
+        "x": 322.4,
+        "y": 28.1999989,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_04/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 322.4,
+        "y": 28.1999989,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_04/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 322.4,
+        "y": 28.1999989,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_04/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 322.4,
+        "y": 28.32,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_05",
+      "active": true,
+      "position": {
+        "x": 336.6,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_05/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 336.6,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_05/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 336.6,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_05/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 336.6,
+        "y": 29.22,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_06",
+      "active": true,
+      "position": {
+        "x": 351.8,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_06/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 351.8,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_06/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 351.8,
+        "y": 29.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_06/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 351.8,
+        "y": 29.22,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lower_01",
+      "active": true,
+      "position": {
+        "x": 287.8,
+        "y": 22.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lower_01/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 287.8,
+        "y": 22.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lower_01/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 287.8,
+        "y": 22.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lower_01/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 287.8,
+        "y": 23.32,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lower_02",
+      "active": true,
+      "position": {
+        "x": 310.0,
+        "y": 22.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lower_02/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 310.0,
+        "y": 22.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lower_02/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 310.0,
+        "y": 22.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lower_02/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 310.0,
+        "y": 22.52,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lower_03",
+      "active": true,
+      "position": {
+        "x": 331.2,
+        "y": 22.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lower_03/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 331.2,
+        "y": 22.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lower_03/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 331.2,
+        "y": 22.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lower_03/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 331.2,
+        "y": 23.22,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lower_04",
+      "active": true,
+      "position": {
+        "x": 347.599976,
+        "y": 23.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lower_04/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 347.599976,
+        "y": 23.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Lower_04/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 347.599976,
+        "y": 23.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Lower_04/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 347.599976,
+        "y": 24.12,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/RouteRejoin",
+      "active": true,
+      "position": {
+        "x": 369.1,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/RouteRejoin/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 369.1,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/RouteRejoin/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 369.1,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/RouteRejoin/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 369.1,
+        "y": 24.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CombatDeck",
+      "active": true,
+      "position": {
+        "x": 401.4,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CombatDeck/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 401.4,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/CombatDeck/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 401.4,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/CombatDeck/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 401.4,
+        "y": 24.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_01",
+      "active": true,
+      "position": {
+        "x": 425.6,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_01/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 425.6,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_01/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 425.6,
+        "y": 22.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_01/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 425.6,
+        "y": 22.92,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_02",
+      "active": true,
+      "position": {
+        "x": 439.8,
+        "y": 20.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_02/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 439.8,
+        "y": 20.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_02/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 439.8,
+        "y": 20.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_02/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 439.8,
+        "y": 21.12,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_03",
+      "active": true,
+      "position": {
+        "x": 453.0,
+        "y": 18.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_03/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 453.0,
+        "y": 18.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_03/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 453.0,
+        "y": 18.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_03/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 453.0,
+        "y": 19.32,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_04",
+      "active": true,
+      "position": {
+        "x": 466.2,
+        "y": 17.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_04/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 466.2,
+        "y": 17.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_04/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 466.2,
+        "y": 17.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_04/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 466.2,
+        "y": 17.52,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_05",
+      "active": true,
+      "position": {
+        "x": 480.4,
+        "y": 15.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_05/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 480.4,
+        "y": 15.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_05/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 480.4,
+        "y": 15.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_05/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 480.4,
+        "y": 15.92,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_06",
+      "active": true,
+      "position": {
+        "x": 493.6,
+        "y": 13.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_06/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 493.6,
+        "y": 13.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Descent_06/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 493.6,
+        "y": 13.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Descent_06/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 493.6,
+        "y": 14.32,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Breather",
+      "active": true,
+      "position": {
+        "x": 508.8,
+        "y": 13.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Breather/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 508.8,
+        "y": 13.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Breather/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 508.8,
+        "y": 13.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Breather/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 508.8,
+        "y": 14.32,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_01",
+      "active": true,
+      "position": {
+        "x": 526.0,
+        "y": 15.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_01/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 526.0,
+        "y": 15.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_01/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 526.0,
+        "y": 15.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_01/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 526.0,
+        "y": 15.52,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_02",
+      "active": true,
+      "position": {
+        "x": 541.2,
+        "y": 16.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_02/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 541.2,
+        "y": 16.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_02/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 541.2,
+        "y": 16.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_02/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 541.2,
+        "y": 16.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_03",
+      "active": true,
+      "position": {
+        "x": 556.4,
+        "y": 15.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_03/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 556.4,
+        "y": 15.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_03/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 556.4,
+        "y": 15.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_03/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 556.4,
+        "y": 15.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_04",
+      "active": true,
+      "position": {
+        "x": 576.6,
+        "y": 16.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_04/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 576.6,
+        "y": 16.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_04/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 576.6,
+        "y": 16.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_04/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 576.6,
+        "y": 16.92,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_05",
+      "active": true,
+      "position": {
+        "x": 598.8,
+        "y": 15.7000008,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_05/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 598.8,
+        "y": 15.7000008,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_05/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 598.8,
+        "y": 15.7000008,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_05/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 598.8,
+        "y": 16.12,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_06",
+      "active": true,
+      "position": {
+        "x": 616.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_06/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 616.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_06/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 616.0,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_06/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 616.0,
+        "y": 17.42,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_07",
+      "active": true,
+      "position": {
+        "x": 634.2,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_07/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 634.2,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_07/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 634.2,
+        "y": 17.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_07/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 634.2,
+        "y": 17.42,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_08",
+      "active": true,
+      "position": {
+        "x": 655.4,
+        "y": 16.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_08/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 655.4,
+        "y": 16.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_08/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 655.4,
+        "y": 16.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Gauntlet_08/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 655.4,
+        "y": 16.72,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ExitApproach",
+      "active": true,
+      "position": {
+        "x": 670.6,
+        "y": 17.2,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ExitApproach/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 670.6,
+        "y": 17.2,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ExitApproach/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 670.6,
+        "y": 17.2,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ExitApproach/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 670.6,
+        "y": 17.62,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ExitDeck",
+      "active": true,
+      "position": {
+        "x": 687.8,
+        "y": 17.2,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ExitDeck/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 687.8,
+        "y": 17.2,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/ExitDeck/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 687.8,
+        "y": 17.2,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/ExitDeck/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 687.8,
+        "y": 17.62,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_07",
+      "active": true,
+      "position": {
+        "x": 366.0,
+        "y": 27.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_07/PlatformVisual",
+      "active": true,
+      "position": {
+        "x": 366.0,
+        "y": 27.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Platforms/Upper_07/PlatformVisual/Body",
+      "active": true,
+      "position": {
+        "x": 366.0,
+        "y": 27.0999985,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.85,
+            "g": 0.68,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Platforms/Upper_07/PlatformVisual/Surface",
+      "active": true,
+      "position": {
+        "x": 366.0,
+        "y": 27.22,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformSurface.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/SectorTitle",
+      "active": true,
+      "position": {
+        "x": 7.0,
+        "y": 4.6,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/ShaftHeader",
+      "active": true,
+      "position": {
+        "x": 79.7,
+        "y": 27.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/TimingHeader",
+      "active": true,
+      "position": {
+        "x": 109.0,
+        "y": 26.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/CorridorHeader",
+      "active": true,
+      "position": {
+        "x": 181.5,
+        "y": 27.9,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/RouteChoice",
+      "active": true,
+      "position": {
+        "x": 271.0,
+        "y": 29.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/UpperRouteSign",
+      "active": true,
+      "position": {
+        "x": 281.5,
+        "y": 30.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/LowerRouteSign",
+      "active": true,
+      "position": {
+        "x": 281.5,
+        "y": 24.25,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/RouteRejoinSign",
+      "active": true,
+      "position": {
+        "x": 377.0,
+        "y": 29.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/CombatHeader",
+      "active": true,
+      "position": {
+        "x": 395.2,
+        "y": 29.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/DescentHeader",
+      "active": true,
+      "position": {
+        "x": 424.2,
+        "y": 27.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/BreatherHeader",
+      "active": true,
+      "position": {
+        "x": 509.2,
+        "y": 19.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/RouteCues/ExitHeader",
+      "active": true,
+      "position": {
+        "x": 690.8,
+        "y": 22.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.MeshRenderer",
+        "UnityEngine.TextMesh"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/Background",
+      "active": true,
+      "position": {
+        "x": 339.8,
+        "y": 15.5,
+        "z": 3.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Background.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.72,
+            "g": 0.5,
+            "b": 0.95,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ShaftPylon_Left",
+      "active": true,
+      "position": {
+        "x": 68.8,
+        "y": 13.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.4,
+            "g": 0.28,
+            "b": 0.6,
+            "a": 0.65
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ShaftPylon_Right",
+      "active": true,
+      "position": {
+        "x": 90.6,
+        "y": 13.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.4,
+            "g": 0.28,
+            "b": 0.6,
+            "a": 0.65
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_115",
+      "active": true,
+      "position": {
+        "x": 115.0,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_174",
+      "active": true,
+      "position": {
+        "x": 174.0,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_244",
+      "active": true,
+      "position": {
+        "x": 244.0,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_305",
+      "active": true,
+      "position": {
+        "x": 305.0,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_384",
+      "active": true,
+      "position": {
+        "x": 398.2,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_438",
+      "active": true,
+      "position": {
+        "x": 452.2,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_499",
+      "active": true,
+      "position": {
+        "x": 513.2,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_559",
+      "active": true,
+      "position": {
+        "x": 573.2,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ReactorHousing_625",
+      "active": true,
+      "position": {
+        "x": 639.2,
+        "y": 11.0,
+        "z": 2.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/PlatformBody.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 0.32,
+            "g": 0.19,
+            "b": 0.5,
+            "a": 0.35
+          }
+        }
+      ]
+    },
+    {
+      "path": "Environment/Decoration/ShaftConduit",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/UpperRouteGuide",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LowerRouteGuide",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_0",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_1",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_2",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_3",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_4",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_5",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_6",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_7",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_8",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_9",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_10",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Environment/Decoration/LaunchMarker_11",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Shaft",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 13.65,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Shaft/Visual",
+      "active": true,
+      "position": {
+        "x": 74.8,
+        "y": 13.65,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Optional",
+      "active": true,
+      "position": {
+        "x": 310.0,
+        "y": 23.2,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Optional/Visual",
+      "active": true,
+      "position": {
+        "x": 310.0,
+        "y": 23.2,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Arena_A",
+      "active": true,
+      "position": {
+        "x": 394.7,
+        "y": 25.4,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Arena_A/Visual",
+      "active": true,
+      "position": {
+        "x": 394.7,
+        "y": 25.4,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Arena_B",
+      "active": true,
+      "position": {
+        "x": 408.7,
+        "y": 25.4,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Arena_B/Visual",
+      "active": true,
+      "position": {
+        "x": 408.7,
+        "y": 25.4,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Final_A",
+      "active": true,
+      "position": {
+        "x": 576.6,
+        "y": 17.6,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Final_A/Visual",
+      "active": true,
+      "position": {
+        "x": 576.6,
+        "y": 17.6,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Enemies/PatrolBot_Final_B",
+      "active": true,
+      "position": {
+        "x": 634.2,
+        "y": 18.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.2,
+        "y": 1.2,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Enemies/PatrolBot_Final_B/Visual",
+      "active": true,
+      "position": {
+        "x": 634.2,
+        "y": 18.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/PatrolBotPatrol.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Spikes_Shaft",
+      "active": true,
+      "position": {
+        "x": 86.8,
+        "y": 8.15,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Spikes_Shaft/Spike_1",
+      "active": true,
+      "position": {
+        "x": 85.8,
+        "y": 7.93866634,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Spikes_Shaft/Spike_2",
+      "active": true,
+      "position": {
+        "x": 86.8,
+        "y": 7.93866634,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Spikes_Shaft/Spike_3",
+      "active": true,
+      "position": {
+        "x": 87.8,
+        "y": 7.93866634,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Mover_Timing_A",
+      "active": true,
+      "position": {
+        "x": 115.8,
+        "y": 22.15,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.CircleCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Mover_Timing_A/HazardDiamond",
+      "active": true,
+      "position": {
+        "x": 115.8,
+        "y": 22.15,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.9,
+        "y": 0.9,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Mover_Timing_A/HazardCore",
+      "active": true,
+      "position": {
+        "x": 115.8,
+        "y": 22.15,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Mover_Timing_B",
+      "active": true,
+      "position": {
+        "x": 151.2,
+        "y": 22.95,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.CircleCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Mover_Timing_B/HazardDiamond",
+      "active": true,
+      "position": {
+        "x": 151.2,
+        "y": 22.95,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.9,
+        "y": 0.9,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Mover_Timing_B/HazardCore",
+      "active": true,
+      "position": {
+        "x": 151.2,
+        "y": 22.95,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_1",
+      "active": true,
+      "position": {
+        "x": 187.6,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_1/BarrierField",
+      "active": true,
+      "position": {
+        "x": 187.6,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.55,
+        "y": 2.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_1/ElectricBolt",
+      "active": true,
+      "position": {
+        "x": 187.6,
+        "y": 24.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_3",
+      "active": true,
+      "position": {
+        "x": 218.0,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_3/BarrierField",
+      "active": true,
+      "position": {
+        "x": 218.0,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.55,
+        "y": 2.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_3/ElectricBolt",
+      "active": true,
+      "position": {
+        "x": 218.0,
+        "y": 24.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_5",
+      "active": true,
+      "position": {
+        "x": 251.9,
+        "y": 24.6,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_5/BarrierField",
+      "active": true,
+      "position": {
+        "x": 251.9,
+        "y": 24.6,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.55,
+        "y": 2.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Barrier_Corridor_5/ElectricBolt",
+      "active": true,
+      "position": {
+        "x": 251.9,
+        "y": 24.6,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_LowerRoute",
+      "active": true,
+      "position": {
+        "x": 292.1,
+        "y": 24.4,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_LowerRoute/BarrierField",
+      "active": true,
+      "position": {
+        "x": 292.1,
+        "y": 24.4,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.55,
+        "y": 2.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Barrier_LowerRoute/ElectricBolt",
+      "active": true,
+      "position": {
+        "x": 292.1,
+        "y": 24.4,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Mover_LowerRoute",
+      "active": true,
+      "position": {
+        "x": 331.2,
+        "y": 24.45,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.CircleCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Mover_LowerRoute/HazardDiamond",
+      "active": true,
+      "position": {
+        "x": 331.2,
+        "y": 24.45,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.9,
+        "y": 0.9,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Mover_LowerRoute/HazardCore",
+      "active": true,
+      "position": {
+        "x": 331.2,
+        "y": 24.45,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Spikes_CombatExit",
+      "active": true,
+      "position": {
+        "x": 415.2,
+        "y": 25.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Spikes_CombatExit/Spike_1",
+      "active": true,
+      "position": {
+        "x": 414.2,
+        "y": 25.088665,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Spikes_CombatExit/Spike_2",
+      "active": true,
+      "position": {
+        "x": 415.2,
+        "y": 25.088665,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Spikes_CombatExit/Spike_3",
+      "active": true,
+      "position": {
+        "x": 416.2,
+        "y": 25.088665,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Mover_Descent",
+      "active": true,
+      "position": {
+        "x": 440.2,
+        "y": 22.35,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.CircleCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Mover_Descent/HazardDiamond",
+      "active": true,
+      "position": {
+        "x": 440.2,
+        "y": 22.35,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.9,
+        "y": 0.9,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Mover_Descent/HazardCore",
+      "active": true,
+      "position": {
+        "x": 440.2,
+        "y": 22.35,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Spikes_FinalEntry",
+      "active": true,
+      "position": {
+        "x": 525.7,
+        "y": 16.1,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Spikes_FinalEntry/Spike_1",
+      "active": true,
+      "position": {
+        "x": 524.7,
+        "y": 15.8886671,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Spikes_FinalEntry/Spike_2",
+      "active": true,
+      "position": {
+        "x": 525.7,
+        "y": 15.8886671,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Spikes_FinalEntry/Spike_3",
+      "active": true,
+      "position": {
+        "x": 526.7,
+        "y": 15.8886671,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Barrier_Final",
+      "active": true,
+      "position": {
+        "x": 556.2,
+        "y": 16.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Barrier_Final/BarrierField",
+      "active": true,
+      "position": {
+        "x": 556.2,
+        "y": 16.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.55,
+        "y": 2.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/ElectricBarrierLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Barrier_Final/ElectricBolt",
+      "active": true,
+      "position": {
+        "x": 556.2,
+        "y": 16.8,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.LineRenderer"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Mover_Final",
+      "active": true,
+      "position": {
+        "x": 598.8,
+        "y": 17.35,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.CircleCollider2D",
+        "UnityEngine.Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Mover_Final/HazardDiamond",
+      "active": true,
+      "position": {
+        "x": 598.8,
+        "y": 17.35,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.9,
+        "y": 0.9,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/MovingHazardLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Mover_Final/HazardCore",
+      "active": true,
+      "position": {
+        "x": 598.8,
+        "y": 17.35,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 0.25,
+        "y": 0.25,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Spikes_FinalExit",
+      "active": true,
+      "position": {
+        "x": 654.4,
+        "y": 17.3,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "Hazards/Spikes_FinalExit/Spike_1",
+      "active": true,
+      "position": {
+        "x": 653.4,
+        "y": 17.088665,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Spikes_FinalExit/Spike_2",
+      "active": true,
+      "position": {
+        "x": 654.4,
+        "y": 17.088665,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "Hazards/Spikes_FinalExit/Spike_3",
+      "active": true,
+      "position": {
+        "x": 655.4,
+        "y": 17.088665,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/StaticSpike.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/GameManager",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "ScoreManager",
+        "LevelManager",
+        "LevelPause"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/HUD",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.UIElements.UIDocument",
+        "GameHUD",
+        "LevelCompletionUI",
+        "PauseMenuUI"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/GoalExitPortalVisual",
+      "active": true,
+      "position": {
+        "x": 690.8,
+        "y": 19.7,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.SpriteRenderer",
+        "UnityEngine.BoxCollider2D",
+        "GoalTrigger",
+        "UnityEngine.Animator"
+      ],
+      "sprites": [
+        {
+          "sprite": "Assets/Art/Sprites/Animation/GoalPortalLoop.png",
+          "material": "Assets/Art/Materials/NeonSprite.mat",
+          "color": {
+            "r": 1.0,
+            "g": 1.0,
+            "b": 1.0,
+            "a": 1.0
+          }
+        }
+      ]
+    },
+    {
+      "path": "LevelObjects/GameplayFeedback",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.ParticleSystem",
+        "UnityEngine.ParticleSystemRenderer",
+        "EnemyDeathFeedback"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "LevelObjects/GameplayAudio",
+      "active": true,
+      "position": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "GameplayAudio",
+        "UnityEngine.AudioSource",
+        "UnityEngine.AudioSource",
+        "UnityEngine.AudioSource"
+      ],
+      "sprites": []
+    },
+    {
+      "path": "CameraBounds",
+      "active": true,
+      "position": {
+        "x": 348.9,
+        "y": 15.5,
+        "z": 0.0
+      },
+      "scale": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0
+      },
+      "components": [
+        "UnityEngine.Transform",
+        "UnityEngine.BoxCollider2D"
+      ],
+      "sprites": []
+    }
+  ],
+  "platformCount": 58,
+  "enemyCount": 6,
+  "hazardCount": 14,
+  "decorationColliders": 0,
+  "decorationScripts": 0,
+  "missingScripts": 0,
+  "nextLevelScene": "",
+  "patrols": [
+    {
+      "name": "PatrolBot_Shaft",
+      "serialized": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PatrolEnemy\",\"speed\":2.0,\"patrolDistance\":2.0}}"
+    },
+    {
+      "name": "PatrolBot_Optional",
+      "serialized": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PatrolEnemy\",\"speed\":2.0,\"patrolDistance\":3.0}}"
+    },
+    {
+      "name": "PatrolBot_Arena_A",
+      "serialized": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PatrolEnemy\",\"speed\":2.0,\"patrolDistance\":3.0}}"
+    },
+    {
+      "name": "PatrolBot_Arena_B",
+      "serialized": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PatrolEnemy\",\"speed\":2.0,\"patrolDistance\":3.0}}"
+    },
+    {
+      "name": "PatrolBot_Final_A",
+      "serialized": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PatrolEnemy\",\"speed\":2.0,\"patrolDistance\":3.0}}"
+    },
+    {
+      "name": "PatrolBot_Final_B",
+      "serialized": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PatrolEnemy\",\"speed\":2.0,\"patrolDistance\":3.0}}"
+    }
+  ],
+  "buildScenes": [
+    {
+      "index": 0,
+      "path": "Assets/Scenes/MainMenu.unity",
+      "enabled": true
+    },
+    {
+      "index": 1,
+      "path": "Assets/Scenes/Level01.unity",
+      "enabled": true
+    },
+    {
+      "index": 2,
+      "path": "Assets/Scenes/Level02.unity",
+      "enabled": true
+    }
+  ]
+}

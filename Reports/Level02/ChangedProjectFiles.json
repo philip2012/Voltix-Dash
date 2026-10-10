@@ -1,0 +1,16 @@
+{
+  "modified": [
+    "Assets/Scenes/Level01.unity",
+    "Assets/Scripts/UI/LevelCompletionUI.cs",
+    "Assets/Scripts/Game/LevelManager.cs",
+    "Assets/Scripts/Game/SceneNavigation.cs",
+    "Assets/Scripts/Game/LevelPause.cs",
+    "Assets/UI/HUD/HUD.uxml",
+    "ProjectSettings/EditorBuildSettings.asset"
+  ],
+  "removed": [],
+  "new": [
+    "Assets/Scenes/Level02.unity",
+    "Assets/Scenes/Level02.unity.meta"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "scene": "Level02",
+  "complete": true,
+  "elapsed": 96.69996573837868,
+  "score": 500,
+  "deaths": 0,
+  "next": false,
+  "nextDisplay": "None",
+  "movementEnabled": false,
+  "combatEnabled": false,
+  "bodySimulated": false,
+  "audioSources": 3,
+  "audioListeners": 1,
+  "documents": 1,
+  "levelManagers": 1
+}

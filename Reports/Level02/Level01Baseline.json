@@ -1,0 +1,1319 @@
+{
+  "scene": "Level01",
+  "dirty": false,
+  "roots": [
+    {
+      "name": "Main Camera",
+      "x": -131.1,
+      "y": 39.0,
+      "children": 0,
+      "components": [
+        "Transform",
+        "Camera",
+        "AudioListener",
+        "UniversalAdditionalCameraData",
+        "CameraFollow",
+        "CameraShake"
+      ]
+    },
+    {
+      "name": "Global Light 2D",
+      "x": 0.0,
+      "y": 0.0,
+      "children": 0,
+      "components": [
+        "Transform",
+        "Light2D"
+      ]
+    },
+    {
+      "name": "Player",
+      "x": -134.0,
+      "y": 39.0,
+      "children": 3,
+      "components": [
+        "Transform",
+        "Rigidbody2D",
+        "CapsuleCollider2D",
+        "PlayerInput",
+        "PlayerMovement",
+        "PlayerHealth",
+        "PlayerCombat",
+        "PlayerAttackVisual",
+        "PlayerFeedback",
+        "PlayerAnimationController"
+      ]
+    },
+    {
+      "name": "Environment",
+      "x": 0.0,
+      "y": 0.0,
+      "children": 2,
+      "components": [
+        "Transform"
+      ]
+    },
+    {
+      "name": "Enemies",
+      "x": 0.0,
+      "y": 0.0,
+      "children": 4,
+      "components": [
+        "Transform"
+      ]
+    },
+    {
+      "name": "Hazards",
+      "x": 0.0,
+      "y": 0.0,
+      "children": 9,
+      "components": [
+        "Transform"
+      ]
+    },
+    {
+      "name": "LevelObjects",
+      "x": 0.0,
+      "y": 0.0,
+      "children": 7,
+      "components": [
+        "Transform"
+      ]
+    }
+  ],
+  "player": [
+    {
+      "type": "Transform",
+      "json": "{\"Transform\":{\"serializedVersion\":\"2\",\"m_LocalRotation\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0},\"m_LocalPosition\":{\"x\":-134.0,\"y\":39.0,\"z\":0.0},\"m_LocalScale\":{\"x\":1.0,\"y\":2.0,\"z\":1.0},\"m_ConstrainProportionsScale\":false,\"m_LocalEulerAnglesHint\":{\"x\":0.0,\"y\":0.0,\"z\":0.0}}}"
+    },
+    {
+      "type": "Rigidbody2D",
+      "json": "{\"Rigidbody2D\":{\"serializedVersion\":\"5\",\"m_BodyType\":0,\"m_Simulated\":true,\"m_UseFullKinematicContacts\":false,\"m_UseAutoMass\":false,\"m_Mass\":1.0,\"m_LinearDamping\":0.0,\"m_AngularDamping\":0.05000000074505806,\"m_GravityScale\":4.0,\"m_Material\":{\"instanceID\":0},\"m_IncludeLayers\":{\"serializedVersion\":\"2\",\"m_Bits\":0},\"m_ExcludeLayers\":{\"serializedVersion\":\"2\",\"m_Bits\":0},\"m_Interpolate\":1,\"m_SleepingMode\":1,\"m_CollisionDetection\":1,\"m_Constraints\":4}}"
+    },
+    {
+      "type": "CapsuleCollider2D",
+      "json": "{\"CapsuleCollider2D\":{\"m_Enabled\":true,\"serializedVersion\":\"3\",\"m_Density\":1.0,\"m_Material\":{\"instanceID\":0},\"m_IncludeLayers\":{\"serializedVersion\":\"2\",\"m_Bits\":0},\"m_ExcludeLayers\":{\"serializedVersion\":\"2\",\"m_Bits\":0},\"m_LayerOverridePriority\":0,\"m_ForceSendLayers\":{\"serializedVersion\":\"2\",\"m_Bits\":4294967295},\"m_ForceReceiveLayers\":{\"serializedVersion\":\"2\",\"m_Bits\":4294967295},\"m_ContactCaptureLayers\":{\"serializedVersion\":\"2\",\"m_Bits\":4294967295},\"m_CallbackLayers\":{\"serializedVersion\":\"2\",\"m_Bits\":4294967295},\"m_IsTrigger\":false,\"m_UsedByEffector\":false,\"m_CompositeOperation\":0,\"m_CompositeOrder\":0,\"m_Offset\":{\"x\":0.0,\"y\":0.0},\"m_Size\":{\"x\":1.0,\"y\":1.0},\"m_Direction\":0}}"
+    },
+    {
+      "type": "PlayerInput",
+      "json": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Unity.InputSystem::UnityEngine.InputSystem.PlayerInput\",\"m_Actions\":{\"fileID\":-944628639613478452,\"guid\":\"b5ea816fa141e428186e4e11c1272578\",\"type\":3},\"m_NotificationBehavior\":0,\"m_UIInputModule\":{\"instanceID\":0},\"m_DeviceLostEvent\":{\"m_PersistentCalls\":{\"m_Calls\":[]}},\"m_DeviceRegainedEvent\":{\"m_PersistentCalls\":{\"m_Calls\":[]}},\"m_ControlsChangedEvent\":{\"m_PersistentCalls\":{\"m_Calls\":[]}},\"m_ActionEvents\":[],\"m_NeverAutoSwitchControlSchemes\":false,\"m_DefaultControlScheme\":\"\",\"m_DefaultActionMap\":\"Player\",\"m_SplitScreenIndex\":-1,\"m_Camera\":{\"instanceID\":0}}}"
+    },
+    {
+      "type": "PlayerMovement",
+      "json": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PlayerMovement\",\"moveSpeed\":8.0,\"acceleration\":60.0,\"deceleration\":70.0,\"airControlMultiplier\":0.6499999761581421,\"jumpForce\":14.0,\"turnAccelerationMultiplier\":1.600000023841858,\"coyoteTime\":0.11999999731779099,\"jumpBufferTime\":0.11999999731779099,\"jumpCutMultiplier\":0.5,\"fallGravityMultiplier\":1.5,\"maxFallSpeed\":25.0,\"apexThreshold\":1.25,\"apexGravityMultiplier\":0.6499999761581421,\"groundCheck\":{\"instanceID\":0},\"groundCheckRadius\":0.15000000596046449,\"groundLayer\":{\"serializedVersion\":\"2\",\"m_Bits\":8}}}"
+    },
+    {
+      "type": "PlayerHealth",
+      "json": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PlayerHealth\",\"maxHealth\":3,\"damageCooldown\":0.75,\"fallRespawnY\":-40.0}}"
+    },
+    {
+      "type": "PlayerCombat",
+      "json": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PlayerCombat\",\"attackCooldown\":0.3499999940395355,\"attackRange\":1.399999976158142,\"attackHeight\":1.5}}"
+    },
+    {
+      "type": "PlayerAttackVisual",
+      "json": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PlayerAttackVisual\",\"slash\":{\"instanceID\":0},\"duration\":0.11999999731779099,\"color\":{\"r\":0.25,\"g\":0.949999988079071,\"b\":1.0,\"a\":1.0}}}"
+    },
+    {
+      "type": "PlayerFeedback",
+      "json": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PlayerFeedback\",\"visual\":{\"instanceID\":0},\"groundCheck\":{\"instanceID\":0},\"groundLayer\":{\"serializedVersion\":\"2\",\"m_Bits\":8},\"groundRadius\":0.15000000596046449,\"cameraShake\":{\"instanceID\":0},\"jumpStretch\":{\"x\":0.9300000071525574,\"y\":1.090000033378601},\"fallStretch\":{\"x\":0.9599999785423279,\"y\":1.059999942779541},\"landingSquash\":{\"x\":1.1200000047683716,\"y\":0.8999999761581421},\"landingDuration\":0.11999999731779099,\"flashDuration\":0.11999999731779099}}"
+    },
+    {
+      "type": "PlayerAnimationController",
+      "json": "{\"MonoBehaviour\":{\"m_Enabled\":true,\"m_EditorHideFlags\":0,\"m_Name\":\"\",\"m_EditorClassIdentifier\":\"Assembly-CSharp::PlayerAnimationController\",\"animator\":{\"instanceID\":0},\"visual\":{\"instanceID\":0},\"groundCheck\":{\"instanceID\":0},\"groundLayer\":{\"serializedVersion\":\"2\",\"m_Bits\":8},\"jumpStartClip\":{\"fileID\":7400000,\"guid\":\"c850f3510aa874cef8f34ae66697e89f\",\"type\":2},\"landClip\":{\"fileID\":7400000,\"guid\":\"de3c7a180c9fe4325b52cad04ea107c6\",\"type\":2},\"attackClip\":{\"fileID\":7400000,\"guid\":\"373846d672cd9470384fc5b0edb83879\",\"type\":2},\"hurtClip\":{\"fileID\":7400000,\"guid\":\"b830636022a754f7ab4838325c3ede1c\",\"type\":2},\"levelManager\":{\"instanceID\":0}}}"
+    }
+  ],
+  "objects": [
+    {
+      "name": "Main Camera",
+      "parent": "",
+      "x": -131.1,
+      "y": 39.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "Camera",
+        "AudioListener",
+        "UniversalAdditionalCameraData",
+        "CameraFollow",
+        "CameraShake"
+      ],
+      "colliders": []
+    },
+    {
+      "name": "Global Light 2D",
+      "parent": "",
+      "x": 0.0,
+      "y": 0.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "Light2D"
+      ],
+      "colliders": []
+    },
+    {
+      "name": "Player",
+      "parent": "",
+      "x": -134.0,
+      "y": 39.0,
+      "sx": 1.0,
+      "sy": 2.0,
+      "components": [
+        "Transform",
+        "Rigidbody2D",
+        "CapsuleCollider2D",
+        "PlayerInput",
+        "PlayerMovement",
+        "PlayerHealth",
+        "PlayerCombat",
+        "PlayerAttackVisual",
+        "PlayerFeedback",
+        "PlayerAnimationController"
+      ],
+      "colliders": [
+        {
+          "type": "CapsuleCollider2D",
+          "minX": -134.5,
+          "maxX": -133.5,
+          "minY": 38.0,
+          "maxY": 40.0,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Environment",
+      "parent": "",
+      "x": 0.0,
+      "y": 0.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform"
+      ],
+      "colliders": []
+    },
+    {
+      "name": "Platform_01_Opening",
+      "parent": "Platforms",
+      "x": -131.0,
+      "y": 37.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -140.0,
+          "maxX": -122.0,
+          "minY": 36.5,
+          "maxY": 37.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_02_EasyJump",
+      "parent": "Platforms",
+      "x": -116.0,
+      "y": 37.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -120.0,
+          "maxX": -112.0,
+          "minY": 37.3,
+          "maxY": 38.3,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_03_EasyJump",
+      "parent": "Platforms",
+      "x": -104.7,
+      "y": 38.6,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -109.7,
+          "maxX": -99.7,
+          "minY": 38.1,
+          "maxY": 39.1,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_04_SpikeIntro",
+      "parent": "Platforms",
+      "x": -89.7,
+      "y": 38.6,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -97.7,
+          "maxX": -81.7,
+          "minY": 38.1,
+          "maxY": 39.1,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_05_BotIntro",
+      "parent": "Platforms",
+      "x": -70.7,
+      "y": 38.6,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -79.7,
+          "maxX": -61.6999969,
+          "minY": 38.1,
+          "maxY": 39.1,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_06_Elevated",
+      "parent": "Platforms",
+      "x": -55.7,
+      "y": 39.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -59.7,
+          "maxX": -51.7,
+          "minY": 39.3,
+          "maxY": 40.3,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_07_Elevated",
+      "parent": "Platforms",
+      "x": -46.2,
+      "y": 41.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -49.7,
+          "maxX": -42.7,
+          "minY": 40.5,
+          "maxY": 41.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_08_Elevated",
+      "parent": "Platforms",
+      "x": -36.2,
+      "y": 41.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -40.7,
+          "maxX": -31.7,
+          "minY": 41.3,
+          "maxY": 42.3,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_09_SafeLanding",
+      "parent": "Platforms",
+      "x": -23.7,
+      "y": 41.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -29.7,
+          "maxX": -17.7,
+          "minY": 40.5,
+          "maxY": 41.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_10_MoverIntro",
+      "parent": "Platforms",
+      "x": -6.7,
+      "y": 41.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -15.7,
+          "maxX": 2.30000019,
+          "minY": 40.5,
+          "maxY": 41.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_11_BarrierStaging",
+      "parent": "Platforms",
+      "x": 8.3,
+      "y": 42.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 4.3,
+          "maxX": 12.3,
+          "minY": 41.5,
+          "maxY": 42.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_12_BarrierIntro",
+      "parent": "Platforms",
+      "x": 21.3,
+      "y": 41.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 14.2999992,
+          "maxX": 28.3,
+          "minY": 40.5,
+          "maxY": 41.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_13_Recovery",
+      "parent": "Platforms",
+      "x": 35.3,
+      "y": 41.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 30.3,
+          "maxX": 40.3,
+          "minY": 40.5,
+          "maxY": 41.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_14_BotReturn",
+      "parent": "Platforms",
+      "x": 51.3,
+      "y": 41.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 42.3,
+          "maxX": 60.3,
+          "minY": 40.5,
+          "maxY": 41.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_15_Descent",
+      "parent": "Platforms",
+      "x": 66.3,
+      "y": 40.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 62.3000031,
+          "maxX": 70.3,
+          "minY": 39.5,
+          "maxY": 40.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_16_SpikeReturn",
+      "parent": "Platforms",
+      "x": 80.3,
+      "y": 39.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 72.3,
+          "maxX": 88.3,
+          "minY": 38.5,
+          "maxY": 39.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_17_Climb",
+      "parent": "Platforms",
+      "x": 94.0,
+      "y": 40.2,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 90.5,
+          "maxX": 97.5,
+          "minY": 39.7,
+          "maxY": 40.7,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_18_Climb",
+      "parent": "Platforms",
+      "x": 103.7,
+      "y": 41.4,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 99.7,
+          "maxX": 107.7,
+          "minY": 40.9,
+          "maxY": 41.9,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_19_Climb",
+      "parent": "Platforms",
+      "x": 114.7,
+      "y": 42.6,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 109.7,
+          "maxX": 119.7,
+          "minY": 42.1,
+          "maxY": 43.1,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_20_Breather",
+      "parent": "Platforms",
+      "x": 128.7,
+      "y": 42.6,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 121.7,
+          "maxX": 135.7,
+          "minY": 42.1,
+          "maxY": 43.1,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_21_Descent",
+      "parent": "Platforms",
+      "x": 142.2,
+      "y": 41.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 137.7,
+          "maxX": 146.7,
+          "minY": 41.3,
+          "maxY": 42.3,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_22_MoverCombination",
+      "parent": "Platforms",
+      "x": 157.7,
+      "y": 41.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 148.7,
+          "maxX": 166.7,
+          "minY": 41.3,
+          "maxY": 42.3,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_23_BotCombination",
+      "parent": "Platforms",
+      "x": 179.7,
+      "y": 41.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 168.7,
+          "maxX": 190.7,
+          "minY": 41.3,
+          "maxY": 42.3,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_24_SpikeCombination",
+      "parent": "Platforms",
+      "x": 200.7,
+      "y": 41.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 192.7,
+          "maxX": 208.7,
+          "minY": 41.3,
+          "maxY": 42.3,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_25_FinalClimb",
+      "parent": "Platforms",
+      "x": 215.2,
+      "y": 43.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 211.2,
+          "maxX": 219.2,
+          "minY": 42.5,
+          "maxY": 43.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_26_FinalClimb",
+      "parent": "Platforms",
+      "x": 225.2,
+      "y": 44.2,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 221.7,
+          "maxX": 228.7,
+          "minY": 43.7,
+          "maxY": 44.7,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_27_FinalLanding",
+      "parent": "Platforms",
+      "x": 235.7,
+      "y": 45.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 230.7,
+          "maxX": 240.7,
+          "minY": 44.5,
+          "maxY": 45.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_28_FinalBot",
+      "parent": "Platforms",
+      "x": 253.7,
+      "y": 45.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 242.700012,
+          "maxX": 264.7,
+          "minY": 44.5,
+          "maxY": 45.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_29_FinalBarrierStaging",
+      "parent": "Platforms",
+      "x": 270.7,
+      "y": 46.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 266.7,
+          "maxX": 274.7,
+          "minY": 45.5,
+          "maxY": 46.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_30_FinalBarrier",
+      "parent": "Platforms",
+      "x": 283.7,
+      "y": 45.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 276.7,
+          "maxX": 290.7,
+          "minY": 44.5,
+          "maxY": 45.5,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_31_FinalJump",
+      "parent": "Platforms",
+      "x": 297.2,
+      "y": 46.2,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 293.2,
+          "maxX": 301.2,
+          "minY": 45.7,
+          "maxY": 46.7,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Platform_32_GoalDeck",
+      "parent": "Platforms",
+      "x": 313.2,
+      "y": 46.2,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 303.2,
+          "maxX": 323.2,
+          "minY": 45.7,
+          "maxY": 46.7,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Background",
+      "parent": "Environment",
+      "x": 91.6,
+      "y": 43.5,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "SpriteRenderer"
+      ],
+      "colliders": []
+    },
+    {
+      "name": "Enemies",
+      "parent": "",
+      "x": 0.0,
+      "y": 0.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform"
+      ],
+      "colliders": []
+    },
+    {
+      "name": "PatrolBot",
+      "parent": "Enemies",
+      "x": -70.7,
+      "y": 39.6999969,
+      "sx": 1.2,
+      "sy": 1.2,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -71.2999954,
+          "maxX": -70.1,
+          "minY": 39.1,
+          "maxY": 40.2999954,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "PatrolBot_02",
+      "parent": "Enemies",
+      "x": 51.3,
+      "y": 42.1,
+      "sx": 1.2,
+      "sy": 1.2,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 50.7,
+          "maxX": 51.8999977,
+          "minY": 41.5,
+          "maxY": 42.6999969,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "PatrolBot_03",
+      "parent": "Enemies",
+      "x": 177.7,
+      "y": 42.8999977,
+      "sx": 1.2,
+      "sy": 1.2,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 177.099991,
+          "maxX": 178.3,
+          "minY": 42.3,
+          "maxY": 43.4999962,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "PatrolBot_04",
+      "parent": "Enemies",
+      "x": 251.7,
+      "y": 46.1,
+      "sx": 1.2,
+      "sy": 1.2,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "PatrolEnemy",
+        "EnemyHealth",
+        "EnemyAnimationController"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 251.099991,
+          "maxX": 252.3,
+          "minY": 45.5,
+          "maxY": 46.6999969,
+          "trigger": false
+        }
+      ]
+    },
+    {
+      "name": "Hazards",
+      "parent": "",
+      "x": 0.0,
+      "y": 0.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform"
+      ],
+      "colliders": []
+    },
+    {
+      "name": "StaticSpikes",
+      "parent": "Hazards",
+      "x": -89.7,
+      "y": 39.6,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "colliders": [
+        {
+          "type": "PolygonCollider2D",
+          "minX": -91.2,
+          "maxX": -88.2,
+          "minY": 39.1,
+          "maxY": 40.1,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "StaticSpikes_02",
+      "parent": "Hazards",
+      "x": 80.3,
+      "y": 40.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "colliders": [
+        {
+          "type": "PolygonCollider2D",
+          "minX": 78.8,
+          "maxX": 81.8,
+          "minY": 39.5,
+          "maxY": 40.5,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "StaticSpikes_03",
+      "parent": "Hazards",
+      "x": 200.7,
+      "y": 42.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "colliders": [
+        {
+          "type": "PolygonCollider2D",
+          "minX": 199.2,
+          "maxX": 202.2,
+          "minY": 42.3,
+          "maxY": 43.3,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "MovingHorizontalHazard",
+      "parent": "Hazards",
+      "x": -6.7,
+      "y": 42.15,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "CircleCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "colliders": [
+        {
+          "type": "CircleCollider2D",
+          "minX": -7.35,
+          "maxX": -6.04999971,
+          "minY": 41.5,
+          "maxY": 42.8000031,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "MovingHorizontalHazard_02",
+      "parent": "Hazards",
+      "x": 157.7,
+      "y": 42.95,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "CircleCollider2D",
+        "Rigidbody2D",
+        "HazardDamage",
+        "HorizontalHazardMover"
+      ],
+      "colliders": [
+        {
+          "type": "CircleCollider2D",
+          "minX": 157.05,
+          "maxX": 158.349991,
+          "minY": 42.3,
+          "maxY": 43.6000023,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "ElectricBarrier",
+      "parent": "Hazards",
+      "x": 15.05,
+      "y": 42.5,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "HazardDamage"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 14.7750006,
+          "maxX": 15.325,
+          "minY": 41.5,
+          "maxY": 43.5,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "ElectricBarrier_02",
+      "parent": "Hazards",
+      "x": 277.45,
+      "y": 46.5,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D",
+        "HazardDamage"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 277.175018,
+          "maxX": 277.725,
+          "minY": 45.5,
+          "maxY": 47.5,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "StaticSpikes_04_Combat",
+      "parent": "Hazards",
+      "x": 186.7,
+      "y": 42.8,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "colliders": [
+        {
+          "type": "PolygonCollider2D",
+          "minX": 185.2,
+          "maxX": 188.2,
+          "minY": 42.3,
+          "maxY": 43.3,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "StaticSpikes_05_Final",
+      "parent": "Hazards",
+      "x": 260.7,
+      "y": 46.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "PolygonCollider2D",
+        "HazardDamage"
+      ],
+      "colliders": [
+        {
+          "type": "PolygonCollider2D",
+          "minX": 259.2,
+          "maxX": 262.2,
+          "minY": 45.5,
+          "maxY": 46.5,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "LevelObjects",
+      "parent": "",
+      "x": 0.0,
+      "y": 0.0,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform"
+      ],
+      "colliders": []
+    },
+    {
+      "name": "CameraBounds",
+      "parent": "LevelObjects",
+      "x": 91.6,
+      "y": 43.5,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "BoxCollider2D"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": -140.0,
+          "maxX": 323.2,
+          "minY": 32.5,
+          "maxY": 54.5,
+          "trigger": true
+        }
+      ]
+    },
+    {
+      "name": "GoalExitPortalVisual",
+      "parent": "LevelObjects",
+      "x": 315.2,
+      "y": 48.7,
+      "sx": 1.0,
+      "sy": 1.0,
+      "components": [
+        "Transform",
+        "SpriteRenderer",
+        "BoxCollider2D",
+        "GoalTrigger",
+        "Animator"
+      ],
+      "colliders": [
+        {
+          "type": "BoxCollider2D",
+          "minX": 314.400024,
+          "maxX": 316.0,
+          "minY": 47.0,
+          "maxY": 50.4,
+          "trigger": true
+        }
+      ]
+    }
+  ]
+}

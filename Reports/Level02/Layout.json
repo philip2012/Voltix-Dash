@@ -1,0 +1,808 @@
+{
+  "concept": "Level02 \u2014 Overcharge Sector",
+  "platforms": [
+    {
+      "name": "Fast_01",
+      "minX": 0,
+      "maxX": 12,
+      "top": 0,
+      "section": "FastOpening",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Fast_02",
+      "minX": 14.2,
+      "maxX": 24.2,
+      "top": 0.65,
+      "section": "FastOpening",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Fast_03",
+      "minX": 26.4,
+      "maxX": 38.4,
+      "top": 1.35,
+      "section": "FastOpening",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Fast_04",
+      "minX": 40.6,
+      "maxX": 54.6,
+      "top": 0.8,
+      "section": "FastOpening",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Fast_05",
+      "minX": 56.8,
+      "maxX": 68.8,
+      "top": 1.8,
+      "section": "FastOpening",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Shaft_00",
+      "minX": 70.8,
+      "maxX": 78.8,
+      "top": 2.55,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_01",
+      "minX": 80.6,
+      "maxX": 88.6,
+      "top": 4.2,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_02",
+      "minX": 69.8,
+      "maxX": 78.8,
+      "top": 6.05,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_03",
+      "minX": 80.6,
+      "maxX": 89.6,
+      "top": 7.65,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_04",
+      "minX": 71.8,
+      "maxX": 78.8,
+      "top": 9.55,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_05",
+      "minX": 80.6,
+      "maxX": 87.6,
+      "top": 11.25,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_06",
+      "minX": 70.2,
+      "maxX": 78.8,
+      "top": 13.05,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_07",
+      "minX": 80.6,
+      "maxX": 89,
+      "top": 14.7,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_08",
+      "minX": 71.2,
+      "maxX": 78.8,
+      "top": 16.55,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_09",
+      "minX": 80.6,
+      "maxX": 88.2,
+      "top": 18.2,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_10",
+      "minX": 70.8,
+      "maxX": 78.8,
+      "top": 20.1,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "Shaft_11",
+      "minX": 80.6,
+      "maxX": 88.6,
+      "top": 21.8,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 0.15
+    },
+    {
+      "name": "ShaftExit",
+      "minX": 90.6,
+      "maxX": 104.6,
+      "top": 21.8,
+      "section": "VerticalShaft",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Timing_01",
+      "minX": 106.8,
+      "maxX": 126.8,
+      "top": 21,
+      "section": "MovingTiming",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Timing_02",
+      "minX": 129,
+      "maxX": 139,
+      "top": 22.4,
+      "section": "MovingTiming",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Timing_03",
+      "minX": 141.2,
+      "maxX": 161.2,
+      "top": 21.8,
+      "section": "MovingTiming",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Timing_04",
+      "minX": 163.4,
+      "maxX": 177.4,
+      "top": 23,
+      "section": "MovingTiming",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Corridor_01",
+      "minX": 179.6,
+      "maxX": 195.6,
+      "top": 23,
+      "section": "ElectricCorridor",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Corridor_02",
+      "minX": 197.8,
+      "maxX": 207.8,
+      "top": 24.2,
+      "section": "ElectricCorridor",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Corridor_03",
+      "minX": 210,
+      "maxX": 230,
+      "top": 23.3,
+      "section": "ElectricCorridor",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Corridor_04",
+      "minX": 232.2,
+      "maxX": 242.2,
+      "top": 24.5,
+      "section": "ElectricCorridor",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Corridor_05",
+      "minX": 244.4,
+      "maxX": 260.4,
+      "top": 23.6,
+      "section": "ElectricCorridor",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "RouteFork",
+      "minX": 262.6,
+      "maxX": 276.6,
+      "top": 24.8,
+      "section": "RouteChoice",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Upper_01",
+      "minX": 278.8,
+      "maxX": 286.8,
+      "top": 26.55,
+      "section": "RouteChoice",
+      "route": "upper",
+      "thickness": 0.4
+    },
+    {
+      "name": "Upper_02",
+      "minX": 289,
+      "maxX": 299,
+      "top": 28.4,
+      "section": "RouteChoice",
+      "route": "upper",
+      "thickness": 0.4
+    },
+    {
+      "name": "Upper_03",
+      "minX": 301.2,
+      "maxX": 313.2,
+      "top": 29.3,
+      "section": "RouteChoice",
+      "route": "upper",
+      "thickness": 0.4
+    },
+    {
+      "name": "Upper_04",
+      "minX": 315.4,
+      "maxX": 329.4,
+      "top": 28.4,
+      "section": "RouteChoice",
+      "route": "upper",
+      "thickness": 0.4
+    },
+    {
+      "name": "Upper_05",
+      "minX": 331.6,
+      "maxX": 341.6,
+      "top": 29.3,
+      "section": "RouteChoice",
+      "route": "upper",
+      "thickness": 0.4
+    },
+    {
+      "name": "Upper_06",
+      "minX": 343.8,
+      "maxX": 359.8,
+      "top": 29.3,
+      "section": "RouteChoice",
+      "route": "upper",
+      "thickness": 0.4
+    },
+    {
+      "name": "Upper_07",
+      "minX": 362,
+      "maxX": 370,
+      "top": 27.3,
+      "section": "RouteChoice",
+      "route": "upper",
+      "thickness": 0.4
+    },
+    {
+      "name": "Lower_01",
+      "minX": 278.8,
+      "maxX": 296.8,
+      "top": 23.4,
+      "section": "RouteChoice",
+      "route": "lower",
+      "thickness": 1
+    },
+    {
+      "name": "Lower_02",
+      "minX": 299,
+      "maxX": 321,
+      "top": 22.6,
+      "section": "RouteChoice",
+      "route": "lower",
+      "thickness": 1
+    },
+    {
+      "name": "Lower_03",
+      "minX": 323.2,
+      "maxX": 339.2,
+      "top": 23.3,
+      "section": "RouteChoice",
+      "route": "lower",
+      "thickness": 1
+    },
+    {
+      "name": "Lower_04",
+      "minX": 341.4,
+      "maxX": 353.8,
+      "top": 24.2,
+      "section": "RouteChoice",
+      "route": "lower",
+      "thickness": 1
+    },
+    {
+      "name": "RouteRejoin",
+      "minX": 356,
+      "maxX": 382.2,
+      "top": 24.8,
+      "section": "RouteChoice",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "CombatDeck",
+      "minX": 384.4,
+      "maxX": 418.4,
+      "top": 24.8,
+      "section": "CombatPlatform",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_01",
+      "minX": 420.6,
+      "maxX": 430.6,
+      "top": 23,
+      "section": "Descent",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_02",
+      "minX": 432.8,
+      "maxX": 446.8,
+      "top": 21.2,
+      "section": "Descent",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_03",
+      "minX": 449.0,
+      "maxX": 457.0,
+      "top": 19.4,
+      "section": "Descent",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_04",
+      "minX": 459.2,
+      "maxX": 473.2,
+      "top": 17.6,
+      "section": "Descent",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_05",
+      "minX": 475.4,
+      "maxX": 485.4,
+      "top": 16,
+      "section": "Descent",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Descent_06",
+      "minX": 487.6,
+      "maxX": 499.6,
+      "top": 14.4,
+      "section": "Descent",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Breather",
+      "minX": 501.8,
+      "maxX": 515.8,
+      "top": 14.4,
+      "section": "Breather",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Gauntlet_01",
+      "minX": 518.0,
+      "maxX": 534.0,
+      "top": 15.6,
+      "section": "FinalGauntlet",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Gauntlet_02",
+      "minX": 536.2,
+      "maxX": 546.2,
+      "top": 16.8,
+      "section": "FinalGauntlet",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Gauntlet_03",
+      "minX": 548.4,
+      "maxX": 564.4,
+      "top": 15.8,
+      "section": "FinalGauntlet",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Gauntlet_04",
+      "minX": 566.6,
+      "maxX": 586.6,
+      "top": 17,
+      "section": "FinalGauntlet",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Gauntlet_05",
+      "minX": 588.8,
+      "maxX": 608.8,
+      "top": 16.2,
+      "section": "FinalGauntlet",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Gauntlet_06",
+      "minX": 611.0,
+      "maxX": 621.0,
+      "top": 17.5,
+      "section": "FinalGauntlet",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Gauntlet_07",
+      "minX": 623.2,
+      "maxX": 645.2,
+      "top": 17.5,
+      "section": "FinalGauntlet",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "Gauntlet_08",
+      "minX": 647.4,
+      "maxX": 663.4,
+      "top": 16.8,
+      "section": "FinalGauntlet",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "ExitApproach",
+      "minX": 665.6,
+      "maxX": 675.6,
+      "top": 17.7,
+      "section": "Goal",
+      "route": "shared",
+      "thickness": 1
+    },
+    {
+      "name": "ExitDeck",
+      "minX": 677.8,
+      "maxX": 697.8,
+      "top": 17.7,
+      "section": "Goal",
+      "route": "shared",
+      "thickness": 1
+    }
+  ],
+  "hazards": [
+    {
+      "name": "Spikes_Shaft",
+      "type": "spikes",
+      "platform": "Shaft_03",
+      "x": 86.8,
+      "y": 8.15
+    },
+    {
+      "name": "Mover_Timing_A",
+      "type": "moving",
+      "platform": "Timing_01",
+      "x": 115.8,
+      "y": 22.15
+    },
+    {
+      "name": "Mover_Timing_B",
+      "type": "moving",
+      "platform": "Timing_03",
+      "x": 151.2,
+      "y": 22.95
+    },
+    {
+      "name": "Barrier_Corridor_1",
+      "type": "barrier",
+      "platform": "Corridor_01",
+      "x": 187.6,
+      "y": 24
+    },
+    {
+      "name": "Barrier_Corridor_3",
+      "type": "barrier",
+      "platform": "Corridor_03",
+      "x": 218,
+      "y": 24.3
+    },
+    {
+      "name": "Barrier_Corridor_5",
+      "type": "barrier",
+      "platform": "Corridor_05",
+      "x": 251.9,
+      "y": 24.6
+    },
+    {
+      "name": "Barrier_LowerRoute",
+      "type": "barrier",
+      "platform": "Lower_01",
+      "x": 292.1,
+      "y": 24.4
+    },
+    {
+      "name": "Mover_LowerRoute",
+      "type": "moving",
+      "platform": "Lower_03",
+      "x": 331.2,
+      "y": 24.45
+    },
+    {
+      "name": "Spikes_CombatExit",
+      "type": "spikes",
+      "platform": "CombatDeck",
+      "x": 415.2,
+      "y": 25.3
+    },
+    {
+      "name": "Mover_Descent",
+      "type": "moving",
+      "platform": "Descent_02",
+      "x": 440.2,
+      "y": 22.349999999999998
+    },
+    {
+      "name": "Spikes_FinalEntry",
+      "type": "spikes",
+      "platform": "Gauntlet_01",
+      "x": 525.7,
+      "y": 16.1
+    },
+    {
+      "name": "Barrier_Final",
+      "type": "barrier",
+      "platform": "Gauntlet_03",
+      "x": 556.2,
+      "y": 16.8
+    },
+    {
+      "name": "Mover_Final",
+      "type": "moving",
+      "platform": "Gauntlet_05",
+      "x": 598.8,
+      "y": 17.349999999999998
+    },
+    {
+      "name": "Spikes_FinalExit",
+      "type": "spikes",
+      "platform": "Gauntlet_08",
+      "x": 654.4,
+      "y": 17.3
+    }
+  ],
+  "enemies": [
+    {
+      "name": "PatrolBot_Shaft",
+      "platform": "Shaft_06",
+      "x": 74.8,
+      "y": 13.65,
+      "patrolDistance": 2,
+      "speed": 2,
+      "optional": false
+    },
+    {
+      "name": "PatrolBot_Optional",
+      "platform": "Lower_02",
+      "x": 310,
+      "y": 23.200000000000003,
+      "patrolDistance": 3,
+      "speed": 2,
+      "optional": true
+    },
+    {
+      "name": "PatrolBot_Arena_A",
+      "platform": "CombatDeck",
+      "x": 394.7,
+      "y": 25.400000000000002,
+      "patrolDistance": 3,
+      "speed": 2,
+      "optional": false
+    },
+    {
+      "name": "PatrolBot_Arena_B",
+      "platform": "CombatDeck",
+      "x": 408.7,
+      "y": 25.400000000000002,
+      "patrolDistance": 3,
+      "speed": 2,
+      "optional": false
+    },
+    {
+      "name": "PatrolBot_Final_A",
+      "platform": "Gauntlet_04",
+      "x": 576.6,
+      "y": 17.6,
+      "patrolDistance": 3,
+      "speed": 2,
+      "optional": false
+    },
+    {
+      "name": "PatrolBot_Final_B",
+      "platform": "Gauntlet_07",
+      "x": 634.2,
+      "y": 18.1,
+      "patrolDistance": 3,
+      "speed": 2,
+      "optional": false
+    }
+  ],
+  "routes": {
+    "upper": [
+      "Fast_01",
+      "Fast_02",
+      "Fast_03",
+      "Fast_04",
+      "Fast_05",
+      "Shaft_00",
+      "Shaft_01",
+      "Shaft_02",
+      "Shaft_03",
+      "Shaft_04",
+      "Shaft_05",
+      "Shaft_06",
+      "Shaft_07",
+      "Shaft_08",
+      "Shaft_09",
+      "Shaft_10",
+      "Shaft_11",
+      "ShaftExit",
+      "Timing_01",
+      "Timing_02",
+      "Timing_03",
+      "Timing_04",
+      "Corridor_01",
+      "Corridor_02",
+      "Corridor_03",
+      "Corridor_04",
+      "Corridor_05",
+      "RouteFork",
+      "Upper_01",
+      "Upper_02",
+      "Upper_03",
+      "Upper_04",
+      "Upper_05",
+      "Upper_06",
+      "Upper_07",
+      "RouteRejoin",
+      "CombatDeck",
+      "Descent_01",
+      "Descent_02",
+      "Descent_03",
+      "Descent_04",
+      "Descent_05",
+      "Descent_06",
+      "Breather",
+      "Gauntlet_01",
+      "Gauntlet_02",
+      "Gauntlet_03",
+      "Gauntlet_04",
+      "Gauntlet_05",
+      "Gauntlet_06",
+      "Gauntlet_07",
+      "Gauntlet_08",
+      "ExitApproach",
+      "ExitDeck"
+    ],
+    "lower": [
+      "Fast_01",
+      "Fast_02",
+      "Fast_03",
+      "Fast_04",
+      "Fast_05",
+      "Shaft_00",
+      "Shaft_01",
+      "Shaft_02",
+      "Shaft_03",
+      "Shaft_04",
+      "Shaft_05",
+      "Shaft_06",
+      "Shaft_07",
+      "Shaft_08",
+      "Shaft_09",
+      "Shaft_10",
+      "Shaft_11",
+      "ShaftExit",
+      "Timing_01",
+      "Timing_02",
+      "Timing_03",
+      "Timing_04",
+      "Corridor_01",
+      "Corridor_02",
+      "Corridor_03",
+      "Corridor_04",
+      "Corridor_05",
+      "RouteFork",
+      "Lower_01",
+      "Lower_02",
+      "Lower_03",
+      "Lower_04",
+      "RouteRejoin",
+      "CombatDeck",
+      "Descent_01",
+      "Descent_02",
+      "Descent_03",
+      "Descent_04",
+      "Descent_05",
+      "Descent_06",
+      "Breather",
+      "Gauntlet_01",
+      "Gauntlet_02",
+      "Gauntlet_03",
+      "Gauntlet_04",
+      "Gauntlet_05",
+      "Gauntlet_06",
+      "Gauntlet_07",
+      "Gauntlet_08",
+      "ExitApproach",
+      "ExitDeck"
+    ]
+  },
+  "spawn": [
+    4,
+    1.1
+  ],
+  "goal": [
+    690.8000000000001,
+    19.7
+  ],
+  "cameraBounds": {
+    "minX": 0,
+    "maxX": 697.8000000000001,
+    "minY": -5,
+    "maxY": 36
+  }
+}
