@@ -11,6 +11,7 @@ public class LevelCompletionUI : MonoBehaviour
 
     private VisualElement overlay;
     private Label scoreLabel;
+    private Label titleLabel;
     private Label timeLabel;
     private Label deathsLabel;
     private Button restartButton;
@@ -21,6 +22,7 @@ public class LevelCompletionUI : MonoBehaviour
         var root = GetComponent<UIDocument>().rootVisualElement;
         overlay = root.Q("completion-overlay");
         scoreLabel = root.Q<Label>("final-score-label");
+        titleLabel = root.Q<Label>("completion-title");
         timeLabel = root.Q<Label>("final-time-label");
         deathsLabel = root.Q<Label>("final-deaths-label");
         restartButton = root.Q<Button>("restart-button");
@@ -46,6 +48,7 @@ public class LevelCompletionUI : MonoBehaviour
     private void ShowCompletion()
     {
         if (overlay == null) return;
+        if (titleLabel != null) titleLabel.text = levelManager.CompletionTitle;
         if (scoreLabel != null) scoreLabel.text = $"SCORE: {levelManager.FinalScore:D4}";
         TimeSpan elapsed = TimeSpan.FromSeconds(levelManager.ElapsedTime);
         if (timeLabel != null)

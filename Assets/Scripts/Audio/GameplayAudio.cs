@@ -5,7 +5,7 @@ using UnityEngine;
 [DefaultExecutionOrder(200)]
 public class GameplayAudio : MonoBehaviour
 {
-    public enum Sound { Jump, Landing, Attack, Damage, EnemyDeath, Completion }
+    public enum Sound { Jump, Landing, Attack, Damage, EnemyDeath, Completion, Launch, Checkpoint, TurretFire }
     private const int VoiceCount = 3;
 
     [Header("Event sources")]
@@ -21,10 +21,13 @@ public class GameplayAudio : MonoBehaviour
     [SerializeField] private AudioClip damageClip;
     [SerializeField] private AudioClip enemyDeathClip;
     [SerializeField] private AudioClip completionClip;
+    [SerializeField] private AudioClip launchClip;
+    [SerializeField] private AudioClip checkpointClip;
+    [SerializeField] private AudioClip turretFireClip;
     [SerializeField, Range(0f, 1f)] private float masterVolume = 0.55f;
     [SerializeField] private AudioSource[] voices;
 
-    private readonly float[] nextAllowed = new float[6];
+    private readonly float[] nextAllowed = new float[9];
     private readonly double[] busyUntil = new double[VoiceCount];
     private readonly int[] voicePriority = new int[VoiceCount];
     private int lastHealth;
@@ -62,6 +65,9 @@ public class GameplayAudio : MonoBehaviour
             playerHealth.HealthChanged += OnHealthChanged;
         }
         EnemyHealth.Killed += OnEnemyKilled;
+        LaunchPad.Launched += OnLaunch;
+        Checkpoint.Activated += OnCheckpoint;
+        SentryTurret.Fired += OnTurretFire;
         if (levelManager != null) levelManager.Completed += OnCompleted;
     }
 
@@ -75,6 +81,9 @@ public class GameplayAudio : MonoBehaviour
         if (playerCombat != null) playerCombat.AttackPerformed -= OnAttack;
         if (playerHealth != null) playerHealth.HealthChanged -= OnHealthChanged;
         EnemyHealth.Killed -= OnEnemyKilled;
+        LaunchPad.Launched -= OnLaunch;
+        Checkpoint.Activated -= OnCheckpoint;
+        SentryTurret.Fired -= OnTurretFire;
         if (levelManager != null) levelManager.Completed -= OnCompleted;
         StopVoices();
     }
@@ -83,6 +92,9 @@ public class GameplayAudio : MonoBehaviour
     private void OnLanding() => Play(Sound.Landing);
     private void OnAttack(int direction, float range, float height) => Play(Sound.Attack);
     private void OnEnemyKilled(Vector3 position) => Play(Sound.EnemyDeath);
+    private void OnLaunch(Vector3 position) => Play(Sound.Launch);
+    private void OnCheckpoint(Vector3 position) => Play(Sound.Checkpoint);
+    private void OnTurretFire(Vector3 position) => Play(Sound.TurretFire);
 
     private void OnHealthChanged(int current, int maximum)
     {
@@ -142,6 +154,9 @@ public class GameplayAudio : MonoBehaviour
             case Sound.Attack: return attackClip;
             case Sound.Damage: return damageClip;
             case Sound.EnemyDeath: return enemyDeathClip;
+            case Sound.Launch: return launchClip;
+            case Sound.Checkpoint: return checkpointClip;
+            case Sound.TurretFire: return turretFireClip;
             default: return completionClip;
         }
     }
@@ -155,6 +170,9 @@ public class GameplayAudio : MonoBehaviour
             case Sound.Attack: return 0.55f;
             case Sound.Damage: return 0.6f;
             case Sound.EnemyDeath: return 0.5f;
+            case Sound.Launch: return 0.5f;
+            case Sound.Checkpoint: return 0.45f;
+            case Sound.TurretFire: return 0.35f;
             default: return 0.6f;
         }
     }
@@ -166,6 +184,9 @@ public class GameplayAudio : MonoBehaviour
             case Sound.Attack: return 0.2f;
             case Sound.Damage: return 0.25f;
             case Sound.Completion: return 0.6f;
+            case Sound.TurretFire: return 0.15f;
+            case Sound.Launch: return 0.2f;
+            case Sound.Checkpoint: return 0.6f;
             default: return 0.12f;
         }
     }

@@ -10,6 +10,7 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private ScoreManager scoreManager;
     [Tooltip("Optional next scene name or build path. Leave empty for the final level.")]
     [SerializeField] private string nextLevelScene;
+    [SerializeField] private string completionTitle = "LEVEL COMPLETE";
 
     private double startTime;
     private double completionTime;
@@ -18,6 +19,7 @@ public class LevelManager : MonoBehaviour
     public bool IsComplete { get; private set; }
     public int DeathCount { get; private set; }
     public int FinalScore { get; private set; }
+    public string CompletionTitle => string.IsNullOrWhiteSpace(completionTitle) ? "LEVEL COMPLETE" : completionTitle;
     public bool HasNextLevel => !string.IsNullOrWhiteSpace(nextLevelScene) &&
         Application.CanStreamedLevelBeLoaded(nextLevelScene);
     public double ElapsedTime => IsComplete ? completionTime : Time.timeAsDouble - startTime;

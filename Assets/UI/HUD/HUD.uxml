@@ -17,7 +17,7 @@
     </ui:VisualElement>
     <ui:VisualElement name="completion-overlay" class="completion-overlay">
         <ui:VisualElement class="completion-panel">
-            <ui:Label text="LEVEL COMPLETE" class="completion-title" />
+            <ui:Label name="completion-title" text="LEVEL COMPLETE" class="completion-title" />
             <ui:Label name="final-score-label" text="SCORE: 0000" class="completion-stat" />
             <ui:Label name="final-time-label" text="TIME: 00:00.00" class="completion-stat" />
             <ui:Label name="final-deaths-label" text="DEATHS: 0" class="completion-stat" />

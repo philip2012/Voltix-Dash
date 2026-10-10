@@ -15,6 +15,7 @@ public class PlayerHealth : MonoBehaviour
 
     private Rigidbody2D body;
     private Vector3 startingPosition;
+    private Vector3 respawnPosition;
     private Quaternion startingRotation;
     private float startingGravityScale;
     private float nextDamageTime;
@@ -22,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     public int CurrentHealth { get; private set; }
     public int MaxHealth => maxHealth;
     public Vector3 StartingPosition => startingPosition;
+    public Vector3 RespawnPosition => respawnPosition;
     public float FallRespawnY => fallRespawnY;
     public bool IsInvulnerable => Time.time < nextDamageTime;
     public event System.Action<int, int> HealthChanged;
@@ -31,6 +33,7 @@ public class PlayerHealth : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         startingPosition = transform.position;
+        respawnPosition = startingPosition;
         startingRotation = transform.rotation;
         startingGravityScale = body.gravityScale;
         CurrentHealth = maxHealth;
@@ -82,14 +85,17 @@ public class PlayerHealth : MonoBehaviour
         nextDamageTime = Time.time + damageCooldown;
 
         // Teleport both the transform and physics body, then discard pre-death momentum.
-        transform.SetPositionAndRotation(startingPosition, startingRotation);
-        body.position = startingPosition;
+        transform.SetPositionAndRotation(respawnPosition, startingRotation);
+        body.position = respawnPosition;
         body.rotation = startingRotation.eulerAngles.z;
         body.linearVelocity = Vector2.zero;
         body.angularVelocity = 0f;
         body.gravityScale = startingGravityScale;
         HealthChanged?.Invoke(CurrentHealth, maxHealth);
     }
+
+    /// <summary>Scene-owned checkpoints change only the destination; reload restores the original spawn.</summary>
+    public void SetRespawnPosition(Vector3 position) => respawnPosition = position;
 
     private void OnValidate()
     {

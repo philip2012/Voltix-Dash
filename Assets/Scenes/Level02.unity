@@ -14550,7 +14550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   playerHealth: {fileID: 1502846386}
   scoreManager: {fileID: 1099217396}
-  nextLevelScene: 
+  nextLevelScene: Assets/Scenes/Level03.unity
 --- !u!114 &1099217399
 MonoBehaviour:
   m_ObjectHideFlags: 0

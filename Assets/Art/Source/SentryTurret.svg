@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 192">
+<polygon points="36,184 25,151 50,123 70,34 100,16 188,16 212,43 219,145 235,159 226,184" fill="#0b1223" stroke="#9165ec" stroke-width="6"/>
+<polygon points="83,41 174,41 197,63 195,130 58,130" fill="#19283c"/>
+<polygon points="108,61 190,61 208,86 243,86 243,116 157,116 111,102" fill="#0b1223" stroke="#ee4e4c" stroke-width="5"/>
+<polygon points="125,79 191,79 191,88 125,88" fill="#ee4e4c"/>
+<polygon points="211,91 239,91 239,108 211,108" fill="#d5fcff"/>
+<ellipse cx="77.0" cy="74.0" rx="20.0" ry="20.0" fill="#ee4e4c" stroke="#d5fcff" stroke-width="3"/>
+<polyline points="47,152 212,152" fill="none" stroke="#9165ec" stroke-width="5" stroke-linejoin="round"/>
+<polygon points="60,164 198,164 198,175 60,175" fill="#34465e"/>
+</svg>

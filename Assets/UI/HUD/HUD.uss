@@ -54,6 +54,7 @@
 
 .completion-title {
     margin-bottom: 18px;
+    white-space: normal;
     color: rgb(82, 233, 245);
     font-size: 32px;
     -unity-font-style: bold;
