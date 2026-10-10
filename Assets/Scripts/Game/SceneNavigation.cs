@@ -15,8 +15,13 @@ public static class SceneNavigation
 
     public static void PlayLevel()
     {
+        LoadLevel(LevelPath);
+    }
+
+    public static void LoadLevel(string scenePath)
+    {
         ResetPlayback();
-        SceneManager.LoadScene(LevelPath);
+        SceneManager.LoadScene(scenePath);
     }
 
     public static void MainMenu()

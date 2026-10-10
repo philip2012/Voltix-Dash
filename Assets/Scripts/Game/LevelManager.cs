@@ -8,6 +8,8 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] private PlayerHealth playerHealth;
     [SerializeField] private ScoreManager scoreManager;
+    [Tooltip("Optional next scene name or build path. Leave empty for the final level.")]
+    [SerializeField] private string nextLevelScene;
 
     private double startTime;
     private double completionTime;
@@ -16,6 +18,8 @@ public class LevelManager : MonoBehaviour
     public bool IsComplete { get; private set; }
     public int DeathCount { get; private set; }
     public int FinalScore { get; private set; }
+    public bool HasNextLevel => !string.IsNullOrWhiteSpace(nextLevelScene) &&
+        Application.CanStreamedLevelBeLoaded(nextLevelScene);
     public double ElapsedTime => IsComplete ? completionTime : Time.timeAsDouble - startTime;
     public event Action Completed;
 
@@ -75,6 +79,13 @@ public class LevelManager : MonoBehaviour
     {
         if (!IsComplete || restartRequested) return;
         restartRequested = true;
-        SceneManager.LoadScene(gameObject.scene.path);
+        SceneNavigation.LoadLevel(gameObject.scene.path);
+    }
+
+    public void NextLevel()
+    {
+        if (!IsComplete || restartRequested || !HasNextLevel) return;
+        restartRequested = true;
+        SceneNavigation.LoadLevel(nextLevelScene);
     }
 }

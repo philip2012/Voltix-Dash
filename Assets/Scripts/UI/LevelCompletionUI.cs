@@ -14,6 +14,7 @@ public class LevelCompletionUI : MonoBehaviour
     private Label timeLabel;
     private Label deathsLabel;
     private Button restartButton;
+    private Button nextLevelButton;
 
     private void OnEnable()
     {
@@ -23,8 +24,10 @@ public class LevelCompletionUI : MonoBehaviour
         timeLabel = root.Q<Label>("final-time-label");
         deathsLabel = root.Q<Label>("final-deaths-label");
         restartButton = root.Q<Button>("restart-button");
+        nextLevelButton = root.Q<Button>("next-level-button");
 
         if (restartButton != null) restartButton.clicked += Restart;
+        if (nextLevelButton != null) nextLevelButton.clicked += NextLevel;
         if (levelManager != null)
         {
             levelManager.Completed += ShowCompletion;
@@ -37,6 +40,7 @@ public class LevelCompletionUI : MonoBehaviour
     {
         if (levelManager != null) levelManager.Completed -= ShowCompletion;
         if (restartButton != null) restartButton.clicked -= Restart;
+        if (nextLevelButton != null) nextLevelButton.clicked -= NextLevel;
     }
 
     private void ShowCompletion()
@@ -47,11 +51,18 @@ public class LevelCompletionUI : MonoBehaviour
         if (timeLabel != null)
             timeLabel.text = $"TIME: {(int)elapsed.TotalMinutes:00}:{elapsed.Seconds:00}.{elapsed.Milliseconds / 10:00}";
         if (deathsLabel != null) deathsLabel.text = $"DEATHS: {levelManager.DeathCount}";
+        if (nextLevelButton != null)
+            nextLevelButton.style.display = levelManager.HasNextLevel ? DisplayStyle.Flex : DisplayStyle.None;
         overlay.style.display = DisplayStyle.Flex;
     }
 
     private void Restart()
     {
         if (levelManager != null) levelManager.RestartLevel();
+    }
+
+    private void NextLevel()
+    {
+        if (levelManager != null) levelManager.NextLevel();
     }
 }

@@ -136,7 +136,7 @@ public class LevelPause : MonoBehaviour
         if (!IsPaused || navigating || (levelManager != null && levelManager.IsComplete)) return;
         navigating = true;
         ReleasePause(false);
-        SceneNavigation.PlayLevel();
+        SceneNavigation.LoadLevel(gameObject.scene.path);
     }
 
     public void MainMenu()

@@ -21,6 +21,7 @@
             <ui:Label name="final-score-label" text="SCORE: 0000" class="completion-stat" />
             <ui:Label name="final-time-label" text="TIME: 00:00.00" class="completion-stat" />
             <ui:Label name="final-deaths-label" text="DEATHS: 0" class="completion-stat" />
+            <ui:Button name="next-level-button" text="NEXT LEVEL" class="restart-button" style="display: none;" />
             <ui:Button name="restart-button" text="Restart" class="restart-button" />
         </ui:VisualElement>
     </ui:VisualElement>
